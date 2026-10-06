@@ -126,7 +126,7 @@ function footer() {
 
 function page({ url, title, desc, body, ogImage = '/assets/img/og-image.png', jsonld = '', bodyClass = '', noindex = false }) {
   const full = `${SITE}${url}`;
-  const html = `<!doctype html>
+  let html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -157,11 +157,23 @@ ${footer()}
 </html>
 `;
   const out = path.join(ROOT, url === '/' ? '' : url, 'index.html');
+  html = relativise(html, url);
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, html);
   PAGES.push(url);
 }
 const PAGES = [];
+// Make every root-absolute link relative so the site works from file://, subfolders, or any host.
+// Folder links get an explicit index.html so they also resolve without a web server. Set CLEAN_URLS=1 to keep /folder/ style.
+function relativise(html, url) {
+  const depth = url === '/' ? 0 : url.split('/').filter(Boolean).length;
+  const pre = depth ? '../'.repeat(depth) : './';
+  return html.replace(/\b(href|src|data-lb)="\/([^"]*)"/g, (m, attr, rest) => {
+    let [pathPart, tail = ''] = rest.split(/(?=[?#])/).length > 1 ? [rest.split(/[?#]/)[0], rest.slice(rest.split(/[?#]/)[0].length)] : [rest, ''];
+    if (!process.env.CLEAN_URLS && (pathPart === '' || pathPart.endsWith('/'))) pathPart += 'index.html';
+    return `${attr}="${pre}${pathPart}${tail}"`;
+  }).replace(/url\(\/(assets[^)]*)\)/g, `url(${pre}$1)`);
+}
 
 /* ---------- components ---------- */
 const rv = (cls = '') => `rv ${cls}`.trim();
@@ -450,7 +462,7 @@ function legal(key, title) {
 /* ---------- 404 ---------- */
 function notFound() {
   page({ url: '/404/', title: 'Page not found | KACO Systems', noindex: true, desc: 'Page not found.', body: `<section class="page-hero" style="min-height:60vh;display:grid;align-content:center"><span class="eyebrow">404</span><h1 class="display">Page not found</h1><p class="lead">The page you're looking for has moved or doesn't exist.</p><div class="links-row" style="margin-top:24px;gap:12px"><a class="btn" href="/">Back to home</a><a class="btn ghost" href="/contact/">Contact us</a></div></section>` });
-  fs.renameSync(path.join(ROOT, '404/index.html'), path.join(ROOT, '404.html'));
+  { const f = path.join(ROOT, '404/index.html'); fs.writeFileSync(path.join(ROOT, '404.html'), fs.readFileSync(f, 'utf8').replace(/(href|src)="\.\.\//g, '$1="./')); fs.unlinkSync(f); }
   fs.rmdirSync(path.join(ROOT, '404'));
   PAGES.pop();
 }
