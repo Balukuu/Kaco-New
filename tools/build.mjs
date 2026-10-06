@@ -92,7 +92,7 @@ function header(cur) {
 <header class="site-header"><div class="hdr">
   <a class="logo" href="/" aria-label="KACO Systems — home"><img src="/kaco-logo.jpg" alt="KACO Systems" width="96" height="26"></a>
   <ul class="nav" aria-label="Primary">${li}</ul>
-  <div class="hdr-right"><a class="hdr-phone" href="tel:${TEL}">${PHONE}</a><a class="pill-sm" href="/contact/">Get a Quote</a>
+  <div class="hdr-right"><a class="pill-sm" href="/contact/">Get a Quote</a>
   <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button></div>
 </div></header>
 <div class="sheet" id="sheet" role="dialog" aria-label="Menu">${sheet}<div class="sheet-cta"><a href="/contact/">Get a Quote</a><a href="tel:${TEL}">Call ${PHONE}</a></div></div>`;
