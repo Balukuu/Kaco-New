@@ -321,15 +321,28 @@ function generic(key, opts = {}) {
 
 /* ---------- HOME ---------- */
 function home() {
+  // Product lineups for the hero. `s` scales a product against the stage height (cutouts carry different
+  // amounts of transparent padding); `blk` marks images shot on an opaque black matte so CSS can lift the matte
+  // into the studio backdrop (`fade` also feathers the edges, for screenshots whose dark ground is not pure black); `side` items are dropped on phones where there is no room for them.
+  const P = '/assets/img/products/';
   const slides = [
-    { pick: 'Precision Geospatial', eye: 'Geospatial & Advanced IT', h: "Precision for Africa's built environment", p: 'KACO Systems empowers surveying, mining, construction, utilities, and government organizations with industry-standard Trimble GNSS positioning, DJI Enterprise drone LiDAR, and certified calibration support across Uganda and East Africa.', img: 'drone-deployment-01.jpg', l: [['Explore solutions', '/solutions/'], ['Get a quote', '/contact/']] },
-    { pick: 'Aerial Mapping & LiDAR', eye: 'DJI Enterprise', h: 'See the whole site from above', p: 'DJI Enterprise drone fleets capturing photogrammetry, thermal imagery, and high-density LiDAR across vast project sites.', img: 'drone-launch-standby-01.jpg', l: [['Learn more', '/dji-enterprise/'], ['Get a quote', '/contact/?product=dji-enterprise']] },
-    { pick: 'Enterprise GIS & SDI', eye: 'Esri ArcGIS', h: 'From raw capture to decisions', p: 'Esri ArcGIS deployment and spatial data infrastructure that turns raw field capture into decision-ready intelligence.', img: 'drone-survey-aerial-01.jpg', l: [['Learn more', '/esri-arcgis/'], ['Talk to a specialist', '/contact/']] },
-    { pick: 'Service & Training', eye: 'Lifecycle support', h: 'Unrivalled service. Unmatched precision.', p: 'Our certified Kampala calibration lab, HelpDesk engineers, and training academy protect your field crews every step of the way.', img: 'gnss-training-01.jpg', l: [['Services & support', '/solutions/#services-support'], ['Training academy', '/training/']] },
+    { pick: 'Precision Geospatial', eye: 'Geospatial & Advanced IT', h: "Precision for Africa's built environment", p: 'KACO Systems empowers surveying, mining, construction, utilities, and government organizations with industry-standard Trimble GNSS positioning, DJI Enterprise drone LiDAR, and certified calibration support across Uganda and East Africa.', glow: '#3a424b',
+      prods: [{ img: 'trimble-r980-product-01.avif', alt: 'Trimble R980 GNSS receiver', s: .9 }, { img: 'trimble-s9-product-01.avif', alt: 'Trimble S9 robotic total station', s: 1 }, { img: 'trimble-r780-product-01.avif', alt: 'Trimble R780 GNSS receiver', s: .9 }],
+      l: [['Explore solutions', '/solutions/'], ['Get a quote', '/contact/']] },
+    { pick: 'Aerial Mapping & LiDAR', eye: 'DJI Enterprise', h: 'See the whole site from above', p: 'DJI Enterprise drone fleets capturing photogrammetry, thermal imagery, and high-density LiDAR across vast project sites.', glow: '#33404d',
+      prods: [{ img: 'dji-zenmuse-l2-product-01.png', alt: 'DJI Zenmuse L2 LiDAR payload', s: .56, m: -70, side: 1 }, { img: 'dji-matrice-350-rtk-product-01.png', alt: 'DJI Matrice 350 RTK enterprise drone', s: 1.5, w: 48, wm: 100 }, { img: 'dji-dock-3-product-01.png', alt: 'DJI Dock 3 autonomous drone dock', s: .64, m: -70, side: 1 }],
+      l: [['Learn more', '/dji-enterprise/'], ['Get a quote', '/contact/?product=dji-enterprise']] },
+    { pick: 'Enterprise GIS & SDI', eye: 'Esri ArcGIS', h: 'From raw capture to decisions', p: 'Esri ArcGIS deployment and spatial data infrastructure that turns raw field capture into decision-ready intelligence.', glow: '#27414f',
+      prods: [{ img: 'esri-arcgis-online-product-01.png', alt: 'ArcGIS Online web GIS', s: .6, blk: 1, fade: 1, side: 1 }, { img: 'esri-arcgis-pro-product-01.png', alt: 'ArcGIS Pro desktop GIS', s: 1, wm: 100, blk: 1, fade: 1 }, { img: 'esri-arcgis-enterprise-product-01.jpg', alt: 'ArcGIS Enterprise spatial infrastructure', s: .6, blk: 1, fade: 1, side: 1 }],
+      l: [['Learn more', '/esri-arcgis/'], ['Talk to a specialist', '/contact/']] },
+    { pick: 'Service & Training', eye: 'Lifecycle support', h: 'Unrivalled service. Unmatched precision.', p: 'Our certified Kampala calibration lab, HelpDesk engineers, and training academy protect your field crews every step of the way.', glow: '#3d3a37',
+      prods: [{ img: 'nikon-ac2s-product-01.avif', alt: 'Nikon AC-2S automatic level', s: .6, blk: 1, side: 1 }, { img: 'spectra-focus50-product-01.avif', alt: 'Spectra Geospatial FOCUS 50 robotic total station', s: 1, blk: 1 }, { img: 'nikon-xf-product-01.avif', alt: 'Nikon XF total station', s: .94, blk: 1 }],
+      l: [['Services & support', '/solutions/#services-support'], ['Training academy', '/training/']] },
   ];
+  const stage = (s, first) => `<div class="stage">${s.prods.map((p, k) => `<img${p.blk ? ` class="blk${p.fade ? ' fade' : ''}"` : ''}${p.side ? ' data-side' : ''} src="${P}${p.img}" alt="${esc(p.alt)}" style="--s:${p.s};--w:${p.w || 34}%;--wm:${p.wm || 56}%;--m:${p.m || 0}px;--i:${k}" ${first ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`).join('')}</div>`;
   const heroHtml = `<section class="hero" aria-roledescription="carousel" aria-label="Featured">
-${slides.map((s, i) => `<div class="slide" role="group" aria-label="${i + 1} of ${slides.length}"><img class="bg" src="/assets/img/hero/${s.img}" alt="" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">
-<div class="slide-copy"><span class="eyebrow">${esc(s.eye)}</span>${i === 0 ? `<h1 class="display">${esc(s.h)}</h1>` : `<h2 class="display">${esc(s.h)}</h2>`}<p>${esc(s.p)}</p><div class="links-row">${s.l.map(([a, b]) => tl(a, b)).join('')}</div></div></div>`).join('')}
+${slides.map((s, i) => `<div class="slide" role="group" aria-label="${i + 1} of ${slides.length}" style="--glow:${s.glow}">
+<div class="slide-copy"><span class="eyebrow">${esc(s.eye)}</span>${i === 0 ? `<h1 class="display">${esc(s.h)}</h1>` : `<h2 class="display">${esc(s.h)}</h2>`}<p>${esc(s.p)}</p><div class="links-row">${s.l.map(([a, b]) => tl(a, b)).join('')}</div></div>${stage(s, i === 0)}</div>`).join('')}
 <div class="hero-pick" role="tablist" aria-label="Choose slide">${slides.map((s, i) => `<button type="button" role="tab" aria-selected="${i === 0}">${esc(s.pick)}</button>`).join('')}</div>
 <a class="hero-scroll" href="#solutions" aria-label="Scroll to solutions">${svg.down}</a></section>`;
 
