@@ -32,7 +32,9 @@ function im(src) {
   else if ((m = src.match(/^\/assets\/images\/gallery\/(thumbs|medium)\/(.+)$/))) src = `/assets/img/gallery/${m[1]}/${m[2]}`;
   else if ((m = src.match(/^\/assets\/images\/gallery\/([^/]+)$/))) {
     const f = path.join(ROOT, 'assets/img/hero', m[1]);
-    if (!fs.existsSync(f) && fs.existsSync(PHIREZ_GALLERY + m[1])) fs.copyFileSync(PHIREZ_GALLERY + m[1], f);
+    if (!fs.existsSync(f) && fs.existsSync(PHIREZ_GALLERY) && fs.existsSync(path.join(PHIREZ_GALLERY, m[1]))) {
+      fs.copyFileSync(path.join(PHIREZ_GALLERY, m[1]), f);
+    }
     src = '/assets/img/hero/' + m[1];
   } else if ((m = src.match(/^\/assets\/images\/(clients|training)\/(.+)$/))) src = `/assets/img/${m[1]}/${m[2]}`;
   if (src.startsWith('/') && !fs.existsSync(path.join(ROOT, src))) IMG_MISSING.add(src);
@@ -111,13 +113,13 @@ function footer() {
   <div><h4>Solutions &amp; Systems</h4><ul>
     <li><a href="/solutions/#gnss-positioning">Trimble GNSS &amp; Total Stations</a></li><li><a href="/solutions/#drones-aerial">DJI Enterprise Drone LiDAR</a></li>
     <li><a href="/solutions/#laser-scanning">3D Laser Scanning &amp; Mobile SLAM</a></li><li><a href="/solutions/#gpr-subsurface">US Radar Subsurface GPR</a></li>
-    <li><a href="/solutions/#gpr-subsurface">Seafloor Hydrographic USVs</a></li><li><a href="/esri-arcgis/">Esri ArcGIS Enterprise &amp; SDI</a></li>
+    <li><a href="/seafloor-systems/">Seafloor Hydrographic USVs</a></li><li><a href="/esri-arcgis/">Esri ArcGIS Enterprise &amp; SDI</a></li>
     <li><a href="/autodesk/">Autodesk &amp; Carlson Software</a></li><li><a href="/datamine-software/">Datamine Mine Geology Software</a></li>
     <li><a href="/ibm-tape/">IBM Tape Storage &amp; Archive</a></li><li><a href="/solutions/#system-integration">System Integration &amp; IT Networks</a></li></ul></div>
   <div><h4>Services &amp; Support</h4><ul>
-    <li><a href="/services/">Certified Service &amp; Calibration</a></li><li><a href="/services/">Technical HelpDesk Support</a></li>
-    <li><a href="/training/">KACO Training Academy</a></li><li><a href="/services/">Contract Survey &amp; Engineering</a></li>
-    <li><a href="/solutions/#esri-gis">Spatial Data Infrastructure</a></li><li><a href="/services/">Technology Assurance Plan</a></li>
+    <li><a href="/services/#svc-1">Certified Service &amp; Calibration</a></li><li><a href="/services/#svc-2">Technical HelpDesk Support</a></li>
+    <li><a href="/training/">KACO Training Academy</a></li><li><a href="/services/#svc-4">Contract Survey &amp; Engineering</a></li>
+    <li><a href="/solutions/#esri-gis">Spatial Data Infrastructure</a></li><li><a href="/services/#svc-6">Technology Assurance Plan</a></li>
     <li><a href="/gallery/">Field Gallery</a></li><li><a href="/company/#divisions">Our Technical Divisions</a></li><li><a href="/company/#careers">Careers at KACO</a></li></ul></div>
   <div><h4>Company</h4><ul>
     <li><a href="/company/">About KACO Systems</a></li><li><a href="/industries/">Industries</a></li><li><a href="/projects/">Capabilities</a></li>
@@ -144,7 +146,9 @@ function page({ url, title, desc, body, ogImage = '/assets/img/og-image.png', js
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${full}"><meta property="og:image" content="${SITE}${ogImage}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/kaco-logo.jpg">
+<meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}">
+<meta name="twitter:image" content="${SITE}${ogImage}">
+<link rel="icon" type="image/jpeg" href="/kaco-logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site.css">
@@ -549,7 +553,7 @@ function galleryPage() {
   const items = sec.imgs.map((im0, i) => ({ src: im0.src.includes('/thumbs/') ? im(im0.src) : im0.src.replace('/assets/images/gallery/', '/assets/img/gallery/thumbs/'), cap: rb(sec.intro[i]?.t || im0.alt) }));
   items.forEach((it) => { if (!fs.existsSync(path.join(ROOT, it.src))) IMG_MISSING.add(it.src); });
   const body = `<section class="page-hero"><span class="eyebrow">Field gallery</span><h1 class="display">Our work in the field</h1><p class="lead">Real KACO Systems field work: GNSS surveys, drone mapping, precision-agriculture demonstrations and industry events across Uganda.</p></section>
-<section class="sec" style="padding-top:8px"><div class="wrap"><div class="masonry">${items.map((it, i) => `<button type="button" data-lb="${it.src}" data-cap="${esc(it.cap)}"><img src="${it.src}" alt="${esc(it.cap)}" loading="${i < 6 ? 'eager' : 'lazy'}" decoding="async"></button>`).join('')}</div></div></section>
+<section class="sec" style="padding-top:8px"><div class="wrap"><div class="masonry">${items.map((it, i) => `<button type="button" data-lb="${it.src}" data-cap="${esc(it.cap)}" aria-label="View photo: ${esc(it.cap)}"><img src="${it.src}" alt="${esc(it.cap)}" loading="${i < 6 ? 'eager' : 'lazy'}" decoding="async"></button>`).join('')}</div></div></section>
 ${ctaBand('Want work like this on your next project?', '', [{ t: 'Talk to a specialist', href: '/contact/' }, { t: 'Explore solutions', href: '/solutions/' }])}
 <div class="lb" id="lb" role="dialog" aria-label="Photo viewer" aria-modal="true"><button class="x" type="button" aria-label="Close">${svg.x}</button><button class="pv" type="button" aria-label="Previous">${svg.left}</button><img alt=""><button class="nx" type="button" aria-label="Next">${svg.right}</button><p></p></div>`;
   page({ url: '/gallery/', title: 'Field Gallery | KACO Systems', desc: 'Photos of KACO Systems GNSS surveys, drone mapping, precision-agriculture demonstrations and training across Uganda.', body });
@@ -566,13 +570,13 @@ function contactPage() {
 <div><h3>Email</h3><a href="mailto:${EMAIL}">${EMAIL}</a></div>
 <div><h3>Office hours</h3><p>Mon–Fri, 8:00 AM – 5:00 PM (EAT)</p></div></div>
 <div class="links-row" style="justify-content:flex-start;margin-top:22px;gap:12px"><a class="btn" href="/contact/?action=service">Book instrument service</a><a class="btn ghost" href="${WA}" target="_blank" rel="noopener">Chat on WhatsApp</a></div></div>
-<form class="form rv" id="contact-form" data-endpoint="${FORM}" novalidate>
+<form class="form rv" id="contact-form" action="https://formsubmit.co/info@kaco.ug" method="POST" data-endpoint="${FORM}" novalidate>
 <h2>Send us a message</h2>
 <div class="two"><div class="fld"><label for="f-name">Full name <small>required</small></label><input id="f-name" name="name" required autocomplete="name" aria-describedby="e-name"><span class="err" id="e-name"></span></div><div class="fld"><label for="f-org">Organisation</label><input id="f-org" name="organisation" autocomplete="organization"></div></div>
 <div class="two"><div class="fld"><label for="f-email">Email <small>required</small></label><input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="e-email"><span class="err" id="e-email"></span></div><div class="fld"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div></div>
 <div class="fld"><label for="f-int">I'm interested in</label><select id="f-int" name="interest"><option>Equipment &amp; product quote</option><option>Calibration &amp; service booking</option><option>Technical support (HelpDesk)</option><option>Training courses</option><option>Contract survey &amp; engineering</option><option>Spatial data infrastructure &amp; IT</option><option>Technology assurance plan</option><option>Something else</option></select></div>
 <div class="fld"><label for="f-msg">How can we help? <small>required</small></label><textarea id="f-msg" name="message" required aria-describedby="e-msg"></textarea><span class="err" id="e-msg"></span></div>
-<div class="hp" aria-hidden="true"><input name="_honey" tabindex="-1" autocomplete="off"></div>
+<div class="hp" style="display:none" aria-hidden="true"><input name="_honey" tabindex="-1" autocomplete="off"></div>
 <input type="hidden" name="_subject" value="New enquiry from kaco.ug"><input type="hidden" name="_template" value="table">
 <button class="btn" type="submit">Send message</button><p class="form-note" role="status" aria-live="polite"></p>
 <p class="priv">We use your details only to reply to your enquiry. Messages are delivered by FormSubmit, a third-party form service. See our <a href="/privacy/">Privacy Policy</a>.</p></form>
@@ -600,7 +604,14 @@ function legal(key, title) {
 /* ---------- 404 ---------- */
 function notFound() {
   page({ url: '/404/', title: 'Page not found | KACO Systems', noindex: true, desc: 'Page not found.', body: `<section class="page-hero" style="min-height:60vh;display:grid;align-content:center"><span class="eyebrow">404</span><h1 class="display">Page not found</h1><p class="lead">The page you're looking for has moved or doesn't exist.</p><div class="links-row" style="margin-top:24px;gap:12px"><a class="btn" href="/">Back to home</a><a class="btn ghost" href="/contact/">Contact us</a></div></section>` });
-  { const f = path.join(ROOT, '404/index.html'); fs.writeFileSync(path.join(ROOT, '404.html'), fs.readFileSync(f, 'utf8').replace(/(href|src)="\.\.\//g, '$1="./')); fs.unlinkSync(f); }
+  {
+    const f = path.join(ROOT, '404/index.html');
+    const content = fs.readFileSync(f, 'utf8')
+      .replace('<head>', '<head>\n<base href="/">')
+      .replace(/(href|src)="\.\.\//g, '$1="/');
+    fs.writeFileSync(path.join(ROOT, '404.html'), content);
+    fs.unlinkSync(f);
+  }
   fs.rmdirSync(path.join(ROOT, '404'));
   PAGES.pop();
 }

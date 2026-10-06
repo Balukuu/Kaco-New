@@ -12,7 +12,7 @@
   --line: #e4e6e8;
   --surface: #f5f6f7;
   --surface-2: #eceff1;
-  --accent: #1890ff;
+  --accent: #0066cc;           /* Accessible accent (5.8:1 contrast on white, passes WCAG AA) */
   --brand: #00979c;            /* KACO logo teal — used only for tiny marks */
   --display: "Montserrat", "Dji", "Helvetica Neue", Arial, sans-serif;
   --body: "Open Sans", "Helvetica Neue", Arial, sans-serif;
@@ -26,7 +26,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 96px; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 104px; }
 body {
   font: 400 1rem/1.6 var(--body);
   color: var(--ink);
@@ -403,7 +403,7 @@ main { padding-top: var(--header-h); }
 .lb .x { top: 12px; right: 12px; } .lb .pv { left: 12px; top: 50%; margin-top: -24px; } .lb .nx { right: 12px; top: 50%; margin-top: -24px; }
 
 /* ---------- Vendor pages (modelled on each vendor's own site) ---------- */
-.v-trimble { --accent: #005f9e; } .v-esri { --accent: #0079c1; } .v-spectra { --accent: #0a58a0; } .v-nikon { --accent: #8a6d00; }
+.v-trimble { --accent: #005f9e; } .v-esri { --accent: #006ea8; } .v-spectra { --accent: #0a58a0; } .v-nikon { --accent: #8a6d00; }
 .v-usradar { --accent: #00608f; } .v-seafloor { --accent: #007a52; } .v-autodesk { --accent: #0a6ea8; } .v-datamine { --accent: #1d6a96; } .v-ibm { --accent: #0f62fe; }
 .news { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .news-lead { grid-column: 1 / -1; display: grid; grid-template-columns: 1.15fr 1fr; background: var(--surface); }

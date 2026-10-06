@@ -22,6 +22,10 @@
     burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     sheet.classList.toggle('open', open);
     d.body.style.overflow = open ? 'hidden' : '';
+    if (open) {
+      var first = sheet.querySelector('.sh-btn, a');
+      first && first.focus();
+    }
   }
   burger && burger.addEventListener('click', function () { setSheet(burger.getAttribute('aria-expanded') !== 'true'); });
   var shBtn = d.querySelector('.sh-btn');
@@ -30,7 +34,24 @@
     shBtn.setAttribute('aria-expanded', o); d.getElementById('sh-sub').classList.toggle('open', o);
   });
   sheet && sheet.addEventListener('click', function (e) { if (e.target.closest('a')) setSheet(false); });
-  addEventListener('keydown', function (e) { if (e.key === 'Escape') { setSheet(false); closeMega(); } });
+  sheet && sheet.addEventListener('keydown', function (e) {
+    if (e.key === 'Tab') {
+      var focusables = [].slice.call(sheet.querySelectorAll('button, a'));
+      if (!focusables.length) return;
+      var first = focusables[0], last = focusables[focusables.length - 1];
+      if (e.shiftKey && d.activeElement === first) { e.preventDefault(); burger && burger.focus(); }
+      else if (!e.shiftKey && d.activeElement === last) { e.preventDefault(); burger && burger.focus(); }
+    }
+  });
+  addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      if (sheet && sheet.classList.contains('open')) {
+        setSheet(false);
+        burger && burger.focus();
+      }
+      closeMega();
+    }
+  });
   matchMedia('(min-width: 1041px)').addEventListener('change', function () { setSheet(false); });
 
   /* Mega panel: hover-intent for mouse (short close delay so diagonal moves don't drop it), click/keyboard for touch */
@@ -45,6 +66,7 @@
     mega.querySelector('.nav-btn').addEventListener('click', function () { setMega(!mega.classList.contains('open')); });
     mega.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') setMega(true); });
     mega.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') { clearTimeout(megaT); megaT = setTimeout(closeMega, 160); } });
+    mega.addEventListener('focusout', function (e) { if (!mega.contains(e.relatedTarget)) closeMega(); });
     d.addEventListener('click', function (e) { if (!mega.contains(e.target)) closeMega(); });
   }
 
@@ -64,6 +86,7 @@
   d.querySelectorAll('[data-count]').forEach(function (el) {
     var end = parseFloat(el.dataset.count), suf = el.dataset.suffix || '';
     if (reduce || !('IntersectionObserver' in window)) { el.textContent = end + suf; return; }
+    el.textContent = '0' + suf;
     var o = new IntersectionObserver(function (es) {
       if (!es[0].isIntersecting) return; o.disconnect();
       var t0 = performance.now(), dur = 1400;
@@ -72,7 +95,7 @@
         el.textContent = Math.round(end * e) + suf;
         if (p < 1) requestAnimationFrame(tick);
       })(t0);
-    }, { threshold: 0.6 });
+    }, { threshold: 0.2 });
     o.observe(el);
   });
 
@@ -183,7 +206,19 @@
     });
     vm.querySelector('.x').addEventListener('click', vclose);
     vm.addEventListener('click', function (e) { if (e.target === vm) vclose(); });
-    addEventListener('keydown', function (e) { if (e.key === 'Escape' && vm.classList.contains('open')) vclose(); });
+    addEventListener('keydown', function (e) {
+      if (vm.classList.contains('open')) {
+        if (e.key === 'Escape') vclose();
+        else if (e.key === 'Tab') {
+          var focusables = [].slice.call(vm.querySelectorAll('button, iframe, a'));
+          if (focusables.length) {
+            var first = focusables[0], last = focusables[focusables.length - 1];
+            if (e.shiftKey && d.activeElement === first) { e.preventDefault(); last.focus(); }
+            else if (!e.shiftKey && d.activeElement === last) { e.preventDefault(); first.focus(); }
+          }
+        }
+      }
+    });
   }
 
   /* Rail: momentum drag with mouse (frame-rate independent), rubber-banding at the ends, native scroll-snap on touch */
@@ -230,6 +265,9 @@
           raf = requestAnimationFrame(glide);
         })(t0);
       } else rail.classList.remove('drag');
+    });
+    addEventListener('pointercancel', function () {
+      if (!down) return; down = false; settle(); rail.classList.remove('drag');
     });
     rail.addEventListener('click', function (e) { if (moved > 6) { e.preventDefault(); e.stopPropagation(); moved = 0; } }, true);
     rail.addEventListener('dragstart', function (e) { e.preventDefault(); });
@@ -320,9 +358,27 @@
     var key = ['product', 'service', 'action', 'course', 'sector', 'project'].filter(function (k) { return q.get(k); })[0];
     if (key) {
       var v = q.get(key), pretty = v.replace(/[-_]/g, ' ').replace(/\b\w/g, function (c) { return c.toUpperCase(); });
-      var opt = [].slice.call(sel.options).filter(function (o) { return o.value.toLowerCase().indexOf(v.split(/[-_]/)[0].toLowerCase()) > -1; })[0];
-      if (opt) sel.value = opt.value;
-      var msg = form.querySelector('textarea'); if (!msg.value) msg.value = 'I am interested in: ' + pretty + '.\n\n';
+      var msg = form.querySelector('textarea');
+      if (key === 'course' || (key === 'action' && v === 'training')) {
+        sel.value = 'Training courses';
+        if (!msg.value) msg.value = 'I would like to enquire about the training course: ' + pretty + '.\n\n';
+      } else if (key === 'product') {
+        sel.value = 'Equipment & product quote';
+        if (!msg.value) msg.value = 'I would like to request a quote for: ' + pretty + '.\n\n';
+      } else if (key === 'service' || (key === 'action' && v === 'service') || v === 'calibration') {
+        sel.value = 'Calibration & service booking';
+        if (!msg.value) msg.value = 'I would like to book equipment service & calibration for: ' + pretty + '.\n\n';
+      } else if (key === 'action' && v === 'support') {
+        sel.value = 'Technical support (HelpDesk)';
+        if (!msg.value) msg.value = 'I require HelpDesk technical support regarding: \n\n';
+      } else if (key === 'project') {
+        sel.value = 'Contract survey & engineering';
+        if (!msg.value) msg.value = 'I would like to discuss contract survey & engineering for: ' + pretty + '.\n\n';
+      } else {
+        var opt = [].slice.call(sel.options).filter(function (o) { return o.value.toLowerCase().indexOf(v.split(/[-_]/)[0].toLowerCase()) > -1; })[0];
+        if (opt) sel.value = opt.value;
+        if (!msg.value) msg.value = 'I am interested in: ' + pretty + '.\n\n';
+      }
     }
     var note = form.querySelector('.form-note'), btn = form.querySelector('button[type=submit]');
     var fields = [].slice.call(form.querySelectorAll('input[required], textarea[required]'));
