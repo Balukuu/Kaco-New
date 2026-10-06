@@ -20,6 +20,11 @@
     d.body.style.overflow = open ? 'hidden' : '';
   }
   burger && burger.addEventListener('click', function () { setSheet(burger.getAttribute('aria-expanded') !== 'true'); });
+  var shBtn = d.querySelector('.sh-btn');
+  shBtn && shBtn.addEventListener('click', function () {
+    var o = shBtn.getAttribute('aria-expanded') !== 'true';
+    shBtn.setAttribute('aria-expanded', o); d.getElementById('sh-sub').classList.toggle('open', o);
+  });
   sheet && sheet.addEventListener('click', function (e) { if (e.target.closest('a')) setSheet(false); });
   addEventListener('keydown', function (e) { if (e.key === 'Escape') { setSheet(false); closeMega(); } });
   matchMedia('(min-width: 1041px)').addEventListener('change', function () { setSheet(false); });

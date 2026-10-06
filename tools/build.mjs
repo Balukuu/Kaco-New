@@ -88,7 +88,9 @@ function header(cur) {
     const on = cur === h || (h !== '/' && cur.startsWith(h) && !h.includes('#') && h !== '/solutions/');
     return `<li><a href="${h}"${on ? ' aria-current="page"' : ''}>${n}</a></li>`;
   }).join('');
-  const sheet = NAV.map(([n, h]) => `<a href="${h}">${n}<span aria-hidden="true">${svg.right}</span></a>${n === 'Solutions' ? `<div class="sub">${BRANDS.map((b) => `<a href="${b.h}">${esc(b.n)}</a>`).join('')}</div>` : ''}`).join('');
+  const sheet = NAV.map(([n, h]) => n === 'Solutions'
+    ? `<button class="sh-btn" type="button" aria-expanded="false" aria-controls="sh-sub">Solutions<span aria-hidden="true">${svg.down}</span></button><div class="sub" id="sh-sub"><div>${BRANDS.map((b) => `<a href="${b.h}">${esc(b.n)}</a>`).join('')}<a class="all" href="/solutions/">All solutions &amp; services</a></div></div>`
+    : `<a href="${h}">${n}<span aria-hidden="true">${svg.right}</span></a>`).join('');
   return `<a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="hdr">
   <a class="logo" href="/" aria-label="KACO Systems — home"><img src="/kaco-logo.jpg" alt="KACO Systems" width="96" height="26"></a>
@@ -96,7 +98,7 @@ function header(cur) {
   <div class="hdr-right"><a class="pill-sm" href="/contact/">Get a Quote</a>
   <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button></div>
 </div></header>
-<div class="sheet" id="sheet" role="dialog" aria-label="Menu">${sheet}<div class="sheet-cta"><a href="/contact/">Get a Quote</a><a href="tel:${TEL}">Call ${PHONE}</a></div></div>`;
+<div class="sheet" id="sheet" role="dialog" aria-label="Menu"><div class="sheet-in">${sheet}</div><div class="sheet-cta"><a href="/contact/">Get a Quote</a><a href="${WA}" target="_blank" rel="noopener">WhatsApp</a></div></div>`;
 }
 
 function footer() {
