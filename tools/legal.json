@@ -1,0 +1,181 @@
+{
+ "privacy": [
+  {
+   "tag": "h1",
+   "t": "Privacy Policy",
+   "cls": "hero-content"
+  },
+  {
+   "tag": "p",
+   "t": "This page was last updated on the date shown below.",
+   "cls": "hero-content"
+  },
+  {
+   "tag": "p",
+   "t": "Last updated: September 2026",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "Phirez International Limited (\"Phirez\", \"we\", \"us\") respects your privacy. This Privacy Policy explains what information we collect through phirez.ug, how we use it, and the choices you have.",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "h3",
+   "t": "Information We Collect",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "li",
+   "t": "Contact details you submit through our contact form (name, organization, email, phone, message).",
+   "cls": ""
+  },
+  {
+   "tag": "li",
+   "t": "Standard technical data collected automatically by our hosting and analytics providers (e.g. pages visited, browser type, approximate location).",
+   "cls": ""
+  },
+  {
+   "tag": "h3",
+   "t": "How We Use Your Information",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "li",
+   "t": "To respond to enquiries and quote requests.",
+   "cls": ""
+  },
+  {
+   "tag": "li",
+   "t": "To improve our website and services.",
+   "cls": ""
+  },
+  {
+   "tag": "li",
+   "t": "To comply with legal obligations.",
+   "cls": ""
+  },
+  {
+   "tag": "h3",
+   "t": "Sharing of Information",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "We do not sell your personal information. We may share information with service providers who help us operate our website and business (such as our form-submission and analytics providers), under confidentiality obligations.",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "h3",
+   "t": "Data Retention",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "We retain enquiry information for as long as reasonably necessary to respond to you and maintain business records, after which it is deleted or anonymized.",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "h3",
+   "t": "Your Rights",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "You may request access to, correction of, or deletion of your personal information by contacting us at info@phirez.ug.",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "h3",
+   "t": "Contact",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "Questions about this policy can be sent to Phirez International Limited, 2nd Floor, Unicalo House, Plot 11, Archer Road, Kampala, Uganda, or info@phirez.ug.",
+   "cls": "legal-content"
+  }
+ ],
+ "terms": [
+  {
+   "tag": "h1",
+   "t": "Terms of Service",
+   "cls": "hero-content"
+  },
+  {
+   "tag": "p",
+   "t": "This page was last updated on the date shown below.",
+   "cls": "hero-content"
+  },
+  {
+   "tag": "p",
+   "t": "Last updated: September 2026",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "These Terms of Service govern your use of the phirez.ug website, operated by Phirez International Limited. By using this site, you agree to these terms.",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "h3",
+   "t": "Use of Content",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "All content on this website — including text, graphics, logos and imagery — is the property of Phirez International Limited or its licensors and may not be reproduced without permission, except for personal, non-commercial reference.",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "h3",
+   "t": "No Professional Advice",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "Content on this website is provided for general informational purposes only and does not constitute a formal proposal, quotation, or professional advice. Formal engagements are governed by separate signed agreements between Phirez and the client.",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "h3",
+   "t": "Quotes & Enquiries",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "Submitting an enquiry or quote request through this website does not create a binding contract. All engagements are subject to a separate written agreement.",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "h3",
+   "t": "Limitation of Liability",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "Phirez International Limited makes reasonable efforts to keep information on this site accurate and up to date, but makes no warranties as to completeness or accuracy, and is not liable for any loss arising from reliance on this website's content.",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "h3",
+   "t": "Governing Law",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "These terms are governed by the laws of the Republic of Uganda.",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "h3",
+   "t": "Contact",
+   "cls": "legal-content"
+  },
+  {
+   "tag": "p",
+   "t": "Questions about these terms can be sent to info@phirez.ug.",
+   "cls": "legal-content"
+  }
+ ]
+}

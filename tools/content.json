@@ -1,0 +1,6474 @@
+{
+ "solutions": {
+  "meta": {
+   "title": "Solutions & Systems | Phirez International Limited | Trimble, DJI & Esri Uganda",
+   "desc": "Explore Phirez's complete geospatial solutions: Trimble GNSS & robotic total stations, DJI Enterprise drone LiDAR, 3D laser scanners, US Radar GPR, Esri GIS, and certified calibration service."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Precision Geospatial & Advanced IT Solutions"
+     },
+     {
+      "tag": "p",
+      "t": "From millimeter-accuracy Trimble GNSS and robotic total stations to DJI Enterprise drone LiDAR, US Radar subsurface GPR, and enterprise Esri spatial infrastructure — we provide end-to-end technology and certified service backing."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/gnss-equipment-loadout-01.jpg",
+      "alt": "Trimble survey and DJI drone equipment loadout ready for field deployment."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/trimble-gnss-total-station-01.jpg",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/vendor-equipment/xgrids-slam-scanner-01.jpg",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "GNSS & Total Stations",
+      "href": "#gnss-positioning"
+     },
+     {
+      "t": "DJI Enterprise Drones",
+      "href": "#drones-aerial"
+     },
+     {
+      "t": "3D Laser & SLAM LiDAR",
+      "href": "#laser-scanning"
+     },
+     {
+      "t": "GPR Subsurface Imaging",
+      "href": "#gpr-subsurface"
+     },
+     {
+      "t": "Hydrographic Bathymetry",
+      "href": "#hydrography"
+     },
+     {
+      "t": "Esri GIS & SDI",
+      "href": "#esri-gis"
+     },
+     {
+      "t": "Carlson & Autodesk",
+      "href": "#field-software"
+     },
+     {
+      "t": "Datamine Mine Geology",
+      "href": "#mine-geology"
+     },
+     {
+      "t": "IT Infrastructure & Storage",
+      "href": "#system-integration"
+     },
+     {
+      "t": "Certified Services & Lab",
+      "href": "#services-support"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "gnss-positioning",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "High-Precision GNSS Positioning & Survey Instruments"
+     },
+     {
+      "tag": "p",
+      "t": "Industry-standard positioning technology designed to deliver repeatable millimeter accuracy in dense jungle canopies, urban canyons, and challenging African field environments."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Trimble R12i GNSS Receiver",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-gnss-total-station-01.jpg",
+        "alt": "Trimble R12i GNSS receiver."
+       }
+      ],
+      "ps": [
+       "TIP Tilt Compensation | ProPoint RTK Engine | Multi-Constellation GNSS | IP68 Rugged Construction"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-r12i"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-r12i"
+       }
+      ]
+     },
+     {
+      "h": "Trimble S-Series (S5, S7 & S9)",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-s-series-product-01.avif",
+        "alt": "Trimble S-Series robotic total station."
+       }
+      ],
+      "ps": [
+       "MagDrive Servo Technology | SurePoint Auto-Compensation | Trimble VISION Video | Trimble Access Integration"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-s-series"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-s7"
+       }
+      ]
+     },
+     {
+      "h": "Spectra FOCUS & Nikon Optical Stations",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/spectra-focus50-product-01.avif",
+        "alt": "Spectra Geospatial FOCUS 50 robotic total station."
+       }
+      ],
+      "ps": [
+       "Spectra FOCUS 35 & FOCUS 50 Robotic Stations | Nikon XS & XF Manual Stations | Precision Optical Auto-Levels | Local Calibration Support"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=nikon-spectra"
+       },
+       {
+        "t": "Learn More",
+        "href": "/spectra-geospatial/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "drones-aerial",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Commercial Aerial Drones, Photogrammetry & LiDAR"
+     },
+     {
+      "tag": "p",
+      "t": "Accelerate spatial capture across vast mines, agricultural estates, and highway corridors with high-efficiency RTK drone platforms and survey-grade sensors."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "DJI Matrice 350 RTK",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/dji-matrice-350-rtk-product-01.png",
+        "alt": "DJI Matrice 350 RTK industrial drone."
+       }
+      ],
+      "ps": [
+       "55-Minute Flight Time | IP55 Weather Rating | 2.7kg Payload Capacity | Multi-Frequency RTK"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=dji-m350"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://enterprise.dji.com/matrice-350-rtk"
+       }
+      ]
+     },
+     {
+      "h": "DJI Mavic 3 Enterprise & Thermal",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/dji-mavic-3-enterprise-product-01.png",
+        "alt": "DJI Mavic 3 Enterprise drone."
+       }
+      ],
+      "ps": [
+       "Mechanical Shutter Camera | RTK Module Support | 640×512 Thermal Sensor | 45-Minute Flight Time"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=dji-m3e"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://enterprise.dji.com/mavic-3-enterprise"
+       }
+      ]
+     },
+     {
+      "h": "DJI Zenmuse L2 & DJI Dock",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/dji-zenmuse-l2-product-01.png",
+        "alt": "DJI Zenmuse L2 aerial LiDAR payload."
+       }
+      ],
+      "ps": [
+       "5 LiDAR Returns | 250m Detection Range | Real-Time Point Cloud Coloring | Autonomous Dock Operations"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=dji-lidar-dock"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://enterprise.dji.com/zenmuse-l2"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "laser-scanning",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Terrestrial Laser Scanners & Mobile SLAM LiDAR"
+     },
+     {
+      "tag": "p",
+      "t": "Transform complex physical assets, industrial plants, historical buildings, and GPS-denied tunnels into dense, millimeter-accurate 3D point clouds."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Trimble X7 & X9 Laser Scanners",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-x7-x9-product-01.webp",
+        "alt": "Trimble X9 3D laser scanner."
+       }
+      ],
+      "ps": [
+       "Automatic Self-Calibration | Full Scan Under 2 Minutes | In-Field Auto-Registration | Ideal For BIM & Tunnels"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-x7-x9"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-x9"
+       }
+      ]
+     },
+     {
+      "h": "Trimble X12 3D Scanner",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-x7-x9-product-01.webp",
+        "alt": "Trimble X12 3D scanner."
+       }
+      ],
+      "ps": [
+       "2.187M Points/Second | 365m Operational Range | 80MP HDR Color Imagery | Structural Deformation Monitoring"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-x12"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-x12"
+       }
+      ]
+     },
+     {
+      "h": "XGRIDS Lixel L2 Mobile SLAM",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/xgrids-slam-scanner-01.jpg",
+        "alt": "XGRIDS mobile SLAM LiDAR scanning devices."
+       }
+      ],
+      "ps": [
+       "Real-Time Continuous SLAM | Handheld, Backpack Or Drone-Mountable | Minutes-Fast Building Capture | BIM/CAD Point Cloud Export"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=xgrids-slam"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.xgrids.com/products/lixel-l2"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "gpr-subsurface",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Subsurface Utility Detection & Hydrographic Bathymetry"
+     },
+     {
+      "tag": "p",
+      "t": "Non-destructive underground utility imaging with US Radar GPR, paired with autonomous acoustic bathymetry from Seafloor Systems for reservoirs, dams, and rivers."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "US Radar Quantum Imager Triple-Frequency GPR",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/usradar-quantum-imager-01.jpg",
+        "alt": "US Radar Quantum Imager ground penetrating radar unit."
+       }
+      ],
+      "ps": [
+       "Simultaneous 250/500/1000 MHz | GPS-Georeferenced CAD/GIS Export | Real-Time 3D Depth Slicing | Rugged All-Terrain Cart"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=us-radar-gpr"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://usradar.com/"
+       }
+      ]
+     },
+     {
+      "h": "Seafloor EchoBoat Autonomous Survey USV",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/seafloor-echoboat-usv-01.jpg",
+        "alt": "Seafloor Systems autonomous survey USVs on water."
+       }
+      ],
+      "ps": [
+       "Autonomous Waypoint Navigation | RTK GNSS Integration | Siltation Volume Auditing | Removes Crew From The Water"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=seafloor-echoboat"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.seafloorsystems.com/products"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "esri-gis",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Enterprise GIS & Spatial Data Infrastructure"
+     },
+     {
+      "tag": "p",
+      "t": "Transform raw field survey points into authoritative spatial intelligence. As an Esri Silver Partner, we license, deploy, and support the full ArcGIS platform."
+     },
+     {
+      "tag": "p",
+      "t": "Also available: ArcGIS Online, Survey123, Utility Network, Dashboards & Drone2Map — view the full ArcGIS range."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "ArcGIS Pro",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-arcgis-pro-product-01.png",
+        "alt": "ArcGIS Pro desktop GIS software."
+       }
+      ],
+      "ps": [
+       "Advanced 2D/3D Spatial Analysis | Powerful Mapping & Visualization | Desktop Geoprocessing Automation | World's Leading GIS Software"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-arcgis-pro"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview"
+       }
+      ]
+     },
+     {
+      "h": "ArcGIS Enterprise",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-arcgis-enterprise-product-01.jpg",
+        "alt": "ArcGIS Enterprise server software."
+       }
+      ],
+      "ps": [
+       "Self-Hosted GIS System | On-Premises, Cloud Or Hybrid | Centralized Spatial Data Management | Scalable Enterprise Architecture"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-arcgis-enterprise"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview"
+       }
+      ]
+     },
+     {
+      "h": "ArcGIS Field Maps",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-field-maps-product-01.jpg",
+        "alt": "ArcGIS Field Maps mobile app."
+       }
+      ],
+      "ps": [
+       "Mobile Field Data Collection | Real-Time Map Navigation | Mobile Workforce Management | Offline-Capable Data Capture"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-field-maps"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/overview"
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "t": "view the full ArcGIS range",
+      "href": "/esri-arcgis/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "field-software",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Field Data Collection, CAD & Mine Design"
+     },
+     {
+      "tag": "p",
+      "t": "Bridge field instruments directly to engineering deliverables with Carlson Software, Trimble Business Center, and Autodesk Civil 3D."
+     },
+     {
+      "tag": "p",
+      "t": "Also available: Navisworks, InfraWorks, ReCap Pro & BIM Collaborate — view the full Autodesk range."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Trimble Business Center (TBC)",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-business-center-01.jpg",
+        "alt": "Trimble Business Center software interface showing point cloud and survey data processing."
+       }
+      ],
+      "ps": [
+       "Field-To-Finish Workflow | Point Cloud & GNSS Data | Volumetric & Surface Tools | Direct CAD/GIS Export"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-tbc"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/software/trimble-business-center"
+       }
+      ]
+     },
+     {
+      "h": "Carlson SurvCE, Civil & Mining",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/carlson-software-logo.jpg",
+        "alt": "Carlson Software official logo."
+       }
+      ],
+      "ps": [
+       "Hardware-Independent Data Collection | Geological Block Modeling & Pit Design | Earthwork Cut/Fill Estimation | AutoCAD/IntelliCAD Compatible"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=carlson"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.carlsonsw.com/all-industries/survey-software/carlson-survey/"
+       }
+      ]
+     },
+     {
+      "h": "AutoCAD Civil 3D",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+        "alt": "Autodesk Civil 3D official logo."
+       }
+      ],
+      "ps": [
+       "Dynamic 3D Corridor Modeling | Grading & Earthwork Analysis | Integrated Survey & Design Data | Automated Plan Production"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=autodesk-civil3d"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.autodesk.com/products/civil-3d/overview"
+       }
+      ]
+     },
+     {
+      "h": "Revit",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+        "alt": "Autodesk Revit official logo."
+       }
+      ],
+      "ps": [
+       "Building Information Modeling | Coordinated Architectural & MEP Design | Parametric 3D Building Components | Construction Documentation"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=autodesk-revit"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.autodesk.com/products/revit/overview"
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "t": "view the full Autodesk range",
+      "href": "/autodesk/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "mine-geology",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Mine Geology & Resource Modelling Software"
+     },
+     {
+      "tag": "p",
+      "t": "We supply Datamine’s geology and mine planning software suite — trusted for resource estimation, geological modelling, and open-pit optimisation."
+     },
+     {
+      "tag": "p",
+      "t": "Also available: Isatis.neo, Studio Mapper, Supervisor & Studio Maxipit — view the full Datamine range."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Studio RM",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/datamine-studio-rm-01.svg",
+        "alt": "Datamine Studio RM logo mark."
+       }
+      ],
+      "ps": [
+       "True Reflection Of The Subsurface | Resource Modelling & Estimation | Geological Domain Interpretation | Block Model Development"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=datamine-studio-rm"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://dataminesoftware.com/"
+       }
+      ]
+     },
+     {
+      "h": "Studio Geo",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/datamine-studio-geo-01.svg",
+        "alt": "Datamine Studio Geo logo mark."
+       }
+      ],
+      "ps": [
+       "Geological Interpretation Environment | Implicit 3D Modelling | Structural & Stratigraphic Analysis | Seamless Studio RM Integration"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=datamine-studio-geo"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://dataminesoftware.com/"
+       }
+      ]
+     },
+     {
+      "h": "Sirovision",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/datamine-sirovision-01.svg",
+        "alt": "Datamine Sirovision logo mark."
+       }
+      ],
+      "ps": [
+       "Photogrammetry-Based Mapping | Rock Face & Pit Wall Imaging | Structural Geology Capture | Rapid Non-Contact Data Collection"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=datamine-sirovision"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://dataminesoftware.com/"
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "t": "view the full Datamine range",
+      "href": "/datamine-software/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "system-integration",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "IT Infrastructure & Enterprise Data Archive"
+     },
+     {
+      "tag": "p",
+      "t": "Servers, structured cabling, and IBM tape storage for long-term retention and air-gapped, cyber-resilient backup — the infrastructure layer behind your spatial data."
+     },
+     {
+      "tag": "p",
+      "t": "Also available: TS4300, TS7700 Virtual Tape, TS1170 Enterprise Drive & IBM Storage Archive — view the full IBM Tape range."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "IT Infrastructure & System Integration",
+      "imgs": [],
+      "ps": [
+       "Enterprise Server Clustering & DR | Structured Cabling & Fiber | GIS/ERP Integration | SLA-Backed Managed Support"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=it-infrastructure"
+       }
+      ]
+     },
+     {
+      "h": "IBM TS4500 Tape Library",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/ibm-ts4500-product-02.png",
+        "alt": "IBM TS4500 tape library."
+       }
+      ],
+      "ps": [
+       "Next-Generation Cloud Storage | Up To 926PB With LTO 10 | Integrated Fleet Management | High Storage Density"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=ibm-ts4500"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.ibm.com/products/ts4500"
+       }
+      ]
+     },
+     {
+      "h": "IBM TS2900 Tape Autoloader",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/ibm-ts2900-product-02.png",
+        "alt": "IBM TS2900 tape autoloader."
+       }
+      ],
+      "ps": [
+       "Low-Profile Entry-Level Storage | Up To 162TB With LTO 9 | Supported On Open System Platforms | Cost-Effective Long-Term Retention"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=ibm-ts2900"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.ibm.com/products/ts2900"
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "t": "view the full IBM Tape range",
+      "href": "/ibm-tape/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "services-support",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Comprehensive Services & Certified Lifecycle Support"
+     },
+     {
+      "tag": "p",
+      "t": "Our relationship begins when you acquire your system. Through our certified calibration laboratory, 24/7 technical HelpDesk, and hands-on Training Academy, we guarantee maximum equipment productivity and field uptime."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Certified Service & Calibration Centre",
+      "imgs": [],
+      "ps": [
+       "Our Kampala facility is equipped with optical collimators and electronic distance meter (EDM) baseline test benches to service and calibrate optical total stations, GNSS rovers, and levels."
+      ],
+      "lis": [
+       "Multi-collimator baseline optical adjustment",
+       "Laser EDM distance accuracy verification",
+       "Genuine OEM replacement parts & seals",
+       "Traceable calibration certificates issued"
+      ],
+      "links": [
+       {
+        "t": "Book Equipment Service",
+        "href": "/contact/?action=service"
+       }
+      ]
+     },
+     {
+      "h": "Technical Support HelpDesk",
+      "imgs": [],
+      "ps": [
+       "Dedicated telephone, WhatsApp, and remote desktop support for field crews troubleshooting geoid coordinate systems, controller firmware, or drone flight planning in real time."
+      ],
+      "lis": [
+       "Direct telephone & field engineer assistance",
+       "Trimble Access & controller software upgrades",
+       "Local coordinate system & geoid file setup",
+       "Fast problem turnaround to prevent downtime"
+      ],
+      "links": [
+       {
+        "t": "Contact HelpDesk Support",
+        "href": "/contact/?action=support"
+       }
+      ]
+     },
+     {
+      "h": "Phirez Training Academy",
+      "imgs": [],
+      "ps": [
+       "Structured, blended learning combining classroom theory with hands-on field practicals to turn your staff into certified operators of GNSS, drones, and ArcGIS systems."
+      ],
+      "lis": [
+       "RTK GNSS & Robotic Total Station practicals",
+       "Commercial Drone Pilot & LiDAR post-processing",
+       "ArcGIS Pro, Enterprise & Field Maps courses",
+       "Custom corporate in-house upskilling"
+      ],
+      "links": [
+       {
+        "t": "View Training Academy",
+        "href": "/training/"
+       }
+      ]
+     },
+     {
+      "h": "Contract Survey & Engineering",
+      "imgs": [],
+      "ps": [
+       "Our licensed surveyors and geodesists execute turn-key high-consequence field campaigns across Uganda and the region when internal capacity is constrained."
+      ],
+      "lis": [
+       "Primary geodetic control networks & CORS",
+       "Corridor drone LiDAR & photogrammetry mapping",
+       "Bathymetric hydrographic sounding surveys",
+       "Underground utility detection with GPR"
+      ],
+      "links": [
+       {
+        "t": "Request Survey Proposal",
+        "href": "/contact/?action=consultancy"
+       }
+      ]
+     },
+     {
+      "h": "Spatial Data Infrastructure (SDI)",
+      "imgs": [],
+      "ps": [
+       "Deploying centralized enterprise GIS repositories, secure cloud geodatabases, and real-time telemetry pipelines connecting field teams to executive decision makers."
+      ],
+      "lis": [
+       "National & municipal SDI architecture",
+       "Enterprise geodatabase modeling & security",
+       "Real-time vehicle & IoT sensor tracking",
+       "Legacy database migration & cleansing"
+      ],
+      "links": [
+       {
+        "t": "Consult an SDI Architect",
+        "href": "/contact/?action=sdi"
+       }
+      ]
+     },
+     {
+      "h": "Phirez Technology Assurance Plan",
+      "imgs": [],
+      "ps": [
+       "Service level agreements (SLAs) designed to guarantee continuous productivity, priority repair queueing, and temporary loaner units during scheduled instrument servicing."
+      ],
+      "lis": [
+       "Guaranteed loaner equipment during major service",
+       "Annual preventative maintenance & calibration",
+       "Priority HelpDesk response with SLA commitments",
+       "Firmware maintenance & warranty protection"
+      ],
+      "links": [
+       {
+        "t": "Inquire About Assurance Plans",
+        "href": "/contact/?action=assurance"
+       }
+      ]
+     },
+     {
+      "h": "Unrivalled Service. Unmatched Precision. Maximum Field Uptime.",
+      "imgs": [],
+      "ps": [
+       "Don't let uncalibrated total stations or sensor drift compromise millions in engineering investments. Book your equipment into our factory-calibrated Kampala laboratory today."
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Book Equipment Service",
+        "href": "/contact/?action=service"
+       },
+       {
+        "t": "Call Service Lab: +256 783 549 770",
+        "href": "tel:+256783549770"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "partners",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Authorised Products & Technology Partners"
+     },
+     {
+      "tag": "p",
+      "t": "We are proud distributors and solution partners for the world's most trusted manufacturers."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/vendor-equipment/trimble-logo.jpg",
+      "alt": "Trimble official logo."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/esri-logo.jpg",
+      "alt": "Esri official logo."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/dji-logo.jpg",
+      "alt": "DJI Enterprise official logo."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/spectra-geospatial-logo.jpg",
+      "alt": "Spectra Geospatial official logo."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/nikon-logo.png",
+      "alt": "Nikon official logo."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/usradar-logo.jpg",
+      "alt": "US Radar official logo."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/seafloor-logo.jpg",
+      "alt": "Seafloor Systems official logo."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/xgrids-logo.jpg",
+      "alt": "XGRIDS official logo."
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Not Sure Which Technology Fits Your Requirements?"
+     },
+     {
+      "tag": "p",
+      "t": "Our application engineers work with your team to review project specifications, recommend optimal hardware/software combinations, and arrange on-site demonstrations."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/"
+     },
+     {
+      "t": "Browse By Industry",
+      "href": "/industries/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "industries": {
+  "meta": {
+   "title": "Industries & Workflows | Phirez International Limited | Mining, Civil, Cadastre & Utilities",
+   "desc": "Explore how Phirez configures Trimble GNSS, DJI Enterprise drone LiDAR, and Esri GIS for mining, civil construction, cadastral administration, utilities, and precision agriculture."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Tailored Geospatial Workflows For African Industry"
+     },
+     {
+      "tag": "p",
+      "t": "Every sector faces unique physical, regulatory, and topographical demands. We configure specialized hardware, analytics, and lifecycle services to ensure maximum accuracy and operational return on investment."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/gnss-construction-site-01.jpg",
+      "alt": "GNSS survey equipment set up on an active construction site."
+     },
+     {
+      "src": "/assets/images/gallery/drone-survey-quarry-01.jpg",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/gallery/gnss-construction-site-02.jpg",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Six Sectors. One Certified Partner."
+     },
+     {
+      "tag": "p",
+      "t": "From open-pit mines to disaster-response zones, we engineer workflows that match the terrain, regulation, and risk profile of each sector we serve."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Mining, Quarrying & Heavy Earthworks",
+      "imgs": [
+       {
+        "src": "/assets/images/gallery/thumbs/drone-survey-quarry-01.jpg",
+        "alt": "DJI Enterprise drone surveying a quarry pit for volumetric auditing."
+       }
+      ],
+      "ps": [
+       "Overcome the hazards and slow turnaround of manual pit surveys. Phirez equips mining companies with autonomous drone LiDAR for rapid stockpile volumetric reconciliation, Trimble robotic total stations for highwall slope deformation monitoring, and Carlson Mining software for drill-and-blast design."
+      ],
+      "lis": [
+       "Volumetric Auditing: Monthly cut/fill calculations with sub-5cm accuracy using DJI Matrice 350 RTK & Zenmuse L2.",
+       "Pit Wall Safety: Continuous deformation and prism monitoring with Trimble S-Series robotic stations.",
+       "Mine Geology Modeling: Carlson Geology & Mine Design software integration."
+      ],
+      "links": [
+       {
+        "t": "Consult A Mining Specialist",
+        "href": "/contact/?sector=mining"
+       }
+      ]
+     },
+     {
+      "h": "Civil Engineering & Highway Construction",
+      "imgs": [
+       {
+        "src": "/assets/images/gallery/thumbs/gnss-construction-site-02.jpg",
+        "alt": "Civil engineering survey team with Trimble GNSS on an active road site."
+       }
+      ],
+      "ps": [
+       "Deliver complex linear corridors and structural bridges strictly within engineering tolerances. We supply Trimble R12i GNSS receivers, machine control positioning systems, and 3D laser scanners that allow site engineers to verify as-builts directly against 3D BIM models in real time."
+      ],
+      "lis": [
+       "Corridor Stakeout: High-speed road centerline & batter stakeout with Trimble Access Roading.",
+       "Structural As-Built Verification: Trimble X7 3D laser scanning for bridges, culverts, and tunnels.",
+       "BIM Interoperability: Seamless point cloud import into Autodesk Civil 3D and Revit."
+      ],
+      "links": [
+       {
+        "t": "Consult A Civil Engineering Specialist",
+        "href": "/contact/?sector=civil"
+       }
+      ]
+     },
+     {
+      "h": "Land Administration, Titling & Cadastre",
+      "imgs": [
+       {
+        "src": "/assets/images/gallery/thumbs/gnss-static-setup-01.jpg",
+        "alt": "Phirez survey team conducting geodetic control survey with Trimble GNSS on tripods."
+       }
+      ],
+      "ps": [
+       "Accurate land records are the foundation of national economic development. Phirez establishes national and regional geodetic control networks (CORS), executes legal cadastral boundary surveys, and configures Esri ArcGIS Enterprise land registry databases for municipal and government authorities."
+      ],
+      "lis": [
+       "CORS Network Establishment: Multi-frequency reference stations for continuous RTK corrections.",
+       "Boundary Formalization: Sub-centimeter Trimble GNSS static and RTK parcel surveys.",
+       "Spatial Land Registries: Secure, searchable parcel databases built on Esri Parcel Fabric architecture."
+      ],
+      "links": [
+       {
+        "t": "Consult A Cadastral Specialist",
+        "href": "/contact/?sector=cadastre"
+       }
+      ]
+     },
+     {
+      "h": "Utilities, Energy & Telecom Corridors",
+      "imgs": [
+       {
+        "src": "/assets/images/gallery/thumbs/industry-event-02.jpg",
+        "alt": "Technical GIS presentation on asset management for utility corridors."
+       }
+      ],
+      "ps": [
+       "Protect existing underground assets and model overhead networks. We combine US Radar Ground Penetrating Radar (GPR) for detecting buried pipes and fiber optic cables with drone LiDAR for mapping high-voltage transmission line vegetation clearances."
+      ],
+      "lis": [
+       "Subsurface Utility Engineering (SUE): Triple-frequency GPR scanning eliminates strike hazards.",
+       "Transmission Line Modeling: Aerial LiDAR identifies tree encroachment and conductor sag.",
+       "Asset Geodatabases: Esri Utility Network deployment for water, power, and telecom operators."
+      ],
+      "links": [
+       {
+        "t": "Consult A Utility Specialist",
+        "href": "/contact/?sector=utilities"
+       }
+      ]
+     },
+     {
+      "h": "Commercial Agriculture, Forestry & Environment",
+      "imgs": [
+       {
+        "src": "/assets/images/gallery/thumbs/precision-agri-demo-01.jpg",
+        "alt": "Field demonstration of precision agricultural drone at a sugarcane plantation."
+       }
+      ],
+      "ps": [
+       "Maximize crop yields and monitor forest concessions with precision multispectral drone analytics. Phirez delivers multispectral mapping to generate NDVI plant vigor indices, identify irrigation failures, and optimize variable-rate fertilizer distribution across large agricultural estates."
+      ],
+      "lis": [
+       "NDVI Crop Scouting: Detect crop stress and disease weeks before visible to the naked eye.",
+       "Prescription Mapping: Generate automated variable-rate spraying and fertilizer application maps.",
+       "Forest Biomass Estimation: High-density drone LiDAR measures tree canopy height and timber volume."
+      ],
+      "links": [
+       {
+        "t": "Consult An Agricultural Specialist",
+        "href": "/contact/?sector=agriculture"
+       }
+      ]
+     },
+     {
+      "h": "Public Safety, Disaster Response & Humanitarian Aid",
+      "imgs": [
+       {
+        "src": "/assets/images/gallery/thumbs/gnss-training-01.jpg",
+        "alt": "Phirez trainers conducting geospatial capacity building overlooking Kampala."
+       }
+      ],
+      "ps": [
+       "Rapid decision-making saves lives. Phirez partners with UN agencies, international NGOs, and government ministries to deliver rapid drone damage mapping, flood risk modeling, refugee settlement spatial planning, and field data collection architectures with ArcGIS Survey123."
+      ],
+      "lis": [
+       "Rapid Post-Disaster Mapping: Generate orthomosaics of flood or landslide zones within hours.",
+       "Settlement Micro-Planning: Digital elevation models to plan drainage, water points, and shelters.",
+       "Mobile Survey Workflows: Offline field data collection for humanitarian needs assessments."
+      ],
+      "links": [
+       {
+        "t": "Consult A Humanitarian GIS Specialist",
+        "href": "/contact/?sector=humanitarian"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Full Lifecycle Support For Every Sector",
+      "imgs": [],
+      "ps": [
+       "Regardless of your industry, our commitment doesn't end at delivery — every engagement is backed by the same certified support standard."
+      ],
+      "lis": [
+       "Guaranteed Factory Calibration",
+       "Emergency Repair Loaner Units",
+       "Tailored In-House Training"
+      ],
+      "links": [
+       {
+        "t": "Discuss Your Project",
+        "href": "/contact/"
+       },
+       {
+        "t": "Explore Certified Services",
+        "href": "/solutions/#services-support"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "projects": {
+  "meta": {
+   "title": "Capabilities & Projects | Phirez International Limited | Uganda Geospatial Science",
+   "desc": "How Phirez applies Trimble GNSS, DJI Enterprise drone LiDAR, Esri GIS and subsurface GPR to real-world survey, mining, agriculture and infrastructure workflows in Uganda."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Field Spotlights & Capabilities"
+     },
+     {
+      "tag": "p",
+      "t": "Government ministries, UN agencies, and civil engineering leaders trust Phirez for precision technology and field workflows. Below are illustrative examples of how we apply that technology to common project types — not attributed to a specific named client."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/drone-survey-quarry-01.jpg",
+      "alt": "Drone survey flight over a quarry site for volumetric analysis."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/trimble-gnss-total-station-01.jpg",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/gallery/precision-agri-drone-01.jpg",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Geodetic Control",
+      "href": "#geodetic-control"
+     },
+     {
+      "t": "Quarry Volumetrics",
+      "href": "#quarry-volumetrics"
+     },
+     {
+      "t": "Precision Agriculture",
+      "href": "#precision-agri"
+     },
+     {
+      "t": "Highway Stakeout",
+      "href": "#highway-stakeout"
+     },
+     {
+      "t": "Utility Detection",
+      "href": "#utility-detection"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "spotlights",
+    "cls": "pj-section",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Precision Technology, Applied In The Field"
+     },
+     {
+      "tag": "p",
+      "t": "Illustrative examples of the type of work we deliver, built around real Phirez field photography — not named case studies with client-attributed results. Browse the full Field Gallery or get in touch to discuss your own project."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "National Geodetic Control & Infrastructure Cadastral Survey",
+      "imgs": [
+       {
+        "src": "/assets/images/gallery/medium/gnss-static-setup-01.webp",
+        "alt": "Trimble GNSS receivers on heavy-duty tripods performing static benchmark measurements."
+       }
+      ],
+      "ps": [
+       "Establishing reliable geodetic baselines across expansive, rugged terrain with intermittent cellular coverage — the kind of ground truth road construction and legal cadastre depend on.",
+       "Multi-frequency Trimble R12i GNSS receivers running long-session dual-frequency static observations, tied to the International GNSS Service (IGS) reference frame and processed in Trimble Business Center (TBC) with least-squares network adjustments.",
+       "High-accuracy control points suitable as the spatial foundation for engineering-grade infrastructure design and legal parcel cadastre."
+      ],
+      "lis": [
+       "The ChallengeEstablishing reliable geodetic baselines across expansive, rugged terrain with intermittent cellular coverage — the kind of ground truth road construction and legal cadastre depend on.",
+       "The SolutionMulti-frequency Trimble R12i GNSS receivers running long-session dual-frequency static observations, tied to the International GNSS Service (IGS) reference frame and processed in Trimble Business Center (TBC) with least-squares network adjustments.",
+       "What This DeliversHigh-accuracy control points suitable as the spatial foundation for engineering-grade infrastructure design and legal parcel cadastre."
+      ],
+      "links": [
+       {
+        "t": "Trimble R12i GNSS",
+        "href": "/trimble/"
+       },
+       {
+        "t": "Trimble Business Center",
+        "href": "/trimble/"
+       },
+       {
+        "t": "Discuss Geodetic Solutions",
+        "href": "/contact/?project=geodetic"
+       }
+      ]
+     },
+     {
+      "h": "Aerial Drone Photogrammetry & Quarry Volumetric Auditing",
+      "imgs": [
+       {
+        "src": "/assets/images/gallery/medium/drone-survey-quarry-01.webp",
+        "alt": "Aerial survey crew setting up a drone at a commercial aggregate quarry."
+       }
+      ],
+      "ps": [
+       "Manual aggregate inventory reconciliation traditionally means surveyors climbing hazardous rock stockpiles with GNSS poles — slow, and a real safety risk.",
+       "A DJI Matrice 350 RTK drone with a Zenmuse L2 LiDAR sensor flies automated terrain-following lines. Point clouds are classified in DJI Terra and cut/fill volumes calculated in Carlson Mining.",
+       "Faster survey turnaround with no personnel exposed to unstable stockpile terrain, and volumetric outputs suitable for inventory reconciliation and audit reporting."
+      ],
+      "lis": [
+       "The ChallengeManual aggregate inventory reconciliation traditionally means surveyors climbing hazardous rock stockpiles with GNSS poles — slow, and a real safety risk.",
+       "The SolutionA DJI Matrice 350 RTK drone with a Zenmuse L2 LiDAR sensor flies automated terrain-following lines. Point clouds are classified in DJI Terra and cut/fill volumes calculated in Carlson Mining.",
+       "What This DeliversFaster survey turnaround with no personnel exposed to unstable stockpile terrain, and volumetric outputs suitable for inventory reconciliation and audit reporting."
+      ],
+      "links": [
+       {
+        "t": "DJI Matrice 350 RTK",
+        "href": "/dji-enterprise/"
+       },
+       {
+        "t": "Zenmuse L2 LiDAR",
+        "href": "/dji-enterprise/"
+       },
+       {
+        "t": "DJI Terra",
+        "href": "/dji-enterprise/"
+       },
+       {
+        "t": "Carlson Mining",
+        "href": "/autodesk/"
+       },
+       {
+        "t": "Inquire About Mining Volumetrics",
+        "href": "/contact/?project=quarry-volumetrics"
+       }
+      ]
+     },
+     {
+      "h": "Multispectral Drone Imagery for Precision Crop Health Optimization",
+      "imgs": [
+       {
+        "src": "/assets/images/gallery/medium/precision-agri-demo-01.webp",
+        "alt": "Agricultural drone demonstration over a commercial sugarcane estate."
+       }
+      ],
+      "ps": [
+       "Commercial sugarcane plantations applying uniform blanket fertilizer treatment risk over-fertilizing fertile sectors while under-treating compromised blocks.",
+       "High-resolution multispectral drone flights generate Normalized Difference Vegetation Index (NDVI) analytics in ArcGIS Pro, producing prescription variable-rate application maps by block.",
+       "Targeted, data-driven fertilizer application in place of blanket treatment — reducing input waste and supporting healthier, more consistent crop stands."
+      ],
+      "lis": [
+       "The ChallengeCommercial sugarcane plantations applying uniform blanket fertilizer treatment risk over-fertilizing fertile sectors while under-treating compromised blocks.",
+       "The SolutionHigh-resolution multispectral drone flights generate Normalized Difference Vegetation Index (NDVI) analytics in ArcGIS Pro, producing prescription variable-rate application maps by block.",
+       "What This DeliversTargeted, data-driven fertilizer application in place of blanket treatment — reducing input waste and supporting healthier, more consistent crop stands."
+      ],
+      "links": [
+       {
+        "t": "Multispectral drones",
+        "href": "/dji-enterprise/"
+       },
+       {
+        "t": "ArcGIS Pro",
+        "href": "/esri-arcgis/"
+       },
+       {
+        "t": "Discuss Precision Agri Solutions",
+        "href": "/contact/?project=precision-agri"
+       }
+      ]
+     },
+     {
+      "h": "Highway Corridor Stakeout & As‑Built Verification",
+      "imgs": [
+       {
+        "src": "/assets/images/gallery/medium/gnss-construction-site-02.webp",
+        "alt": "Phirez survey team with GNSS rover on a civil infrastructure corridor."
+       }
+      ],
+      "ps": [
+       "Contractors need to stake out centerline alignment points quickly while verifying earthwork layers against tight design tolerances to avoid costly rework.",
+       "Trimble S-Series robotic total stations paired with Trimble TSC7 controllers running the Trimble Access Roading module, allowing one-person operation directly from CAD alignment files.",
+       "Faster daily stakeout with one-person operation, and as-built verification data that supports compliance sign-off against design tolerances."
+      ],
+      "lis": [
+       "The ChallengeContractors need to stake out centerline alignment points quickly while verifying earthwork layers against tight design tolerances to avoid costly rework.",
+       "The SolutionTrimble S-Series robotic total stations paired with Trimble TSC7 controllers running the Trimble Access Roading module, allowing one-person operation directly from CAD alignment files.",
+       "What This DeliversFaster daily stakeout with one-person operation, and as-built verification data that supports compliance sign-off against design tolerances."
+      ],
+      "links": [
+       {
+        "t": "Trimble S-Series",
+        "href": "/trimble/"
+       },
+       {
+        "t": "Trimble TSC7",
+        "href": "/trimble/"
+       },
+       {
+        "t": "Trimble Access Roading",
+        "href": "/trimble/"
+       },
+       {
+        "t": "Discuss Highway Solutions",
+        "href": "/contact/?project=highway-stakeout"
+       }
+      ]
+     },
+     {
+      "h": "Subsurface Utility Line Tracing & Fiber Optic Strike Prevention",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/usradar-gprover-product-02.avif",
+        "alt": "US Radar GPR Rover ground penetrating radar cart with a GNSS antenna on a pole."
+       }
+      ],
+      "ps": [
+       "Expanding urban roads without reliable historical as-built drawings risks severing live power cables, pressurized water mains, and optical fiber lines during excavation.",
+       "US Radar ground penetrating radar (GPR) coupled with Trimble Catalyst GNSS. Radargram cross-sections are converted into georeferenced 3D utility vectors.",
+       "Georeferenced utility maps that reduce excavation risk and integrate directly into municipal spatial data infrastructure for future maintenance planning."
+      ],
+      "lis": [
+       "The ChallengeExpanding urban roads without reliable historical as-built drawings risks severing live power cables, pressurized water mains, and optical fiber lines during excavation.",
+       "The SolutionUS Radar ground penetrating radar (GPR) coupled with Trimble Catalyst GNSS. Radargram cross-sections are converted into georeferenced 3D utility vectors.",
+       "What This DeliversGeoreferenced utility maps that reduce excavation risk and integrate directly into municipal spatial data infrastructure for future maintenance planning."
+      ],
+      "links": [
+       {
+        "t": "US Radar GPR",
+        "href": "/us-radar/"
+       },
+       {
+        "t": "Trimble Catalyst GNSS",
+        "href": "/trimble/"
+       },
+       {
+        "t": "Inquire About GPR Services",
+        "href": "/contact/?project=utility-detection"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "pj-clients",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Trusted By Leading Institutions Across East Africa"
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/clients/wfp.webp",
+      "alt": "World Food Programme (WFP)"
+     },
+     {
+      "src": "/assets/images/clients/un-ocha.webp",
+      "alt": "UN OCHA"
+     },
+     {
+      "src": "/assets/images/clients/mtn.svg",
+      "alt": "MTN Uganda"
+     },
+     {
+      "src": "/assets/images/clients/wcs.svg",
+      "alt": "Wildlife Conservation Society"
+     },
+     {
+      "src": "/assets/images/clients/nfa.webp",
+      "alt": "National Forestry Authority (NFA)"
+     },
+     {
+      "src": "/assets/images/clients/psfu.webp",
+      "alt": "Private Sector Foundation Uganda"
+     },
+     {
+      "src": "/assets/images/clients/usaid.webp",
+      "alt": "USAID"
+     },
+     {
+      "src": "/assets/images/clients/undp.svg",
+      "alt": "UNDP"
+     },
+     {
+      "src": "/assets/images/clients/iom.webp",
+      "alt": "IOM"
+     },
+     {
+      "src": "/assets/images/clients/unicef.svg",
+      "alt": "UNICEF"
+     },
+     {
+      "src": "/assets/images/clients/uetcl.webp",
+      "alt": "Uganda Electricity Transmission (UETCL)"
+     },
+     {
+      "src": "/assets/images/clients/amref.webp",
+      "alt": "AMREF Health Africa"
+     },
+     {
+      "src": "/assets/images/clients/wwf.svg",
+      "alt": "WWF"
+     },
+     {
+      "src": "/assets/images/clients/nema.webp",
+      "alt": "National Environment Management (NEMA)"
+     },
+     {
+      "src": "/assets/images/clients/ubos.webp",
+      "alt": "Uganda Bureau of Statistics (UBOS)"
+     },
+     {
+      "src": "/assets/images/clients/umeme.webp",
+      "alt": "Umeme"
+     },
+     {
+      "src": "/assets/images/clients/kcca.webp",
+      "alt": "Kampala Capital City Authority (KCCA)"
+     },
+     {
+      "src": "/assets/images/clients/uwa.webp",
+      "alt": "Uganda Wildlife Authority (UWA)"
+     }
+    ],
+    "loose": [
+     "",
+     "",
+     "",
+     "",
+     "UNRAUganda National Roads Authority",
+     "",
+     "",
+     "",
+     "National Wetlands Programme",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ]
+   },
+   {
+    "id": null,
+    "cls": "pj-cta-section",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Bring Proven Precision To Your Next Project"
+     },
+     {
+      "tag": "p",
+      "t": "Whether you need equipment supplied, field crews trained, or turn-key survey consulting delivered to the highest standards, Phirez is ready to partner with you."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/"
+     },
+     {
+      "t": "View Field Photography",
+      "href": "/gallery/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "training": {
+  "meta": {
+   "title": "Training Academy | Phirez International Limited | GNSS, Drone LiDAR & GIS Courses",
+   "desc": "Accredited hands-on training academy for RTK GNSS, Trimble robotic total stations, DJI Enterprise drone LiDAR, and Esri ArcGIS Pro in Kampala, Uganda."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "tr-hero",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Hands-on geospatial masterclasses, taught in the field"
+     },
+     {
+      "tag": "p",
+      "t": "Equip your surveyors, engineers and GIS analysts with certified, practical competency. Classroom instruction is paired with real field exercises on genuine Trimble, DJI and Esri systems."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Explore Programs",
+      "href": "#programs"
+     },
+     {
+      "t": "Request Course Calendar",
+      "href": "/contact/?action=training"
+     }
+    ],
+    "imgs": [
+     {
+      "src": "/assets/images/training/hero-field-training.webp",
+      "alt": "Trimble GNSS survey equipment being unpacked and demonstrated during a field training session overlooking Kampala."
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "tr-why",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Field-proven competency, zero guesswork"
+     },
+     {
+      "tag": "p",
+      "t": "Unlike generic theoretical workshops, Phirez Academy courses are led by practicing survey engineers and GIS architects who actively execute national-scale geodetic and drone mapping contracts across Uganda."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Genuine modern hardware",
+      "imgs": [],
+      "ps": [
+       "Train on real Trimble R12i GNSS, S-Series robotic total stations, and DJI Enterprise RTK drones."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Real Ugandan datasets",
+      "imgs": [],
+      "ps": [
+       "Work with local UTM projections, Arc 1960 transformation parameters, and real Ugandan terrain data."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Recognized certificates",
+      "imgs": [],
+      "ps": [
+       "Receive certificates verifying hands-on practical competency upon course completion."
+      ],
+      "lis": [],
+      "links": []
+     }
+    ],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/training/why-field-team.webp",
+      "alt": "Survey team gathered around a GNSS rover for a topographic survey on an earthworks site."
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": "programs",
+    "cls": "section-dark tr-programs",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Core masterclass programs"
+     },
+     {
+      "tag": "p",
+      "t": "Attend at our Kampala training center, or have us deliver a customized on-site program for your staff. Every course blends classroom instruction with live field practice."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "High-Precision RTK GNSS & Total Station Operations",
+      "imgs": [
+       {
+        "src": "/assets/images/training/course-gnss.webp",
+        "alt": ""
+       }
+      ],
+      "ps": [
+       "Master modern land survey workflows from static control networks to high-speed RTK stakeout using Trimble R12i receivers, S-Series robotic total stations, and Trimble Access."
+      ],
+      "lis": [
+       "Base and rover radio/cellular NTRIP configuration",
+       "Site calibrations, local coordinate transformations & geoids",
+       "Feature coding and linework creation in the field",
+       "Field troubleshooting and tilt compensation best practices"
+      ],
+      "links": [
+       {
+        "t": "Inquire About GNSS Course",
+        "href": "/contact/?course=gnss-total-stations"
+       }
+      ]
+     },
+     {
+      "h": "Commercial Drone Pilot, Photogrammetry & LiDAR",
+      "imgs": [
+       {
+        "src": "/assets/images/training/course-drone-lidar.webp",
+        "alt": ""
+       }
+      ],
+      "ps": [
+       "From flight planning and airspace compliance to point cloud classification. Learn how to deploy DJI Enterprise drones (Matrice 350, Mavic 3E) to produce survey-grade terrain models."
+      ],
+      "lis": [
+       "Mission planning: GSD calculation, overlap, RTK base setup",
+       "Aerial LiDAR point cloud processing with DJI Terra & TBC",
+       "Ground Control Point (GCP) and checkpoint placement verification",
+       "Volume calculations, contour generation & orthomosaic export"
+      ],
+      "links": [
+       {
+        "t": "Inquire About Drone Course",
+        "href": "/contact/?course=drone-lidar"
+       }
+      ]
+     },
+     {
+      "h": "Esri ArcGIS Pro Advanced Spatial Analysis & SDI",
+      "imgs": [
+       {
+        "src": "/assets/images/training/course-arcgis.webp",
+        "alt": ""
+       }
+      ],
+      "ps": [
+       "An exhaustive masterclass in ArcGIS Pro: multi-user geodatabase management, advanced spatial statistics, model builder automation, and spatial data infrastructure architecture."
+      ],
+      "lis": [
+       "Advanced geoprocessing, raster analytics & hydrological modeling",
+       "Enterprise geodatabase topology and schema design",
+       "Web map publishing and dashboard configuration on ArcGIS Online",
+       "Python ArcPy scripting for recurring GIS tasks"
+      ],
+      "links": [
+       {
+        "t": "Inquire About ArcGIS Course",
+        "href": "/contact/?course=arcgis-pro"
+       }
+      ]
+     },
+     {
+      "h": "AutoCAD Civil 3D & Survey Data Integration",
+      "imgs": [
+       {
+        "src": "/assets/images/training/course-civil3d.webp",
+        "alt": ""
+       }
+      ],
+      "ps": [
+       "Connect field survey data directly to engineering civil design. Learn to import raw survey points, create dynamic surfaces, model road corridors, and compute earthwork volumes."
+      ],
+      "lis": [
+       "Survey database setup and description key management",
+       "TIN surface creation, breakline editing & boundary enforcement",
+       "Road horizontal/vertical alignment and corridor profiling",
+       "Automated cut/fill cross-section volume calculations"
+      ],
+      "links": [
+       {
+        "t": "Inquire About Civil 3D",
+        "href": "/contact/?course=civil-3d"
+       }
+      ]
+     },
+     {
+      "h": "Mobile Data Collection with Field Maps & Survey123",
+      "imgs": [
+       {
+        "src": "/assets/images/training/course-mobile-gis.webp",
+        "alt": ""
+       }
+      ],
+      "ps": [
+       "Design and deploy smart offline survey forms with logic, photo attachments, and high-accuracy GPS integration to streamline field data collection across large remote teams."
+      ],
+      "lis": [
+       "XLSForm syntax scripting with dynamic skip logic & validation",
+       "Offline basemap caching and synchronization protocols",
+       "Bluetooth pairing with external Trimble GNSS receivers",
+       "Real-time executive dashboard generation"
+      ],
+      "links": [
+       {
+        "t": "Inquire About Mobile GIS",
+        "href": "/contact/?course=mobile-gis"
+       }
+      ]
+     },
+     {
+      "h": "Tailored In-House Corporate Capacity Building",
+      "imgs": [
+       {
+        "src": "/assets/images/training/course-corporate.webp",
+        "alt": ""
+       }
+      ],
+      "ps": [
+       "We build a bespoke curriculum aligned directly with your organization's projects, existing equipment, software licenses, and specific operational challenges."
+      ],
+      "lis": [
+       "Delivered at your headquarters, field base camp, or our Kampala lab",
+       "Customized course schedule fitted to operational shifts",
+       "Practical exercises conducted on your active project sites",
+       "Post-training assessment and ongoing HelpDesk support"
+      ],
+      "links": [
+       {
+        "t": "Request Corporate Proposal",
+        "href": "/contact/?course=corporate-tailored"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "tr-process",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "From first enquiry to certified competency"
+     },
+     {
+      "tag": "p",
+      "t": "A simple path for individuals and teams alike."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Enquire",
+      "imgs": [],
+      "ps": [
+       "Tell us who needs training. We send the latest course calendar, syllabus details, and group registration discounts."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Choose your setting",
+      "imgs": [],
+      "ps": [
+       "Attend at our Kampala training center, or have us deliver on-site at your headquarters or field base camp."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Learn by doing",
+      "imgs": [],
+      "ps": [
+       "Classroom instruction paired with field exercises on genuine equipment, led by practicing engineers."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Get certified",
+      "imgs": [],
+      "ps": [
+       "Leave with a recognized certificate verifying your hands-on practical competency."
+      ],
+      "lis": [],
+      "links": []
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "tr-cta-section",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Enroll your team in an upcoming session"
+     },
+     {
+      "tag": "p",
+      "t": "Contact our Academy Coordinator to receive the latest course calendar, syllabus details, group registration discounts, or to schedule a customized on-site training."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Inquire About Courses",
+      "href": "/contact/?action=training"
+     },
+     {
+      "t": "Call: +256 783 549 770",
+      "href": "tel:+256783549770"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "company": {
+  "meta": {
+   "title": "About Us & Company | Phirez International Limited | Uganda Geospatial Science",
+   "desc": "Learn about Phirez International Limited — Trimble Authorised Distributor, Esri Silver Partner and leading geospatial engineering company in Uganda since 2011."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Engineered For Precision, Built On Integrity"
+     },
+     {
+      "tag": "p",
+      "t": "Fifteen years of multidisciplinary IT and Geospatial Science leadership, empowering governments, engineers, and enterprises across East Africa with world-class positioning hardware, analytics, and certified lifecycle support."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/industry-event-02.jpg",
+      "alt": "Phirez International team members at an industry event in Kampala."
+     },
+     {
+      "src": "/assets/images/gallery/gnss-training-01.jpg",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/gallery/industry-event-01.jpg",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": "about",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "A Decade & A Half Of Spatial Innovation"
+     },
+     {
+      "tag": "p",
+      "t": "Phirez International Limited was founded in Kampala in 2011 with a singular objective: to elevate the standard of spatial data collection, engineering survey, and information technology infrastructure across Uganda and East Africa."
+     },
+     {
+      "tag": "p",
+      "t": "Over the past fifteen years, we have grown into Uganda's foremost geospatial authority — serving as an Authorised Distribution Partner for Trimble Geospatial, an Esri Silver Partner, and an enterprise specialist for DJI Enterprise drones. We bridge advanced global positioning technology with the practical realities of African infrastructure delivery."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Explore Our Technology Solutions",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-static-setup-01.jpg",
+      "alt": "Phirez survey team with Trimble GNSS receivers on Archer Road Kampala."
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": "values",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Our Core Pillars & Principles"
+     },
+     {
+      "tag": "p",
+      "t": "We believe in long-term relationships backed by unwavering technical integrity and transparent engineering standards."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Precision",
+      "imgs": [],
+      "ps": [
+       "We measure our success in millimeters. From geodetic control networks to drone LiDAR point clouds, we deliver data that engineers trust without hesitation."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Integrity",
+      "imgs": [],
+      "ps": [
+       "Doing what is right for our clients, our team, and our partner brands. Transparent pricing, genuine OEM parts, and honest technical feasibility assessments."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Technical Mastery",
+      "imgs": [],
+      "ps": [
+       "We invest heavily in factory training and local laboratory calibration facilities so that our clients never have to ship instruments overseas for routine service."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Partnership",
+      "imgs": [],
+      "ps": [
+       "We walk beside our clients throughout the working life of their systems — from initial selection and financing advice to ongoing HelpDesk field support and certified training."
+      ],
+      "lis": [],
+      "links": []
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "divisions",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Our Core Technical Divisions"
+     },
+     {
+      "tag": "p",
+      "t": "Our team comprises registered geodesists, commercial UAV pilots, certified GIS architects, and factory-trained instrument technicians."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Geodesy & Survey Engineering",
+      "imgs": [],
+      "ps": [
+       "Specializing in primary geodetic control networks, CORS base stations, cadastral land parcel demarcation, highway linear corridor stakeout, and highwall deformation monitoring."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Aerial Robotics & Remote Sensing",
+      "imgs": [],
+      "ps": [
+       "Operating a fleet of DJI Enterprise commercial drones equipped with aerial LiDAR and multispectral cameras to execute large-area photogrammetry, quarry volumetrics, and forestry analysis."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Enterprise GIS & Spatial Data Infrastructure",
+      "imgs": [],
+      "ps": [
+       "Architecting enterprise GIS databases, web mapping portals, and automated mobile data collection workflows for national ministries, UN agencies, and utility networks."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Certified Service Lab & Training Academy",
+      "imgs": [],
+      "ps": [
+       "Maintaining optical collimator test benches and EDM baselines in Kampala to service and certify surveying instruments, coupled with blended practical training masterclasses."
+      ],
+      "lis": [],
+      "links": []
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "careers",
+    "cls": "section-dark",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Current Open Interest Areas",
+      "imgs": [],
+      "ps": [
+       "We are always seeking passionate geodesists, licensed land surveyors, commercial drone pilots, and enterprise GIS developers who thrive on technical precision and solving complex physical challenges.",
+       "We welcome speculative applications for: Senior Survey Geodesist, Commercial UAV Flight Specialist, Enterprise Esri Geodatabase Developer, and Optical Instrument Service Technician."
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Send Your CV to careers@phirez.ug",
+        "href": "mailto:careers@phirez.ug"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "contact": {
+  "meta": {
+   "title": "Contact Us | Phirez International Limited",
+   "desc": "Get in touch with Phirez International Limited in Kampala, Uganda. Call +256 783 549 770 or email info@phirez.ug to discuss your GIS or IT project."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "page-hero",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Kampala, Uganda",
+      "imgs": [],
+      "ps": [
+       "Tell us about your project and our team will get back to you shortly.",
+       "Archer Road HQ"
+      ],
+      "lis": [],
+      "links": []
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Call Us",
+      "imgs": [],
+      "ps": [
+       "+256 783 549 770"
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Email Us",
+      "imgs": [],
+      "ps": [
+       "info@phirez.ug"
+      ],
+      "lis": [],
+      "links": []
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Reach Our Kampala Office"
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Head Office",
+      "imgs": [],
+      "ps": [
+       "2nd Floor, Unicalo House, Plot 11, Archer Road, Kampala, UgandaP.O. Box 111999, Kampala, Uganda"
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Phone",
+      "imgs": [],
+      "ps": [
+       "+256 783 549 770"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "+256 783 549 770",
+        "href": "tel:+256783549770"
+       }
+      ]
+     },
+     {
+      "h": "WhatsApp",
+      "imgs": [],
+      "ps": [
+       "+256 783 549 770"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "+256 783 549 770",
+        "href": "https://wa.me/256783549770?text=Hello%20Phirez%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+       }
+      ]
+     },
+     {
+      "h": "Email",
+      "imgs": [],
+      "ps": [
+       "info@phirez.ugkamugishacosta@gmail.com"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "info@phirez.ug",
+        "href": "mailto:info@phirez.ug"
+       },
+       {
+        "t": "kamugishacosta@gmail.com",
+        "href": "mailto:kamugishacosta@gmail.com"
+       }
+      ]
+     },
+     {
+      "h": "Office Hours",
+      "imgs": [],
+      "ps": [
+       "Mon–Fri, 8:30am–5:30pm (EAT)Placeholder — to be confirmed by Phirez."
+      ],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Send Us a Message",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "gallery": {
+  "meta": {
+   "title": "Gallery | Phirez International Limited",
+   "desc": "Field photography from Phirez International Limited's GNSS surveys, drone mapping, precision agriculture and industry events across Uganda."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro hero-agro-light",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Our Work In The Field"
+     },
+     {
+      "tag": "p",
+      "t": "GNSS control surveys, drone mapping flights, precision-agriculture demonstrations and industry events — a look at how our team delivers geospatial and IT solutions on the ground across Uganda."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/precision-agri-drone-02.jpg",
+      "alt": "Drone mapping flight over farmland during a Phirez field deployment."
+     },
+     {
+      "src": "/assets/images/gallery/gnss-static-setup-01.jpg",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/gallery/drone-gnss-combo-01.jpg",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": "gallery-grid",
+    "cls": "",
+    "intro": [
+     {
+      "tag": "p",
+      "t": "Setting up dual-frequency GNSS base and rover receivers for a control survey."
+     },
+     {
+      "tag": "p",
+      "t": "Demonstrating agricultural spray-drone technology to farm workers at a sugarcane plantation."
+     },
+     {
+      "tag": "p",
+      "t": "Reviewing a flight plan before an aerial survey of a quarry and earthworks site."
+     },
+     {
+      "tag": "p",
+      "t": "Setting up a GNSS rover for a topographic survey on a construction site."
+     },
+     {
+      "tag": "p",
+      "t": "The survey team reviewing coordinates captured on-site with RTK GNSS equipment."
+     },
+     {
+      "tag": "p",
+      "t": "An agricultural spray drone staged on a farm access road ahead of a demonstration flight."
+     },
+     {
+      "tag": "p",
+      "t": "Technicians preparing an agricultural spray drone for a field application run."
+     },
+     {
+      "tag": "p",
+      "t": "Reviewing flight data with farm staff during a precision-agriculture demonstration."
+     },
+     {
+      "tag": "p",
+      "t": "Unpacking and demonstrating Trimble GNSS kit during a field training session."
+     },
+     {
+      "tag": "p",
+      "t": "Preparing a drone for a demo flight, with a GNSS base station running alongside."
+     },
+     {
+      "tag": "p",
+      "t": "Piloting an agricultural drone along a farm access track during a field run."
+     },
+     {
+      "tag": "p",
+      "t": "Presenting on drone data collection at a GIS industry conference in Kampala."
+     },
+     {
+      "tag": "p",
+      "t": "Flying an indoor demo flight to showcase drone handling at a conference venue."
+     },
+     {
+      "tag": "p",
+      "t": "GNSS survey kits staged beside the vehicle before deployment to a field site."
+     },
+     {
+      "tag": "p",
+      "t": "Connecting with industry peers at a location-intelligence conference in Kampala."
+     },
+     {
+      "tag": "p",
+      "t": "An aerial view captured mid-survey, showing the crew and GNSS kit from the drone's perspective."
+     },
+     {
+      "tag": "p",
+      "t": "A mapping flight's-eye view of the access road and surrounding terrain."
+     },
+     {
+      "tag": "p",
+      "t": "The drone survey team, deployed in partnership with DESCON, ahead of a mapping flight."
+     },
+     {
+      "tag": "p",
+      "t": "Running pre-flight checks with DESCON partner technicians before launch."
+     },
+     {
+      "tag": "p",
+      "t": "Final checks on the drone's camera and rotors before takeoff."
+     },
+     {
+      "tag": "p",
+      "t": "On standby as the drone is readied for launch in open terrain."
+     },
+     {
+      "tag": "p",
+      "t": "Piloting the mapping flight from the DJI enterprise controller."
+     },
+     {
+      "tag": "p",
+      "t": "GNSS rover and base equipment staged for a control survey."
+     },
+     {
+      "tag": "p",
+      "t": "Capturing a control point with a GNSS rover in the field."
+     },
+     {
+      "tag": "p",
+      "t": "A GNSS rover reading taken along the survey corridor."
+     },
+     {
+      "tag": "p",
+      "t": "Walking a survey transect with the GNSS rover, DESCON partner crew in the field."
+     },
+     {
+      "tag": "p",
+      "t": "Equipment cases and base-station gear staged for the day's survey."
+     },
+     {
+      "tag": "p",
+      "t": "Setting up the GNSS base station and generator ahead of a control survey."
+     },
+     {
+      "tag": "p",
+      "t": "A GNSS rover reading captured at the edge of a cultivated field."
+     },
+     {
+      "tag": "p",
+      "t": "A field briefing with DESCON partner technicians during a GNSS survey."
+     },
+     {
+      "tag": "p",
+      "t": "Field logistics: refuelling the generator between survey stops."
+     },
+     {
+      "tag": "p",
+      "t": "Setting up positioning equipment on-site, field vehicle standing by."
+     },
+     {
+      "tag": "p",
+      "t": "Moving equipment between set-up points during a day of fieldwork."
+     },
+     {
+      "tag": "p",
+      "t": "Loading GNSS survey equipment into the vehicle, in partnership with DESCON."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-static-setup-01.jpg",
+      "alt": "Survey technicians setting up dual-frequency GNSS base and rover receivers on tripods for a control survey."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/precision-agri-demo-01.jpg",
+      "alt": "Phirez technicians demonstrating agricultural spray drone technology to farm workers beside a sugarcane plantation."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-survey-quarry-01.jpg",
+      "alt": "Field team in hard hats and hi-vis vests reviewing a drone flight plan before an aerial survey of a quarry site."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-construction-site-01.jpg",
+      "alt": "Survey technicians setting up a GNSS rover on a construction and earthworks site."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-construction-site-02.jpg",
+      "alt": "Survey team gathered around a GNSS rover for a topographic survey on an earthworks site."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/precision-agri-drone-02.jpg",
+      "alt": "An agricultural spray drone positioned on a farm access road beside a sugarcane plantation."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/precision-agri-drone-01.jpg",
+      "alt": "Technicians preparing an agricultural spray drone at the edge of a sugarcane field."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/precision-agri-demo-02.jpg",
+      "alt": "Farm staff and Phirez technicians reviewing drone flight data during an agri-drone demonstration."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-training-01.jpg",
+      "alt": "Trimble GNSS survey equipment being unpacked and demonstrated during a field training session overlooking Kampala."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-gnss-combo-01.jpg",
+      "alt": "Technicians preparing an agricultural drone for a demo flight with a GNSS base station set up in the background."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-gnss-combo-02.jpg",
+      "alt": "A technician piloting an agricultural spray drone along a farm track, with team members carrying supplies nearby."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/industry-event-02.jpg",
+      "alt": "A team member presenting on 'Why Drones?' at an Esri-sponsored GIS industry conference."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-demo-indoor-01.jpg",
+      "alt": "An indoor drone demonstration flight at a conference venue."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-equipment-loadout-01.jpg",
+      "alt": "Trimble GNSS survey kits laid out beside a vehicle before deployment to a field site."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/industry-event-01.jpg",
+      "alt": "Phirez team members at a location-intelligence industry conference in Kampala."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-survey-aerial-01.jpg",
+      "alt": "Aerial drone photo of a GNSS survey crew and equipment beside a dirt access road in open scrubland."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-survey-aerial-02.jpg",
+      "alt": "Aerial drone view of a dirt road cutting through cultivated fields and scrubland during a mapping flight."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-deployment-01.jpg",
+      "alt": "A Phirez and DESCON survey team posing with a DJI enterprise drone ahead of a mapping flight."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-preflight-check-01.jpg",
+      "alt": "The field team running pre-flight checks on a DJI enterprise drone before launch."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-preflight-check-02.jpg",
+      "alt": "Technicians preparing a drone on its launch pad, checking the camera and rotors before takeoff."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-launch-standby-01.jpg",
+      "alt": "Field team standing by as a drone is prepared for launch on a wooden pad in open terrain."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/drone-controller-closeup-01.jpg",
+      "alt": "Close-up of a technician operating a DJI drone controller during a survey flight."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-equipment-closeup-01.jpg",
+      "alt": "GNSS rover and base station equipment set up on tripods, with a technician seated nearby."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-rover-fieldwork-01.jpg",
+      "alt": "A survey technician holding a GNSS rover pole while capturing a control point in open terrain."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-rover-fieldwork-02.jpg",
+      "alt": "A technician with a GNSS rover pole, with a colleague crossing the open landscape in the background."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-rover-transect-01.jpg",
+      "alt": "A DESCON-partnered technician walking a survey transect with a raised GNSS rover pole along a dirt road."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-equipment-loadout-02.jpg",
+      "alt": "Survey equipment cases and tripods staged on the ground beside a generator, ready for deployment."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-base-station-setup-01.jpg",
+      "alt": "The survey team setting up a GNSS base station with a generator and rover pole in open scrubland."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-rover-farmland-01.jpg",
+      "alt": "A technician taking a GNSS rover reading beside a fenced field of cultivated crop."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-field-briefing-01.jpg",
+      "alt": "A field briefing between Phirez and DESCON technicians beside a GNSS rover set up near farmland."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/survey-field-logistics-01.jpg",
+      "alt": "The field crew handling a generator and fuel canisters beside the survey vehicle on a dirt road."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-total-station-setup-01.jpg",
+      "alt": "The survey team setting up a tripod-mounted positioning target on a dirt road with the field vehicle nearby."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/survey-field-logistics-02.jpg",
+      "alt": "The field team carrying survey equipment along a dirt road between set-up points."
+     },
+     {
+      "src": "/assets/images/gallery/thumbs/gnss-equipment-vehicle-loadout-01.jpg",
+      "alt": "Phirez and DESCON technicians loading GNSS survey equipment into the field vehicle."
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Want work like this on your next project?"
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Get a Quote",
+      "href": "/contact/"
+     },
+     {
+      "t": "View Our Solutions",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "trimble": {
+  "meta": {
+   "title": "Trimble GNSS & Total Stations | Phirez International Limited | Uganda Authorised Distributor",
+   "desc": "Phirez International Limited is Uganda's Authorised Trimble Distributor: R12i GNSS receivers, S-Series robotic total stations, X7/X9 3D laser scanners & Trimble Business Center, backed by certified calibration and field support."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Trimble Survey & Positioning Systems"
+     },
+     {
+      "tag": "p",
+      "t": "As Uganda’s Authorised Trimble Distributor, Phirez supplies and supports the complete Trimble ecosystem — GNSS receivers, robotic total stations, 3D laser scanners, and Trimble Access/Business Center software — for surveyors, civil engineers, and mining operations across East Africa."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/vendor-equipment/trimble-mx90-product-01.webp",
+      "alt": "Trimble MX90 mobile mapping sensor."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/trimble-x9-product-01.webp",
+      "alt": "Trimble X9 3D laser scanning total station."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/trimble-gnss-total-station-01.jpg",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/vendor-equipment/trimble-business-center-product-01.avif",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Product Range",
+      "href": "#products"
+     },
+     {
+      "t": "Why Phirez",
+      "href": "#why-phirez"
+     },
+     {
+      "t": "All Solutions & Brands",
+      "href": "/solutions/"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/?product=trimble-general"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "products",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Trimble GNSS, Total Stations & 3D Laser Scanning"
+     },
+     {
+      "tag": "p",
+      "t": "Industry-standard positioning and reality-capture hardware, sold and supported locally with certified calibration and Trimble Access expertise."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Trimble R12i GNSS Receiver",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-gnss-total-station-01.jpg",
+        "alt": "Trimble R12i GNSS receiver."
+       }
+      ],
+      "ps": [
+       "TIP Tilt Compensation | ProPoint RTK Engine | Multi-Constellation GNSS | IP68 Rugged Construction"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-r12i"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-r12i"
+       }
+      ]
+     },
+     {
+      "h": "Trimble R580 GNSS System",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-r580-product-01.avif",
+        "alt": "Trimble R580 GNSS system."
+       }
+      ],
+      "ps": [
+       "Everyday Integrated GNSS | Trimble ProPoint Engine | Reliable Accuracy In More Places | Built For Productivity"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-r580"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-r580"
+       }
+      ]
+     },
+     {
+      "h": "Trimble R780 GNSS System",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-r780-product-01.avif",
+        "alt": "Trimble R780 GNSS system."
+       }
+      ],
+      "ps": [
+       "Ultra-Rugged Integrated GNSS | Built For Toughest Environments | Adaptable & Scalable | Trimble ProPoint Positioning"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-r780"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-r780"
+       }
+      ]
+     },
+     {
+      "h": "Trimble R980 GNSS System",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-r980-product-01.avif",
+        "alt": "Trimble R980 GNSS system."
+       }
+      ],
+      "ps": [
+       "Peak Accuracy In Remote Locations | Proven GNSS Performance | Overcomes Challenging Conditions | Ready For Any Jobsite"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-r980"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-r980"
+       }
+      ]
+     },
+     {
+      "h": "Trimble Alloy GNSS Reference Receiver",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-alloy-product-01.avif",
+        "alt": "Trimble Alloy GNSS reference receiver."
+       }
+      ],
+      "ps": [
+       "Built For Any Real-Time Network | Rugged Global Deployment | CORS & Base Station Ready | Reliable Continuous Operation"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-alloy"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-alloy"
+       }
+      ]
+     },
+     {
+      "h": "Trimble S9 / S9 HP Total Station",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-s9-product-01.avif",
+        "alt": "Trimble S9 robotic total station."
+       }
+      ],
+      "ps": [
+       "Top-Tier Field Technologies | Highest Trimble Accuracy Class | Built For Monitoring & Tunneling | Advanced Robotic Engineering"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-s9"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-s9"
+       }
+      ]
+     },
+     {
+      "h": "Trimble X9 3D Laser Scanner",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-x9-product-01.webp",
+        "alt": "Trimble X9 3D laser scanner."
+       }
+      ],
+      "ps": [
+       "Automatic Self-Calibration | Full Scan Under 2 Minutes | In-Field Auto-Registration | Reality Capture Made Simple"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-x9"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-x9"
+       }
+      ]
+     },
+     {
+      "h": "Trimble X12 3D Scanner",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-x12-product-01.png",
+        "alt": "Trimble X12 3D scanner."
+       }
+      ],
+      "ps": [
+       "2.187M Points/Second | 365m Operational Range | 80MP HDR Color Imagery | Structural Deformation Monitoring"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-x12"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-x12"
+       }
+      ]
+     },
+     {
+      "h": "Trimble MX90 Mobile Mapping System",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-mx90-product-01.webp",
+        "alt": "Trimble MX90 mobile mapping system."
+       }
+      ],
+      "ps": [
+       "Leading-Edge Mobile Mapping Hardware | Intuitive Field Software | Integrated Office Workflow | Field-To-Finish Solution"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-mx90"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/hardware/trimble-mx90"
+       }
+      ]
+     },
+     {
+      "h": "Trimble Business Center (TBC)",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/trimble-business-center-product-02.avif",
+        "alt": "Trimble Business Center software processing point cloud survey data."
+       }
+      ],
+      "ps": [
+       "Field-To-Finish Survey CAD | GNSS, Total Station & Scanner Data | Drone Photogrammetry Processing | Client-Ready Deliverables"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=trimble-tbc"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://geospatial.trimble.com/en/products/software/trimble-business-center"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "why-phirez",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Local Backing For Your Trimble Investment"
+     },
+     {
+      "tag": "p",
+      "t": "Buying the instrument is the easy part. Our Kampala calibration lab, HelpDesk, and Training Academy keep Trimble systems accurate and productive for their entire working life."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Certified Calibration in Kampala",
+      "imgs": [],
+      "ps": [
+       "Our facility is equipped with optical collimators and EDM baseline test benches to service and calibrate Trimble total stations, GNSS rovers, and levels."
+      ],
+      "lis": [
+       "Multi-collimator baseline optical adjustment",
+       "Laser EDM distance accuracy verification",
+       "Traceable calibration certificates issued"
+      ],
+      "links": [
+       {
+        "t": "View Service Centre",
+        "href": "/solutions/#service-centre"
+       }
+      ]
+     },
+     {
+      "h": "Local Trimble Access Support",
+      "imgs": [],
+      "ps": [
+       "Dedicated telephone, WhatsApp, and remote desktop support for field crews troubleshooting coordinate systems, controller firmware, or Trimble Access workflows in real time."
+      ],
+      "lis": [
+       "Trimble Access & controller firmware updates",
+       "Local coordinate system & geoid file setup",
+       "Fast problem turnaround to prevent downtime"
+      ],
+      "links": [
+       {
+        "t": "Contact HelpDesk",
+        "href": "/contact/?action=support"
+       }
+      ]
+     },
+     {
+      "h": "Trimble Training Academy",
+      "imgs": [],
+      "ps": [
+       "Structured, blended learning combining classroom theory with hands-on field practicals to turn your staff into certified Trimble GNSS and total station operators."
+      ],
+      "lis": [
+       "RTK GNSS & robotic total station practicals",
+       "Trimble Access & Business Center workflows",
+       "Custom corporate in-house upskilling"
+      ],
+      "links": [
+       {
+        "t": "View Training Academy",
+        "href": "/training/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Ready To Upgrade Your Survey Fleet?"
+     },
+     {
+      "tag": "p",
+      "t": "Our application engineers review your project specifications and recommend the right Trimble hardware/software combination, with an on-site demonstration where useful."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/?product=trimble-general"
+     },
+     {
+      "t": "View Full Solutions Range",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "dji-enterprise": {
+  "meta": {
+   "title": "DJI Enterprise Drones & Aerial LiDAR | Phirez International Limited | Uganda",
+   "desc": "Phirez is a DJI Enterprise specialist in Uganda: Matrice 350 RTK, Mavic 3 Enterprise, Zenmuse L3 LiDAR & DJI Dock 3, backed by certified drone support, LiDAR processing, and commercial pilot training."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-carousel",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Commercial Drones, Photogrammetry & Aerial LiDAR — DJI Enterprise Solutions from Phirez"
+     },
+     {
+      "tag": "p",
+      "t": "DJI AP100 Parachute"
+     },
+     {
+      "tag": "p",
+      "t": "For the Priceless Below"
+     },
+     {
+      "tag": "p",
+      "t": "DJI O4 Ground Station"
+     },
+     {
+      "tag": "p",
+      "t": "Reach Farther, Stay Aware"
+     },
+     {
+      "tag": "p",
+      "t": "Dock as First Responder"
+     },
+     {
+      "tag": "p",
+      "t": "Launch on Alert, Eyes on Scene First"
+     },
+     {
+      "tag": "p",
+      "t": "Zenmuse L3"
+     },
+     {
+      "tag": "p",
+      "t": "See Through, Far and True"
+     },
+     {
+      "tag": "p",
+      "t": "DJI FlightHub 2"
+     },
+     {
+      "tag": "p",
+      "t": "Fly With Cloud Intelligence"
+     },
+     {
+      "tag": "p",
+      "t": "DJI Matrice 400"
+     },
+     {
+      "tag": "p",
+      "t": "Engineered for Excellence, Designed for Versatility"
+     },
+     {
+      "tag": "p",
+      "t": "DJI Dock 3"
+     },
+     {
+      "tag": "p",
+      "t": "Rise to Any Challenge"
+     },
+     {
+      "tag": "p",
+      "t": "DJI Matrice 4 Series"
+     },
+     {
+      "tag": "p",
+      "t": "The Age of Intelligent Flight"
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Get A Quote",
+      "href": "/contact/?product=dji-ap100"
+     },
+     {
+      "t": "Learn More",
+      "href": "https://enterprise.dji.com/ap100-parachute"
+     },
+     {
+      "t": "Get A Quote",
+      "href": "/contact/?product=dji-o4-ground-station"
+     },
+     {
+      "t": "Learn More",
+      "href": "https://enterprise.dji.com/o4-ground-station"
+     },
+     {
+      "t": "Get A Quote",
+      "href": "/contact/?product=dji-dock-3"
+     },
+     {
+      "t": "Learn More",
+      "href": "https://enterprise.dji.com/dock-3"
+     },
+     {
+      "t": "Get A Quote",
+      "href": "/contact/?product=dji-zenmuse-l3"
+     },
+     {
+      "t": "Learn More",
+      "href": "https://enterprise.dji.com/zenmuse-l3"
+     },
+     {
+      "t": "Get A Quote",
+      "href": "/contact/?product=dji-flighthub-2"
+     },
+     {
+      "t": "Learn More",
+      "href": "https://enterprise.dji.com/flighthub-2"
+     },
+     {
+      "t": "Get A Quote",
+      "href": "/contact/?product=dji-matrice-400"
+     },
+     {
+      "t": "Learn More",
+      "href": "https://enterprise.dji.com/matrice-400"
+     },
+     {
+      "t": "Get A Quote",
+      "href": "/contact/?product=dji-dock-3"
+     },
+     {
+      "t": "Learn More",
+      "href": "https://enterprise.dji.com/dock-3"
+     },
+     {
+      "t": "Get A Quote",
+      "href": "/contact/?product=dji-m4-series"
+     },
+     {
+      "t": "Learn More",
+      "href": "https://enterprise.dji.com/matrice-4-series"
+     }
+    ],
+    "imgs": [],
+    "loose": [
+     "DJI AP100 Parachute For the Priceless Below Get A Quote Learn More",
+     "DJI O4 Ground Station Reach Farther, Stay Aware Get A Quote Learn More",
+     "Dock as First Responder Launch on Alert, Eyes on Scene First Get A Quote Learn More",
+     "Zenmuse L3 See Through, Far and True Get A Quote Learn More",
+     "DJI FlightHub 2 Fly With Cloud Intelligence Get A Quote Learn More",
+     "DJI Matrice 400 Engineered for Excellence, Designed for Versatility Get A Quote Learn More",
+     "DJI Dock 3 Rise to Any Challenge Get A Quote Learn More",
+     "DJI Matrice 4 Series The Age of Intelligent Flight Get A Quote Learn More"
+    ]
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Product Range",
+      "href": "#products"
+     },
+     {
+      "t": "Why Phirez",
+      "href": "#why-phirez"
+     },
+     {
+      "t": "All Solutions & Brands",
+      "href": "/solutions/"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/?product=dji-enterprise-general"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "products",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "DJI Enterprise Drones, Cameras & LiDAR Payloads"
+     },
+     {
+      "tag": "p",
+      "t": "High-efficiency RTK drone platforms, survey-grade sensors, and autonomous operations hardware — DJI's current enterprise line-up, supplied and supported by Phirez across Uganda and East Africa."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "DJI Matrice 4 Series",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/dji-matrice-4-series-product-01.png",
+        "alt": "DJI Matrice 4 Series enterprise drone."
+       }
+      ],
+      "ps": [
+       "Integrated Multi-Sensor Imaging | Improved Low-Light Performance | O4 Enterprise Transmission | Dock 3 Compatible"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=dji-m4-series"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://enterprise.dji.com/matrice-4-series"
+       }
+      ]
+     },
+     {
+      "h": "DJI Matrice 350 RTK",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/dji-matrice-350-rtk-product-01.png",
+        "alt": "DJI Matrice 350 RTK industrial drone."
+       }
+      ],
+      "ps": [
+       "55-Minute Flight Time | IP55 Weather Rating | 2.7kg Payload Capacity | Multi-Frequency RTK"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=dji-m350"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://enterprise.dji.com/matrice-350-rtk"
+       }
+      ]
+     },
+     {
+      "h": "DJI Mavic 3 Enterprise & Thermal",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/dji-mavic-3-enterprise-product-01.png",
+        "alt": "DJI Mavic 3 Enterprise drone."
+       }
+      ],
+      "ps": [
+       "Mechanical Shutter Camera | RTK Module Support | 640×512 Thermal Sensor | 45-Minute Flight Time"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=dji-m3e"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://enterprise.dji.com/mavic-3-enterprise"
+       }
+      ]
+     },
+     {
+      "h": "DJI Zenmuse L2",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/dji-zenmuse-l2-product-01.png",
+        "alt": "DJI Zenmuse L2 aerial LiDAR payload."
+       }
+      ],
+      "ps": [
+       "5 LiDAR Returns | 250m Detection Range | Real-Time Point Cloud Coloring | Mounts To Matrice 350/300"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=dji-zenmuse-l2"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://enterprise.dji.com/zenmuse-l2"
+       }
+      ]
+     },
+     {
+      "h": "DJI Dock 3",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/dji-dock-3-product-01.png",
+        "alt": "DJI Dock 3 autonomous drone docking station."
+       }
+      ],
+      "ps": [
+       "Weatherproof Housing | Ultra-Long Transmission Range | Matrice 4D/4TD Compatible | Automated FlightHub 2 Missions"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=dji-dock-3"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://enterprise.dji.com/dock-3"
+       }
+      ]
+     },
+     {
+      "h": "DJI Zenmuse P1",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/dji-zenmuse-p1-product-01.png",
+        "alt": "DJI Zenmuse P1 full-frame photogrammetry camera."
+       }
+      ],
+      "ps": [
+       "Full-Frame 45MP Sensor | Interchangeable Fixed-Focus Lenses | Smart Oblique Capture | DJI Terra Processing"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=dji-zenmuse-p1"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://enterprise.dji.com/zenmuse-p1"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "why-phirez",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Certified Support For Your DJI Enterprise Fleet"
+     },
+     {
+      "tag": "p",
+      "t": "Drones are only as productive as the data workflow behind them. We back every platform with technical support, LiDAR/photogrammetry processing guidance, and certified pilot training."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Certified DJI Enterprise Support",
+      "imgs": [],
+      "ps": [
+       "Firmware updates, flight-planning guidance, and hands-on troubleshooting for Matrice, Mavic, and Zenmuse payloads operating across Uganda’s varied terrain and climate."
+      ],
+      "lis": [
+       "Firmware & RTK module configuration",
+       "Flight planning & airspace guidance",
+       "Repair coordination for DJI Enterprise hardware"
+      ],
+      "links": [
+       {
+        "t": "Contact HelpDesk",
+        "href": "/contact/?action=support"
+       }
+      ]
+     },
+     {
+      "h": "LiDAR & Photogrammetry Processing",
+      "imgs": [],
+      "ps": [
+       "Guidance turning raw Zenmuse L3 point clouds and Mavic 3E imagery into deliverables — classified point clouds, DTMs/DSMs, and orthomosaics ready for CAD or GIS."
+      ],
+      "lis": [
+       "Point cloud classification & QA workflows",
+       "DTM/DSM & orthomosaic generation support",
+       "Export to Trimble Business Center & Esri formats"
+      ],
+      "links": [
+       {
+        "t": "Ask About Data Processing",
+        "href": "/contact/?product=dji-processing"
+       }
+      ]
+     },
+     {
+      "h": "Commercial Drone Pilot Training",
+      "imgs": [],
+      "ps": [
+       "Structured, blended learning combining classroom theory with hands-on field practicals to build certified drone operators and LiDAR data handlers on your team."
+      ],
+      "lis": [
+       "Commercial drone pilot & flight-planning practicals",
+       "LiDAR & photogrammetry post-processing",
+       "Custom corporate in-house upskilling"
+      ],
+      "links": [
+       {
+        "t": "View Training Academy",
+        "href": "/training/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Ready To Scale Your Aerial Data Capture?"
+     },
+     {
+      "tag": "p",
+      "t": "Our application engineers help you match the right DJI Enterprise platform and payload to your project, with an on-site flight demonstration where useful."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/?product=dji-enterprise-general"
+     },
+     {
+      "t": "View Full Solutions Range",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "esri-arcgis": {
+  "meta": {
+   "title": "Esri ArcGIS Enterprise GIS Software | Phirez International Limited | Uganda",
+   "desc": "Phirez is an Esri Silver Partner in Uganda: ArcGIS Pro, ArcGIS Enterprise, ArcGIS Online, Field Maps, Survey123 & Utility Network, backed by certified deployment, training and support."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Enterprise GIS & Spatial Data Infrastructure With Esri ArcGIS"
+     },
+     {
+      "tag": "p",
+      "t": "Phirez is an Esri Silver Partner delivering the complete ArcGIS platform across Uganda and East Africa — from desktop analysis and enterprise server deployment to mobile field data collection for government, utility, and humanitarian programmes."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/industry-event-02.jpg",
+      "alt": "Phirez representing Esri at a location-intelligence industry conference in Kampala."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/esri-arcgis-pro-product-01.png",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/vendor-equipment/esri-field-maps-product-01.jpg",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Product Range",
+      "href": "#products"
+     },
+     {
+      "t": "Why Phirez",
+      "href": "#why-phirez"
+     },
+     {
+      "t": "All Solutions & Brands",
+      "href": "/solutions/"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/?product=esri-general"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "products",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "The Complete ArcGIS Platform"
+     },
+     {
+      "tag": "p",
+      "t": "From desktop analysis to enterprise deployment and mobile field collection, we license, implement, and support the full ArcGIS system of engagement for your organisation."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "ArcGIS Pro",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-arcgis-pro-product-01.png",
+        "alt": "ArcGIS Pro desktop GIS software."
+       }
+      ],
+      "ps": [
+       "Advanced 2D/3D Spatial Analysis | Powerful Mapping & Visualization | Desktop Geoprocessing Automation | World's Leading GIS Software"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-arcgis-pro"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview"
+       }
+      ]
+     },
+     {
+      "h": "ArcGIS Enterprise",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-arcgis-enterprise-product-01.jpg",
+        "alt": "ArcGIS Enterprise server software."
+       }
+      ],
+      "ps": [
+       "Self-Hosted GIS System | On-Premises, Cloud Or Hybrid | Centralized Spatial Data Management | Scalable Enterprise Architecture"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-arcgis-enterprise"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview"
+       }
+      ]
+     },
+     {
+      "h": "ArcGIS Online",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-arcgis-online-product-01.png",
+        "alt": "ArcGIS Online SaaS mapping platform."
+       }
+      ],
+      "ps": [
+       "Complete SaaS Mapping Platform | No Installation Required | Create & Share Interactive Maps | Runs Entirely In Your Browser"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-arcgis-online"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-online/overview"
+       }
+      ]
+     },
+     {
+      "h": "ArcGIS Field Maps",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-field-maps-product-01.jpg",
+        "alt": "ArcGIS Field Maps mobile app."
+       }
+      ],
+      "ps": [
+       "Mobile Field Data Collection | Real-Time Map Navigation | Mobile Workforce Management | Offline-Capable Data Capture"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-field-maps"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/overview"
+       }
+      ]
+     },
+     {
+      "h": "ArcGIS Survey123",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-survey123-product-01.jpg",
+        "alt": "ArcGIS Survey123 mobile survey app."
+       }
+      ],
+      "ps": [
+       "Intuitive Smart Form Builder | High-Quality GIS Data Surveys | Easy-To-Use Data Collection | Automated Data Validation"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-survey123"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-survey123/overview"
+       }
+      ]
+     },
+     {
+      "h": "ArcGIS Utility Network",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-utility-network-product-01.jpg",
+        "alt": "ArcGIS Utility Network for utility infrastructure."
+       }
+      ],
+      "ps": [
+       "Models Complex Utility Networks | Advanced Asset Tracing & Analysis | Built For Power, Water & Telecom | Enterprise-Grade Reliability"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-utility-network"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-utility-network/overview"
+       }
+      ]
+     },
+     {
+      "h": "ArcGIS Dashboards",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-dashboards-product-01.jpg",
+        "alt": "ArcGIS Dashboards operational dashboard."
+       }
+      ],
+      "ps": [
+       "Operational & Strategic Dashboards | Real-Time Data Visualization | Tailored To Your Audience | Easy Results Sharing"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-dashboards"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/overview"
+       }
+      ]
+     },
+     {
+      "h": "ArcGIS Drone2Map",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/esri-drone2map-product-01.jpg",
+        "alt": "ArcGIS Drone2Map photogrammetry software."
+       }
+      ],
+      "ps": [
+       "2D & 3D Drone Photogrammetry | Desktop GIS Drone Mapping | Seamless ArcGIS Integration | Fast Orthomosaic Processing"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=esri-drone2map"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.esri.com/en-us/arcgis/products/arcgis-reality/products/arcgis-drone2map"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "why-phirez",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Licensed, Deployed & Supported Locally"
+     },
+     {
+      "tag": "p",
+      "t": "As an Esri Silver Partner, we don’t just sell licenses — we architect, deploy, and support your GIS investment for the long term."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Enterprise GIS Deployment",
+      "imgs": [],
+      "ps": [
+       "Centralized corporate GIS portals with role-based security, spatial geodatabase design, and migration from legacy desktop GIS."
+      ],
+      "lis": [
+       "Multi-user geodatabase design (PostGIS, SQL Server, Oracle)",
+       "Role-based portal security & governance",
+       "Legacy system migration & data conversion"
+      ],
+      "links": [
+       {
+        "t": "Explore Enterprise Deployments",
+        "href": "/contact/?product=esri-arcgis-enterprise"
+       }
+      ]
+     },
+     {
+      "h": "Mobile Field Operations",
+      "imgs": [],
+      "ps": [
+       "Configure Field Maps and Survey123 for asset inspection, humanitarian needs assessments, and mobile workforce dispatch across disconnected sites."
+      ],
+      "lis": [
+       "Offline-capable smart form design",
+       "High-accuracy GNSS metadata capture",
+       "Field crew training & rollout support"
+      ],
+      "links": [
+       {
+        "t": "Discuss Mobile GIS",
+        "href": "/contact/?product=esri-field-ops"
+       }
+      ]
+     },
+     {
+      "h": "Esri Training Academy",
+      "imgs": [],
+      "ps": [
+       "Structured ArcGIS Pro, Enterprise, and Field Maps courses delivered by certified Phirez GIS trainers."
+      ],
+      "lis": [
+       "ArcGIS Pro fundamentals & spatial analysis",
+       "ArcGIS Enterprise administration",
+       "Custom corporate GIS upskilling"
+      ],
+      "links": [
+       {
+        "t": "View Training Academy",
+        "href": "/training/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Ready To Build Your Spatial Data Infrastructure?"
+     },
+     {
+      "tag": "p",
+      "t": "Our GIS architects help you scope the right ArcGIS licensing tier and deployment model for your organisation’s scale and budget."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/?product=esri-general"
+     },
+     {
+      "t": "View Full Solutions Range",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "spectra-geospatial": {
+  "meta": {
+   "title": "Spectra Geospatial GNSS & Total Stations | Phirez International Limited | Uganda",
+   "desc": "Phirez supplies Spectra Geospatial positioning systems in Uganda: SP60/SP85/SP90m GNSS receivers, FOCUS 35/50 robotic total stations, and Ranger field controllers, backed by certified calibration and training."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Spectra Geospatial GNSS & Total Stations"
+     },
+     {
+      "tag": "p",
+      "t": "Phirez supplies Spectra Geospatial’s GNSS receivers, robotic total stations, and field controllers — a positioning line with roots in some of surveying’s earliest instrument innovations — for everyday survey, construction, and GIS data collection work across Uganda."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/drone-gnss-combo-01.jpg",
+      "alt": "Phirez field team with GNSS survey equipment set up in the field in Uganda."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/spectra-sp85-product-01.avif",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/vendor-equipment/spectra-focus50-product-01.avif",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Product Range",
+      "href": "#products"
+     },
+     {
+      "t": "Why Phirez",
+      "href": "#why-phirez"
+     },
+     {
+      "t": "All Solutions & Brands",
+      "href": "/solutions/"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/?product=spectra-geospatial-general"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "products",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Everyday GNSS Positioning & Robotic Total Stations"
+     },
+     {
+      "tag": "p",
+      "t": "Dependable, scalable positioning hardware for survey, construction, and GIS teams — from entry-level RTK rovers to robotic total stations."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Spectra SP60 GNSS Receiver",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/spectra-sp85-product-01.avif",
+        "alt": "Spectra Geospatial SP60 GNSS receiver."
+       }
+      ],
+      "ps": [
+       "Everyday RTK Survey Receiver | Multi-Constellation GNSS Tracking | Rugged African-Ready Housing | Survey Pro & Origin Compatible"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=spectra-sp60"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://spectrageospatial.com/"
+       }
+      ]
+     },
+     {
+      "h": "Spectra SP85 GNSS Receiver",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/spectra-sp85-product-01.avif",
+        "alt": "Spectra Geospatial SP85 GNSS receiver."
+       }
+      ],
+      "ps": [
+       "High-Connectivity Network Rover | Multi-Constellation GNSS Tracking | Rugged Field-Ready Housing | Survey Pro & Origin Compatible"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=spectra-sp85"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://spectrageospatial.com/"
+       }
+      ]
+     },
+     {
+      "h": "Spectra SP90m GNSS Receiver",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/spectra-sp90m-product-01.avif",
+        "alt": "Spectra Geospatial SP90m GNSS receiver."
+       }
+      ],
+      "ps": [
+       "Powerful & Ultra-Rugged GNSS | Real-Time & Post-Processing Ready | Versatile Across Applications | Reliable Reference-Grade Performance"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=spectra-sp90m"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://spectrageospatial.com/"
+       }
+      ]
+     },
+     {
+      "h": "Spectra SP100 GNSS Receiver",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/spectra-sp100-product-01.avif",
+        "alt": "Spectra Geospatial SP100 GNSS receiver."
+       }
+      ],
+      "ps": [
+       "Complete Surveying GNSS Solution | Everything You Need Out Of The Box | Entry-Level Simplicity | Dependable Everyday Performance"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=spectra-sp100"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://spectrageospatial.com/"
+       }
+      ]
+     },
+     {
+      "h": "Spectra FOCUS 35 Total Station",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/spectra-focus50-product-01.avif",
+        "alt": "Spectra Geospatial FOCUS 35 robotic total station."
+       }
+      ],
+      "ps": [
+       "One-Person Robotic Operation | Automatic Target Tracking | Rugged Daily-Use Build | Local Calibration Support"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=spectra-focus35"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://spectrageospatial.com/"
+       }
+      ]
+     },
+     {
+      "h": "Spectra FOCUS 50 Total Station",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/spectra-focus50-product-02.avif",
+        "alt": "Spectra Geospatial FOCUS 50 robotic total station."
+       }
+      ],
+      "ps": [
+       "Customizable Robotic Total Station | Automatic Target Tracking | Configurable To Your Workflow | Local Calibration Support"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=spectra-focus50"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://spectrageospatial.com/"
+       }
+      ]
+     },
+     {
+      "h": "Spectra Ranger 7 Field Controller",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/spectra-ranger7-product-01.avif",
+        "alt": "Spectra Geospatial Ranger 7 rugged field controller."
+       }
+      ],
+      "ps": [
+       "7-Inch Sunlight-Readable Touchscreen | Full Keypad & Windows 10 Pro | Rugged, Cost-Effective Build | Easy-To-Use Data Collection"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=spectra-ranger7"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://spectrageospatial.com/"
+       }
+      ]
+     },
+     {
+      "h": "Spectra Origin Field Software",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/spectra-origin-product-01.avif",
+        "alt": "Spectra Geospatial Origin field software."
+       }
+      ],
+      "ps": [
+       "Handles A Full Range Of Projects | Fast & Efficient Field Workflow | Modern Spectra Interface | Straightforward Field-To-Office Transfer"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=spectra-origin"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://spectrageospatial.com/"
+       }
+      ]
+     },
+     {
+      "h": "Spectra Survey Pro Field Software",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/spectra-ranger5-product-01.avif",
+        "alt": "Spectra Geospatial Survey Pro field software running on a data collector."
+       }
+      ],
+      "ps": [
+       "Proven Field Data Collection | Straightforward Field-To-Office Transfer | Wide Hardware Compatibility | Training Available"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=spectra-survey-pro"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://spectrageospatial.com/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "why-phirez",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "A Dependable Everyday Positioning System"
+     },
+     {
+      "tag": "p",
+      "t": "Spectra Geospatial hardware is built for everyday productivity — we keep it calibrated, supported, and your crew trained to get the most from it."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Everyday Survey Positioning",
+      "imgs": [],
+      "ps": [
+       "Scalable GNSS and robotic total station hardware suited to daily topographic survey, construction stakeout, and GIS data collection work."
+      ],
+      "lis": [
+       "Multi-constellation RTK GNSS positioning",
+       "Robotic total station tracking",
+       "Field-to-office workflow support"
+      ],
+      "links": [
+       {
+        "t": "Contact HelpDesk",
+        "href": "/contact/?action=support"
+       }
+      ]
+     },
+     {
+      "h": "Local Calibration & Collimation",
+      "imgs": [],
+      "ps": [
+       "Our Kampala facility services and calibrates Spectra GNSS receivers and total stations to keep them within factory accuracy specifications."
+      ],
+      "lis": [
+       "Optical collimator baseline adjustment",
+       "GNSS receiver performance verification",
+       "Traceable calibration certificates issued"
+      ],
+      "links": [
+       {
+        "t": "View Service Centre",
+        "href": "/solutions/#service-centre"
+       }
+      ]
+     },
+     {
+      "h": "Field Software Training",
+      "imgs": [],
+      "ps": [
+       "Hands-on training in Survey Pro, Origin, and Ranger controller workflows so your crew can move confidently from field capture to office deliverables."
+      ],
+      "lis": [
+       "Survey Pro & Origin field software training",
+       "Ranger controller operation practicals",
+       "Custom corporate in-house upskilling"
+      ],
+      "links": [
+       {
+        "t": "View Training Academy",
+        "href": "/training/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Looking For A Dependable Everyday Survey System?"
+     },
+     {
+      "tag": "p",
+      "t": "Our application engineers help you configure the right Spectra Geospatial GNSS, total station, and software combination for your team."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/?product=spectra-geospatial-general"
+     },
+     {
+      "t": "View Full Solutions Range",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "nikon": {
+  "meta": {
+   "title": "Nikon Total Stations & Optical Levels | Phirez International Limited | Uganda",
+   "desc": "Phirez supplies Nikon survey instruments in Uganda: XF & N/K Series mechanical total stations, NE-100 electronic theodolites, and AC-2S automatic levels, backed by certified calibration and training."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Nikon Total Stations, Theodolites & Automatic Levels"
+     },
+     {
+      "tag": "p",
+      "t": "Phirez supplies Nikon’s rugged optical and mechanical survey instruments — trusted for clear optics, all-weather durability, and straightforward field operation — for general construction, land surveying, and civil engineering teams across Uganda."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/vendor-equipment/nikon-ac2s-hero-01.webp",
+      "alt": "Nikon AC-2S automatic level."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/nikon-ne100-hero-01.webp",
+      "alt": "Nikon NE-100 digital theodolite."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/nikon-xf-product-01.avif",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/vendor-equipment/nikon-ac2s-product-02.png",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Product Range",
+      "href": "#products"
+     },
+     {
+      "t": "Why Phirez",
+      "href": "#why-phirez"
+     },
+     {
+      "t": "All Solutions & Brands",
+      "href": "/solutions/"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/?product=nikon-general"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "products",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Rugged Optical & Mechanical Survey Instruments"
+     },
+     {
+      "tag": "p",
+      "t": "Dependable, easy-to-operate instruments for general construction and land survey teams that need reliable field performance without a steep learning curve."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Nikon XF & N/K Series Total Stations",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/nikon-xf-product-01.avif",
+        "alt": "Nikon XF series mechanical total station."
+       }
+      ],
+      "ps": [
+       "Dual Full-Face Display | Clear Optics For Bright Daylight | Low-Maintenance Build | Local Calibration Support"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=nikon-total-stations"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.nikon-trimble.co.jp/english/index.html"
+       }
+      ]
+     },
+     {
+      "h": "Nikon NE-100 Series",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/nikon-ne100-product-02.png",
+        "alt": "Nikon NE-100 series electronic theodolite."
+       }
+      ],
+      "ps": [
+       "Digital Angle Readout | Compact Lightweight Build | Simple Setup For Layout Work | Ideal For Entry-Level Crews"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=nikon-ne100"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.nikon-trimble.co.jp/english/index.html"
+       }
+      ]
+     },
+     {
+      "h": "Nikon AC-2S Automatic Level",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/nikon-ac2s-product-02.png",
+        "alt": "Nikon AC-2S automatic level."
+       }
+      ],
+      "ps": [
+       "Automatic Compensator | Elevation & Cut/Fill Measurement | Durable Daily-Use Build | Low-Cost Entry Point"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=nikon-level"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.nikon-trimble.co.jp/english/index.html"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "why-phirez",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Dependable Instruments, Backed Locally"
+     },
+     {
+      "tag": "p",
+      "t": "Nikon instruments are built to be simple and rugged — our job is to make sure they stay accurate for years of daily use on Ugandan construction sites."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Certified Calibration in Kampala",
+      "imgs": [],
+      "ps": [
+       "Our facility is equipped with optical collimators and EDM baseline test benches to service and calibrate Nikon total stations, theodolites, and automatic levels."
+      ],
+      "lis": [
+       "Multi-collimator baseline optical adjustment",
+       "Compensator & level accuracy verification",
+       "Traceable calibration certificates issued"
+      ],
+      "links": [
+       {
+        "t": "View Service Centre",
+        "href": "/solutions/#service-centre"
+       }
+      ]
+     },
+     {
+      "h": "Technical HelpDesk Support",
+      "imgs": [],
+      "ps": [
+       "Telephone and in-person support for setup, adjustment, and everyday troubleshooting so field crews lose as little time as possible on-site."
+      ],
+      "lis": [
+       "Instrument setup & adjustment guidance",
+       "Field troubleshooting support",
+       "Fast problem turnaround to prevent downtime"
+      ],
+      "links": [
+       {
+        "t": "Contact HelpDesk",
+        "href": "/contact/?action=support"
+       }
+      ]
+     },
+     {
+      "h": "Instrument Operator Training",
+      "imgs": [],
+      "ps": [
+       "Hands-on practicals covering setup, angle/elevation measurement, and field best practices for new survey technicians and construction site staff."
+      ],
+      "lis": [
+       "Total station & theodolite operation practicals",
+       "Levelling & grading field technique",
+       "Custom corporate in-house upskilling"
+      ],
+      "links": [
+       {
+        "t": "View Training Academy",
+        "href": "/training/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Need A Reliable Everyday Survey Instrument?"
+     },
+     {
+      "tag": "p",
+      "t": "Our application engineers help you pick the right Nikon instrument for your crew and budget, with certified calibration and support once it’s on-site."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/?product=nikon-general"
+     },
+     {
+      "t": "View Full Solutions Range",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "us-radar": {
+  "meta": {
+   "title": "US Radar GPR & Subsurface Imaging | Phirez International Limited | Uganda",
+   "desc": "Phirez supplies US Radar ground penetrating radar systems in Uganda: Quantum Imager triple-frequency GPR, GPRover GPS/GPR mapping carts & 100 Series deep geotechnical radar, backed by certified support and operator training."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Ground Penetrating Radar & Subsurface Imaging"
+     },
+     {
+      "tag": "p",
+      "t": "Phirez supplies US Radar ground penetrating radar (GPR) systems for non-destructive subsurface utility detection, void and rebar location, and geotechnical investigation across Uganda’s construction, utility, and infrastructure sectors."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/gnss-construction-site-01.jpg",
+      "alt": "Phirez survey engineers on an active construction site where subsurface utility detection is required."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/usradar-quantum-imager-01.jpg",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/vendor-equipment/usradar-100series-product-01.avif",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Product Range",
+      "href": "#products"
+     },
+     {
+      "t": "Why Phirez",
+      "href": "#why-phirez"
+     },
+     {
+      "t": "All Solutions & Brands",
+      "href": "/solutions/"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/?product=us-radar-general"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "products",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Non-Destructive Subsurface Radar Imaging"
+     },
+     {
+      "tag": "p",
+      "t": "From everyday utility locating to deep geotechnical investigation, US Radar systems detect what’s buried before you dig, drill, or design around it."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "US Radar Quantum Imager Triple-Frequency GPR",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/usradar-quantum-imager-01.jpg",
+        "alt": "US Radar Quantum Imager ground penetrating radar unit."
+       }
+      ],
+      "ps": [
+       "Simultaneous 250/500/1000 MHz | GPS-Georeferenced CAD/GIS Export | Real-Time 3D Depth Slicing | Rugged All-Terrain Cart"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=us-radar-gpr"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://usradar.com/"
+       }
+      ]
+     },
+     {
+      "h": "US Radar GPRover",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/usradar-gprover-product-01.avif",
+        "alt": "US Radar GPRover all-in-one GPR and GNSS mapping cart."
+       }
+      ],
+      "ps": [
+       "Integrated GNSS Georeferencing | Triple-Bandwidth Antenna | Real-Time On-Cart Logging | Direct CAD/GIS Export"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=us-radar-gprover"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://usradar.com/"
+       }
+      ]
+     },
+     {
+      "h": "US Radar 100 Series GPR",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/usradar-100series-product-01.avif",
+        "alt": "US Radar 100 Series deep-penetration geotechnical GPR system."
+       }
+      ],
+      "ps": [
+       "Up To ~30m Penetration Depth | Modular Antenna Configurations | Tunnel, Dam & Geological Surveys | Radar Studio Processing"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=us-radar-100series"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://usradar.com/"
+       }
+      ]
+     },
+     {
+      "h": "US Radar Field Software",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/usradar-fieldsoftware-product-01.avif",
+        "alt": "US Radar field acquisition software running on a GPR cart."
+       }
+      ],
+      "ps": [
+       "Drives Every US Radar System | Clear, Crisp Graphical Display | Vibrant Color Palette Options | Automatic Gain & Averaging Filters"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=us-radar-field-software"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://usradar.com/"
+       }
+      ]
+     },
+     {
+      "h": "US Radar Radar Studio",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/usradar-radarstudio-product-01.avif",
+        "alt": "US Radar Radar Studio post-processing software interface."
+       }
+      ],
+      "ps": [
+       "All-In-One Viewing & Processing Suite | Infinitely Customisable Interface | Intuitive Controls | Optional Post-Processing Toolkit"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=us-radar-radar-studio"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://usradar.com/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "why-phirez",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Reduce Excavation Risk On Every Dig"
+     },
+     {
+      "tag": "p",
+      "t": "A utility strike is expensive and dangerous. We back every US Radar system with certified support, application guidance, and operator training for Uganda’s civil and utility sector."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Zero-Excavation Utility Verification",
+      "imgs": [],
+      "ps": [
+       "Locate metallic and non-metallic pipes, cables, and ducts before breaking ground, reducing costly redesigns and unplanned excavation delays on active sites."
+      ],
+      "lis": [
+       "Metallic & non-metallic utility detection",
+       "3D depth-slice mapping exported to CAD/GIS",
+       "On-site application support for complex soils"
+      ],
+      "links": [
+       {
+        "t": "Contact HelpDesk",
+        "href": "/contact/?action=support"
+       }
+      ]
+     },
+     {
+      "h": "Reduced Strike Risk On Civil Sites",
+      "imgs": [],
+      "ps": [
+       "Non-destructive scanning ahead of piling, trenching, and directional drilling protects crews and existing infrastructure from accidental utility strikes."
+      ],
+      "lis": [
+       "Pre-construction utility verification surveys",
+       "Void & rebar location for structural work",
+       "Traceable survey records for site handover"
+      ],
+      "links": [
+       {
+        "t": "Discuss A Site Survey",
+        "href": "/contact/?product=us-radar-survey"
+       }
+      ]
+     },
+     {
+      "h": "GPR Operator Training",
+      "imgs": [],
+      "ps": [
+       "Hands-on training in radar data acquisition, depth-slice interpretation, and Radar Studio post-processing for your own site engineers and survey crews."
+      ],
+      "lis": [
+       "Field data acquisition practicals",
+       "Radar Studio post-processing training",
+       "Custom corporate in-house upskilling"
+      ],
+      "links": [
+       {
+        "t": "View Training Academy",
+        "href": "/training/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Avoid Costly Utility Strikes Before You Dig"
+     },
+     {
+      "tag": "p",
+      "t": "Our application engineers help you scope the right US Radar system for your soil conditions and project depth requirements, with an on-site demonstration where useful."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/?product=us-radar-general"
+     },
+     {
+      "t": "View Full Solutions Range",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "seafloor-systems": {
+  "meta": {
+   "title": "Seafloor Systems Hydrographic USVs | Phirez International Limited | Uganda",
+   "desc": "Phirez supplies Seafloor Systems autonomous survey vessels in Uganda: EchoBoat, HyDrone & TriDrone USVs plus HydroLite echosounders, for bathymetric mapping of reservoirs, dams, rivers and harbours."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Autonomous Hydrographic Survey Vessels"
+     },
+     {
+      "tag": "p",
+      "t": "Phirez supplies Seafloor Systems autonomous and remotely operated survey vessels for bathymetric mapping of reservoirs, dams, rivers, and harbours — replacing manned survey boats with safer, repeatable acoustic data collection across Uganda’s water bodies."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/gallery/gnss-construction-site-02.jpg",
+      "alt": "Phirez field engineers on a civil engineering site with a water reservoir visible in the background, Uganda."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/seafloor-echoboat-usv-01.jpg",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/vendor-equipment/seafloor-hydrone-product-01.avif",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Product Range",
+      "href": "#products"
+     },
+     {
+      "t": "Why Phirez",
+      "href": "#why-phirez"
+     },
+     {
+      "t": "All Solutions & Brands",
+      "href": "/solutions/"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/?product=seafloor-systems-general"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "products",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Bathymetric Survey Vessels & Echosounders"
+     },
+     {
+      "tag": "p",
+      "t": "Autonomous and remotely operated platforms that map underwater topography without putting a survey crew on the water."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Seafloor EchoBoat Autonomous Survey USV",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/seafloor-echoboat-usv-01.jpg",
+        "alt": "Seafloor Systems autonomous survey USVs on water."
+       }
+      ],
+      "ps": [
+       "Autonomous Waypoint Navigation | RTK GNSS Integration | Siltation Volume Auditing | Removes Crew From The Water"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=seafloor-echoboat"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.seafloorsystems.com/products"
+       }
+      ]
+     },
+     {
+      "h": "Seafloor HyDrone & TriDrone",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/seafloor-hydrone-product-01.avif",
+        "alt": "Seafloor HyDrone compact portable unmanned survey vessel."
+       }
+      ],
+      "ps": [
+       "Hand-Launchable & Lightweight | Remote Or Autonomous Operation | Singlebeam & RTK GNSS Ready | Ideal For Narrow Waterways"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=seafloor-hydrone"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.seafloorsystems.com/products"
+       }
+      ]
+     },
+     {
+      "h": "Seafloor HydroLite Echosounder",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/seafloor-hydrolite-product-01.avif",
+        "alt": "Seafloor HydroLite portable single-beam echosounder kit."
+       }
+      ],
+      "ps": [
+       "Compact Low-Power Sensor | GNSS-Georeferenced Soundings | Deployable From Small Boats Or USVs | Standard Software Export"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=seafloor-hydrolite"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.seafloorsystems.com/products"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "why-phirez",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Map The Water Without Putting A Crew On It"
+     },
+     {
+      "tag": "p",
+      "t": "Reservoirs, rivers, and harbours are unforgiving places to work. We back every Seafloor Systems platform with certified support and hydrographic survey training."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Safer Than Manned Survey Boats",
+      "imgs": [],
+      "ps": [
+       "Autonomous and remote operation keeps survey personnel on dry land while the USV collects bathymetric data across open water, currents, or hazardous reservoirs."
+      ],
+      "lis": [
+       "Remote & autonomous waypoint operation",
+       "Collision-avoidance navigation",
+       "No crew exposure to open-water hazards"
+      ],
+      "links": [
+       {
+        "t": "Contact HelpDesk",
+        "href": "/contact/?action=support"
+       }
+      ]
+     },
+     {
+      "h": "Siltation & Reservoir Auditing",
+      "imgs": [],
+      "ps": [
+       "Repeatable bathymetric surveys track reservoir and dam siltation over time, supporting dredging planning and hydropower asset management."
+      ],
+      "lis": [
+       "Siltation volume auditing for dams & reservoirs",
+       "Repeatable survey lines for change detection",
+       "Data exported to standard hydrographic formats"
+      ],
+      "links": [
+       {
+        "t": "Discuss A Bathymetric Survey",
+        "href": "/contact/?product=seafloor-survey"
+       }
+      ]
+     },
+     {
+      "h": "Hydrographic Survey Training",
+      "imgs": [],
+      "ps": [
+       "Hands-on training in USV deployment, echosounder calibration, and hydrographic data processing for your own field and office staff."
+      ],
+      "lis": [
+       "USV deployment & operation practicals",
+       "Echosounder calibration & QA",
+       "Custom corporate in-house upskilling"
+      ],
+      "links": [
+       {
+        "t": "View Training Academy",
+        "href": "/training/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Map Your Waterway Without Putting A Crew On The Water"
+     },
+     {
+      "tag": "p",
+      "t": "Our application engineers help you match the right Seafloor Systems platform to your reservoir, river, or harbour survey requirements."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/?product=seafloor-systems-general"
+     },
+     {
+      "t": "View Full Solutions Range",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "autodesk": {
+  "meta": {
+   "title": "Autodesk AutoCAD, Civil 3D & Revit | Phirez International Limited | Uganda",
+   "desc": "Phirez supplies and supports Autodesk design software in Uganda: AutoCAD, Civil 3D, Revit, Navisworks, InfraWorks & ReCap Pro, backed by certified training and technical support."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Civil Engineering, BIM & CAD Software From Autodesk"
+     },
+     {
+      "tag": "p",
+      "t": "Phirez licenses, deploys, and trains teams on the Autodesk design portfolio — connecting field survey data directly to civil engineering design, Building Information Modeling (BIM), and construction documentation."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Product Range",
+      "href": "#products"
+     },
+     {
+      "t": "Why Phirez",
+      "href": "#why-phirez"
+     },
+     {
+      "t": "All Solutions & Brands",
+      "href": "/solutions/"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/?product=autodesk-general"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "products",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "From Field Survey To Finished Design"
+     },
+     {
+      "tag": "p",
+      "t": "We license, install, and train your team on the Autodesk tools that turn field data into engineering deliverables — from 2D drafting to full BIM coordination."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "AutoCAD",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+        "alt": "Autodesk AutoCAD official logo."
+       }
+      ],
+      "ps": [
+       "Industry-Standard 2D & 3D CAD | Precision Drafting & Documentation | Extensive Toolset & Add-Ons | Universal DWG File Format"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=autodesk-autocad"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.autodesk.com/products/autocad/overview"
+       }
+      ]
+     },
+     {
+      "h": "AutoCAD Civil 3D",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+        "alt": "Autodesk Civil 3D official logo."
+       }
+      ],
+      "ps": [
+       "Dynamic 3D Corridor Modeling | Grading & Earthwork Analysis | Integrated Survey & Design Data | Automated Plan Production"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=autodesk-civil3d"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.autodesk.com/products/civil-3d/overview"
+       }
+      ]
+     },
+     {
+      "h": "Revit",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+        "alt": "Autodesk Revit official logo."
+       }
+      ],
+      "ps": [
+       "Building Information Modeling | Coordinated Architectural & MEP Design | Parametric 3D Building Components | Construction Documentation"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=autodesk-revit"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.autodesk.com/products/revit/overview"
+       }
+      ]
+     },
+     {
+      "h": "Navisworks",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+        "alt": "Autodesk Navisworks official logo."
+       }
+      ],
+      "ps": [
+       "Multi-Discipline Model Coordination | Automated Clash Detection | 4D Construction Sequencing | Whole-Project Model Review"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=autodesk-navisworks"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.autodesk.com/products/navisworks/overview"
+       }
+      ]
+     },
+     {
+      "h": "InfraWorks",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+        "alt": "Autodesk InfraWorks official logo."
+       }
+      ],
+      "ps": [
+       "Conceptual Civil Infrastructure Design | Real-World Context Modeling | Rapid Road & Site Design Iteration | Early-Stage Visualization"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=autodesk-infraworks"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.autodesk.com/products/infraworks/overview"
+       }
+      ]
+     },
+     {
+      "h": "ReCap Pro",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+        "alt": "Autodesk ReCap Pro official logo."
+       }
+      ],
+      "ps": [
+       "Point Cloud & Reality Capture | Laser Scan & Drone Photo Registration | Direct Import Into Civil 3D & Revit | As-Built Verification"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=autodesk-recap"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.autodesk.com/products/recap/overview"
+       }
+      ]
+     },
+     {
+      "h": "BIM Collaborate",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/autodesk-logo.jpg",
+        "alt": "Autodesk BIM Collaborate official logo."
+       }
+      ],
+      "ps": [
+       "Cloud-Based Project Coordination | Centralized Model Sharing | Cross-Team Design Review | Construction Cloud Integration"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=autodesk-bim-collaborate"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.autodesk.com/products/bim-collaborate/overview"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "why-phirez",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Software Licensed & Teams Trained Locally"
+     },
+     {
+      "tag": "p",
+      "t": "Owning the software is one thing — using it well is another. We back every Autodesk deployment with instructor-led training and technical support in Kampala."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Field-To-Design Integration",
+      "imgs": [],
+      "ps": [
+       "Import Trimble GNSS, total station, and drone LiDAR data directly into Civil 3D and Revit for as-built verification and design."
+      ],
+      "lis": [
+       "Point cloud & survey data import workflows",
+       "As-built verification against design models",
+       "Trimble Business Center & Civil 3D interoperability"
+      ],
+      "links": [
+       {
+        "t": "Discuss Field-To-Design Workflows",
+        "href": "/contact/?product=autodesk-civil3d"
+       }
+      ]
+     },
+     {
+      "h": "BIM & Model Coordination",
+      "imgs": [],
+      "ps": [
+       "Clash detection, 4D sequencing, and cross-discipline model review support for civil infrastructure and building projects."
+      ],
+      "lis": [
+       "Navisworks clash detection setup",
+       "Multi-discipline model federation",
+       "BIM Collaborate cloud project rollout"
+      ],
+      "links": [
+       {
+        "t": "Explore BIM Coordination",
+        "href": "/contact/?product=autodesk-bim-collaborate"
+       }
+      ]
+     },
+     {
+      "h": "Autodesk Training Academy",
+      "imgs": [],
+      "ps": [
+       "Instructor-led AutoCAD Essentials, Civil 3D, and Revit Essentials courses tailored to your team's engineering workflow."
+      ],
+      "lis": [
+       "AutoCAD & Civil 3D Essentials courses",
+       "Revit Essentials for architectural & MEP teams",
+       "Custom corporate in-house upskilling"
+      ],
+      "links": [
+       {
+        "t": "View Training Academy",
+        "href": "/training/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Ready To Connect Your Field Data To Design?"
+     },
+     {
+      "tag": "p",
+      "t": "Our engineers help you scope the right Autodesk licensing bundle and set up your field-to-finish workflow from day one."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/?product=autodesk-general"
+     },
+     {
+      "t": "View Full Solutions Range",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "datamine-software": {
+  "meta": {
+   "title": "Datamine Mine Geology & Resource Modelling Software | Phirez International Limited | Uganda",
+   "desc": "Phirez supplies Datamine mine geology and resource modelling software in Uganda: Studio RM, Studio Geo, Isatis.neo, Sirovision, Studio Mapper & more, backed by certified training and support."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Mine Geology, Resource Modelling & Grade Control Software"
+     },
+     {
+      "tag": "p",
+      "t": "Phirez supplies Datamine’s geology and mine planning software suite — trusted by mining companies worldwide for resource estimation, geological modelling, and open-pit optimisation across East Africa’s mining sector."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/vendor-equipment/datamine-hero-openpit-01.webp",
+      "alt": "Resource geologists reviewing open-pit mine data on site."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/datamine-studio-rm-01.svg",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/vendor-equipment/datamine-sirovision-01.svg",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Product Range",
+      "href": "#products"
+     },
+     {
+      "t": "Why Phirez",
+      "href": "#why-phirez"
+     },
+     {
+      "t": "All Solutions & Brands",
+      "href": "/solutions/"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/?product=datamine-general"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "products",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Geology, Estimation & Mine Optimisation"
+     },
+     {
+      "tag": "p",
+      "t": "From field mapping and geological interpretation through to resource estimation and pit optimisation, Datamine covers the full mine geology workflow."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Studio RM",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/datamine-studio-rm-01.svg",
+        "alt": "Datamine Studio RM logo mark."
+       }
+      ],
+      "ps": [
+       "True Reflection Of The Subsurface | Resource Modelling & Estimation | Geological Domain Interpretation | Block Model Development"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=datamine-studio-rm"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://dataminesoftware.com/"
+       }
+      ]
+     },
+     {
+      "h": "Studio Geo",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/datamine-studio-geo-01.svg",
+        "alt": "Datamine Studio Geo logo mark."
+       }
+      ],
+      "ps": [
+       "Geological Interpretation Environment | Implicit 3D Modelling | Structural & Stratigraphic Analysis | Seamless Studio RM Integration"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=datamine-studio-geo"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://dataminesoftware.com/"
+       }
+      ]
+     },
+     {
+      "h": "Isatis.neo",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/datamine-isatis-neo-01.svg",
+        "alt": "Datamine Isatis.neo logo mark."
+       }
+      ],
+      "ps": [
+       "Advanced Geostatistical Analysis | Variogram Modelling & Kriging | Resource Estimation Confidence | Industry-Standard Geostatistics"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=datamine-isatis-neo"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://dataminesoftware.com/"
+       }
+      ]
+     },
+     {
+      "h": "Sirovision",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/datamine-sirovision-01.svg",
+        "alt": "Datamine Sirovision logo mark."
+       }
+      ],
+      "ps": [
+       "Photogrammetry-Based Mapping | Rock Face & Pit Wall Imaging | Structural Geology Capture | Rapid Non-Contact Data Collection"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=datamine-sirovision"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://dataminesoftware.com/"
+       }
+      ]
+     },
+     {
+      "h": "Studio Mapper",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/datamine-studio-mapper-01.svg",
+        "alt": "Datamine Studio Mapper logo mark."
+       }
+      ],
+      "ps": [
+       "Integrated Mine Mapping Tools | Latest Mapping Technologies | Field-To-Office Geology Workflow | Digital Face Mapping"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=datamine-studio-mapper"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://dataminesoftware.com/"
+       }
+      ]
+     },
+     {
+      "h": "Supervisor",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/datamine-supervisor-01.svg",
+        "alt": "Datamine Supervisor logo mark."
+       }
+      ],
+      "ps": [
+       "Mineralisation & Variability Analysis | Grade Uncertainty Quantification | Geostatistical Data Review | Informed Estimation Decisions"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=datamine-supervisor"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://dataminesoftware.com/"
+       }
+      ]
+     },
+     {
+      "h": "Studio Maxipit",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/datamine-studio-maxipit-01.svg",
+        "alt": "Datamine Studio Maxipit logo mark."
+       }
+      ],
+      "ps": [
+       "Open-Pit Reserve Preparation | Pit Optimisation & Scheduling | Reserve Reporting Confidence | Strategic Mine Planning"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=datamine-studio-maxipit"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://dataminesoftware.com/"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "why-phirez",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "From Pit Face To Resource Model"
+     },
+     {
+      "tag": "p",
+      "t": "We pair Datamine software with our own Trimble GNSS and DJI drone LiDAR field capture — connecting real field data directly to your geology and resource models."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Mine Planning Software Deployment",
+      "imgs": [],
+      "ps": [
+       "Licensing, installation, and workflow configuration for Datamine geology, resource modelling, and pit optimisation software."
+      ],
+      "lis": [
+       "Studio RM & Studio Geo workflow setup",
+       "Integration with drone LiDAR & GNSS survey data",
+       "Licensing and renewal management"
+      ],
+      "links": [
+       {
+        "t": "Discuss Mine Planning Software",
+        "href": "/contact/?product=datamine-general"
+       }
+      ]
+     },
+     {
+      "h": "Geology & Resource Modelling Training",
+      "imgs": [],
+      "ps": [
+       "Practical, hands-on courses in geological interpretation, geostatistics, and resource estimation for your mine geology team."
+      ],
+      "lis": [
+       "Studio RM & Studio Geo fundamentals",
+       "Isatis.neo geostatistics practicals",
+       "Custom corporate in-house upskilling"
+      ],
+      "links": [
+       {
+        "t": "View Training Academy",
+        "href": "/training/"
+       }
+      ]
+     },
+     {
+      "h": "Technical Support & Licensing",
+      "imgs": [],
+      "ps": [
+       "Dedicated technical support and licence administration so your geology software stays productive between site visits."
+      ],
+      "lis": [
+       "Direct technical helpdesk support",
+       "Software update & version management",
+       "Fast problem turnaround to prevent downtime"
+      ],
+      "links": [
+       {
+        "t": "Contact HelpDesk",
+        "href": "/contact/?action=support"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Ready To Strengthen Your Resource Model?"
+     },
+     {
+      "tag": "p",
+      "t": "Our geology software specialists help you scope the right Datamine modules for your deposit type and mine planning stage."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/?product=datamine-general"
+     },
+     {
+      "t": "View Full Solutions Range",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "ibm-tape": {
+  "meta": {
+   "title": "IBM Tape Storage & Data Archive Solutions | Phirez International Limited | Uganda",
+   "desc": "Phirez supplies IBM tape storage systems in Uganda: TS4500, TS4300 & TS2900 tape libraries, TS7700 virtual tape, and IBM Storage Archive software, backed by certified IT infrastructure support."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "hero-agro",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Enterprise Data Archive & Tape Storage Systems"
+     },
+     {
+      "tag": "p",
+      "t": "Phirez supplies and supports IBM tape storage infrastructure for long-term data retention, disaster recovery, and air-gapped cyber-resilient backup — protecting your organisation’s most critical data for decades, not just years."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [
+     {
+      "src": "/assets/images/vendor-equipment/ibm-ts7700-product-02.png",
+      "alt": "IBM TS7700 virtual tape system."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/ibm-ts4500-product-02.png",
+      "alt": "IBM TS4500 enterprise tape library."
+     },
+     {
+      "src": "/assets/images/vendor-equipment/ibm-ts4500-product-02.png",
+      "alt": ""
+     },
+     {
+      "src": "/assets/images/vendor-equipment/ibm-ts2900-product-02.png",
+      "alt": ""
+     }
+    ],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-tight",
+    "intro": [],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Product Range",
+      "href": "#products"
+     },
+     {
+      "t": "Why Phirez",
+      "href": "#why-phirez"
+     },
+     {
+      "t": "All Solutions & Brands",
+      "href": "/solutions/"
+     },
+     {
+      "t": "Request A Quote",
+      "href": "/contact/?product=ibm-general"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "products",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Entry-Level To Enterprise-Scale Archive"
+     },
+     {
+      "tag": "p",
+      "t": "From a single autoloader protecting a small office server to mainframe-scale virtual tape, we size and support the right IBM tape platform for your data retention requirements."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "IBM TS2900 Tape Autoloader",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/ibm-ts2900-product-02.png",
+        "alt": "IBM TS2900 tape autoloader."
+       }
+      ],
+      "ps": [
+       "Low-Profile Entry-Level Storage | Up To 162TB With LTO 9 | Supported On Open System Platforms | Cost-Effective Long-Term Retention"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=ibm-ts2900"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.ibm.com/products/ts2900"
+       }
+      ]
+     },
+     {
+      "h": "IBM TS4300 Tape Library",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/ibm-ts4300-product-02.png",
+        "alt": "IBM TS4300 tape library."
+       }
+      ],
+      "ps": [
+       "High-Density, Easy To Manage | Up To 25.6PB With LTO 10 | Air-Gapped Cyber-Resilient Backup | Highly Scalable Architecture"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=ibm-ts4300"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.ibm.com/products/ts4300"
+       }
+      ]
+     },
+     {
+      "h": "IBM TS4500 Tape Library",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/ibm-ts4500-product-02.png",
+        "alt": "IBM TS4500 tape library."
+       }
+      ],
+      "ps": [
+       "Next-Generation Cloud Storage | Up To 926PB With LTO 10 | Integrated Fleet Management | High Storage Density"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=ibm-ts4500"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.ibm.com/products/ts4500"
+       }
+      ]
+     },
+     {
+      "h": "IBM TS7700 Virtual Tape Family",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/ibm-ts7700-product-02.png",
+        "alt": "IBM TS7700 virtual tape family."
+       }
+      ],
+      "ps": [
+       "Virtual Tape For Mainframe Systems | Hybrid Cloud Integration | Cloud-Based Disaster Recovery | 8-Cluster Grid Encryption"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=ibm-ts7700"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.ibm.com/products/ts7700"
+       }
+      ]
+     },
+     {
+      "h": "IBM TS1170 Enterprise Tape Drive",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/ibm-ts1170-product-02.png",
+        "alt": "IBM TS1170 enterprise tape drive."
+       }
+      ],
+      "ps": [
+       "Up To 50TB Native Capacity | 150TB With Compression | High-Density Long-Term Retention | Cost-Effective Archive Infrastructure"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=ibm-ts1170"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.ibm.com/products/enterprise-tape-drive"
+       }
+      ]
+     },
+     {
+      "h": "IBM Storage Archive",
+      "imgs": [
+       {
+        "src": "/assets/images/vendor-equipment/ibm-storage-archive-illustration-01.svg",
+        "alt": "IBM Storage Archive management software."
+       }
+      ],
+      "ps": [
+       "Graphical LTFS Management Interface | Physical Air-Gap Protection | Optimised Archival Costs | Industry-Standard LTFS Format"
+      ],
+      "lis": [],
+      "links": [
+       {
+        "t": "Get A Quote",
+        "href": "/contact/?product=ibm-storage-archive"
+       },
+       {
+        "t": "Learn More",
+        "href": "https://www.ibm.com/products/storage-archive"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": "why-phirez",
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Data That Survives Every Threat"
+     },
+     {
+      "tag": "p",
+      "t": "Ransomware, hardware failure, and simple human error all threaten online data. We back every IBM tape deployment with sizing, installation, and ongoing infrastructure support."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Enterprise Backup & Disaster Recovery",
+      "imgs": [],
+      "ps": [
+       "Sizing and deployment of tape libraries and virtual tape systems as the last line of defence in your backup strategy."
+      ],
+      "lis": [
+       "Backup capacity & retention planning",
+       "Integration with existing backup software",
+       "Disaster recovery site design"
+      ],
+      "links": [
+       {
+        "t": "Discuss Backup Infrastructure",
+        "href": "/contact/?product=ibm-general"
+       }
+      ]
+     },
+     {
+      "h": "Air-Gapped Cyber Resilience",
+      "imgs": [],
+      "ps": [
+       "Physically air-gapped tape cartridges that ransomware cannot reach — a critical layer beneath your online and cloud backups."
+      ],
+      "lis": [
+       "LTFS archive configuration & management",
+       "Offline, offsite cartridge rotation planning",
+       "Long-term regulatory data retention"
+      ],
+      "links": [
+       {
+        "t": "Explore Storage Archive",
+        "href": "/contact/?product=ibm-storage-archive"
+       }
+      ]
+     },
+     {
+      "h": "IT Infrastructure Integration",
+      "imgs": [],
+      "ps": [
+       "Tape storage installed as part of a wider IT infrastructure project — servers, structured cabling, and enterprise networks."
+      ],
+      "lis": [
+       "Enterprise server clustering & integration",
+       "Structured cabling & data centre fit-out",
+       "SLA-backed managed IT support"
+      ],
+      "links": [
+       {
+        "t": "Explore IT Systems",
+        "href": "/contact/?product=it-infrastructure"
+       }
+      ]
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "section-dark",
+    "intro": [
+     {
+      "tag": "h2",
+      "t": "Ready To Secure Your Long-Term Data?"
+     },
+     {
+      "tag": "p",
+      "t": "Our infrastructure engineers help you size the right IBM tape platform for your data volume, retention policy, and budget."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [
+     {
+      "t": "Talk To A Specialist",
+      "href": "/contact/?product=ibm-general"
+     },
+     {
+      "t": "View Full Solutions Range",
+      "href": "/solutions/"
+     }
+    ],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ },
+ "privacy": {
+  "meta": {
+   "title": "Privacy Policy | Phirez International Limited",
+   "desc": "Privacy Policy for Phirez International Limited — how we collect, use and protect information submitted through phirez.ug."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "page-hero",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Privacy Policy"
+     },
+     {
+      "tag": "p",
+      "t": "This page was last updated on the date shown below."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "",
+    "intro": [
+     {
+      "tag": "p",
+      "t": "Last updated: September 2026"
+     },
+     {
+      "tag": "p",
+      "t": "Phirez International Limited (\"Phirez\", \"we\", \"us\") respects your privacy. This Privacy Policy explains what information we collect through phirez.ug, how we use it, and the choices you have."
+     },
+     {
+      "tag": "p",
+      "t": "We do not sell your personal information. We may share information with service providers who help us operate our website and business (such as our form-submission and analytics providers), under confidentiality obligations."
+     },
+     {
+      "tag": "p",
+      "t": "We retain enquiry information for as long as reasonably necessary to respond to you and maintain business records, after which it is deleted or anonymized."
+     },
+     {
+      "tag": "p",
+      "t": "You may request access to, correction of, or deletion of your personal information by contacting us at info@phirez.ug."
+     },
+     {
+      "tag": "p",
+      "t": "Questions about this policy can be sent to Phirez International Limited, 2nd Floor, Unicalo House, Plot 11, Archer Road, Kampala, Uganda, or info@phirez.ug."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Information We Collect",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "How We Use Your Information",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Sharing of Information",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Data Retention",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Your Rights",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Contact",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": [
+     "Contact details you submit through our contact form (name, organization, email, phone, message).",
+     "Standard technical data collected automatically by our hosting and analytics providers (e.g. pages visited, browser type, approximate location).",
+     "To respond to enquiries and quote requests.",
+     "To improve our website and services.",
+     "To comply with legal obligations."
+    ]
+   }
+  ]
+ },
+ "terms": {
+  "meta": {
+   "title": "Terms of Service | Phirez International Limited",
+   "desc": "Terms of Service for the phirez.ug website, operated by Phirez International Limited."
+  },
+  "secs": [
+   {
+    "id": null,
+    "cls": "page-hero",
+    "intro": [
+     {
+      "tag": "h1",
+      "t": "Terms of Service"
+     },
+     {
+      "tag": "p",
+      "t": "This page was last updated on the date shown below."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   },
+   {
+    "id": null,
+    "cls": "",
+    "intro": [
+     {
+      "tag": "p",
+      "t": "Last updated: September 2026"
+     },
+     {
+      "tag": "p",
+      "t": "These Terms of Service govern your use of the phirez.ug website, operated by Phirez International Limited. By using this site, you agree to these terms."
+     },
+     {
+      "tag": "p",
+      "t": "All content on this website — including text, graphics, logos and imagery — is the property of Phirez International Limited or its licensors and may not be reproduced without permission, except for personal, non-commercial reference."
+     },
+     {
+      "tag": "p",
+      "t": "Content on this website is provided for general informational purposes only and does not constitute a formal proposal, quotation, or professional advice. Formal engagements are governed by separate signed agreements between Phirez and the client."
+     },
+     {
+      "tag": "p",
+      "t": "Submitting an enquiry or quote request through this website does not create a binding contract. All engagements are subject to a separate written agreement."
+     },
+     {
+      "tag": "p",
+      "t": "Phirez International Limited makes reasonable efforts to keep information on this site accurate and up to date, but makes no warranties as to completeness or accuracy, and is not liable for any loss arising from reliance on this website's content."
+     },
+     {
+      "tag": "p",
+      "t": "These terms are governed by the laws of the Republic of Uganda."
+     },
+     {
+      "tag": "p",
+      "t": "Questions about these terms can be sent to info@phirez.ug."
+     }
+    ],
+    "eyebrow": [],
+    "cards": [
+     {
+      "h": "Use of Content",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "No Professional Advice",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Quotes & Enquiries",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Limitation of Liability",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Governing Law",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     },
+     {
+      "h": "Contact",
+      "imgs": [],
+      "ps": [],
+      "lis": [],
+      "links": []
+     }
+    ],
+    "links": [],
+    "imgs": [],
+    "loose": []
+   }
+  ]
+ }
+}
