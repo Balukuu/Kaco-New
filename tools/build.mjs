@@ -61,7 +61,7 @@ const BRANDS = [
   { n: 'Spectra Geospatial', s: 'GNSS & Robotic Stations', h: '/spectra-geospatial/', i: 'spectra-sp100-product-01.avif' },
   { n: 'Nikon Precision', s: 'Optical Survey', h: '/nikon/', i: 'nikon-ne100-product-02.png' },
   { n: 'US Radar', s: 'Ground Penetrating Radar', h: '/us-radar/', i: 'usradar-quantum-product-02.avif' },
-  { n: 'Seafloor Systems', s: 'Hydrographic Survey', h: '/seafloor-systems/', i: 'seafloor-hydrone-product-01.avif' },
+  { n: 'Seafloor Systems', s: 'Hydrographic Survey', h: '/seafloor-systems/', i: 'seafloor-hydrone-cutout-01.webp' },
   { n: 'Autodesk & Carlson', s: 'CAD & Field Software', h: '/autodesk/', i: 'autodesk-logo.jpg' },
   { n: 'Datamine', s: 'Mine Geology Software', h: '/datamine-software/', i: 'datamine-logo-01.png' },
   { n: 'IBM Tape Storage', s: 'Enterprise Data Archive', h: '/ibm-tape/', i: 'ibm-ts4500-product-02.png' },
@@ -451,7 +451,7 @@ function home() {
     { n: 'Nikon Precision Survey', p: 'Nikon XS & XF Series Mechanical Stations | High-Accuracy Optical Auto-Levels', h: '/nikon/', i: 'nikon-ne100-product-02.png' },
     { n: 'XGRIDS Handheld LiDAR', p: 'Lixel L2 Handheld Mobile SLAM Scanner | Real-Time Colored 3D Point Clouds', h: '/solutions/#laser-scanning', i: 'xgrids-slam-scanner-01.jpg' },
     { n: 'US Radar Ground Penetrating Radar', p: 'Quantum Imager Triple-Frequency GPR | Underground Pipe & Cable Line Tracing', h: '/us-radar/', i: 'usradar-quantum-product-02.avif' },
-    { n: 'Seafloor Systems Bathymetry', p: 'EchoBoat Autonomous Survey USV | Singlebeam & Multibeam Sonar Systems', h: '/seafloor-systems/', i: 'seafloor-hydrone-product-01.avif' },
+    { n: 'Seafloor Systems Bathymetry', p: 'EchoBoat Autonomous Survey USV | Singlebeam & Multibeam Sonar Systems', h: '/seafloor-systems/', i: 'seafloor-hydrone-cutout-01.webp' },
     { n: 'Carlson Software & Autodesk', p: 'Carlson SurvCE & SurvPC Field Software | Carlson Mining, Geology & Civil Modules', h: '/autodesk/', i: 'autodesk-logo.jpg' },
   ];
   const mk = (b) => { const [a, ...r] = b.p.split(' | '); return tile({ h: b.n, imgs: [{ src: '/assets/images/vendor-equipment/' + b.i, alt: b.n }], ps: [b.p], lis: [], links: [{ t: 'Learn more', href: b.h }, { t: 'Get a quote', href: `/contact/?product=${slug(b.n.split(' ')[0])}` }] }); };
@@ -486,6 +486,18 @@ function home() {
     ['Agriculture, Forestry & Environment', 'Multispectral NDVI drone surveys for variable-rate fertilization, forest canopy biomass estimation, water basin catchment modeling, and environmental impact assessments.'],
     ['Public Safety, UN & Humanitarian Response', 'Rapid drone situational awareness, refugee settlement micro-planning, flood inundation modeling, and mobile spatial data collection for NGOs and UN agencies.'],
   ];
+  // Industries: photo tiles in the style of the vendor pages' industries sections, one per KACO sector, linking to the Industries page
+  const SECTORS = [
+    ['Mining, Quarrying & Earthworks', 'Stockpile volumes, pit monitoring and blast-hole navigation.', 'drone-survey-quarry-01.jpg', 50, 'mining-quarrying-heavy-e'],
+    ['Civil Engineering & Road Construction', 'Corridor surveys, machine control and BIM-to-field stakeout.', 'gnss-construction-site-02.jpg', 50, 'civil-engineering-highwa'],
+    ['Land Cadastre & Municipal Administration', 'Geodetic control, legal boundaries and digital land registries.', 'gnss-rover-farmland-01.jpg', 30, 'land-administration-titl'],
+    ['Utilities, Energy & Telecom', 'Line clearance, pipeline routing and subsurface tracing.', 'drone-gnss-combo-01.jpg', 50, 'utilities-energy-telecom'],
+    ['Agriculture, Forestry & Environment', 'Crop health, canopy biomass and catchment modeling.', 'precision-agri-drone-02.jpg', 60, 'commercial-agriculture-f'],
+    ['Public Safety & Humanitarian Response', 'Rapid situational awareness and mobile data collection.', 'drone-deployment-01.jpg', 50, 'public-safety-disaster-r'],
+  ];
+  const industriesTiles = `<section class="sec" id="industries"><div class="wrap">${head('Industries', 'Six sectors, one certified partner: precision geospatial and IT solutions for the sectors we serve.')}<div class="photos short six cols" style="--cols:3">
+${SECTORS.map(([n, d, img, pos, id]) => `<a class="ptile rv" href="/industries/#${id}"><img src="/assets/img/hero/${img}" alt="" loading="lazy" decoding="async" style="object-position:${pos}% 50%"><h3>${esc(n)}</h3><p>${esc(d)}</p><span class="tl">Learn more</span></a>`).join('\n')}</div></div></section>`;
+
   const industries2 = `<section class="sec" data-rail><div class="wrap">${head('Solutions aligned to how you work', "From large-scale national infrastructure and mining pits to municipal cadastre and disaster response, we configure specialized hardware, analytics, and service packages built for Africa's operating realities.")}</div>
 <div class="rail-nav"><button type="button" data-prev aria-label="Previous">${svg.left}</button><button type="button" data-next aria-label="Next">${svg.right}</button></div>
 <div class="rail rv" style="padding-inline:max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)))">${IND.map((c, i) => `<a class="card" href="/industries/"><div class="num">${String(i + 1).padStart(2, '0')}</div><h3>${esc(c[0])}</h3><p>${esc(c[1])}</p><span class="tl">Learn more</span></a>`).join('')}</div></section>`;
@@ -512,7 +524,7 @@ function home() {
 <div class="links-row" style="margin-top:28px;gap:12px"><a class="btn" href="/contact/">Talk to a specialist</a><a class="btn ghost" href="/contact/?service=calibration">Book equipment service</a></div></div></section>`;
 
   const ld = JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', name: 'KACO Systems', url: SITE, telephone: PHONE, email: EMAIL, image: SITE + '/kaco-logo.jpg', address: { '@type': 'PostalAddress', streetAddress: '2nd Floor, Unicalo House, Plot 11, Archer Road', addressLocality: 'Kampala', addressCountry: 'UG' }, openingHours: 'Mo-Fr 08:00-17:00' });
-  page({ url: '/', title: 'KACO Systems | Precision Geospatial & IT Solutions in Uganda', desc: "KACO Systems supplies Trimble GNSS, DJI Enterprise drones & LiDAR, Esri GIS and certified calibration across Uganda and East Africa.", body: heroHtml + solutions + stats + about + industries2 + spotlights + services + cta, jsonld: ld });
+  page({ url: '/', title: 'KACO Systems | Precision Geospatial & IT Solutions in Uganda', desc: "KACO Systems supplies Trimble GNSS, DJI Enterprise drones & LiDAR, Esri GIS and certified calibration across Uganda and East Africa.", body: heroHtml + solutions + stats + industriesTiles + about + industries2 + spotlights + services + cta, jsonld: ld });
 }
 
 /* ---------- Services (split out of Solutions so "Services" has its own destination) ---------- */

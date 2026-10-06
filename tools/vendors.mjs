@@ -473,12 +473,12 @@ export const VENDORS = {
       label: 'Seafloor Systems featured products',
       slides: [
         { label: 'Seafloor Systems', eye: 'Seafloor Systems', h: 'Complete hydrographic survey solutions', p: 'Autonomous survey vessels, echosounders and software for bathymetry, dredging, reservoir and marine construction surveys.', glow: '#1f5249',
-          prods: [{ src: P + 'seafloor-hydrone-product-01.avif', alt: 'Seafloor Systems HyDrone survey vessel', s: .66, blk: 1, w: 36, wm: 80 }, { src: P + 'seafloor-hydrolite-product-01.avif', alt: 'Seafloor Systems HydroLite echosounder kit', s: .74, blk: 1, w: 34, side: 1 }],
+          prods: [{ src: P + 'seafloor-hydrone-cutout-01.webp', alt: 'Seafloor Systems HyDrone survey vessel', s: .85, w: 46, wm: 90 }, { src: P + 'seafloor-hydrolite-cutout-01.webp', alt: 'Seafloor Systems HydroLite echosounder kit', s: .8, w: 30, side: 1 }],
           l: [['Get a quote', q('seafloor-systems')], ['Explore products', '#products']] },
         { label: 'EchoBoat', eye: 'Unmanned survey vessels', h: 'EchoBoat survey vessels', p: 'Autonomous and remote-controlled USVs that carry singlebeam or multibeam sonar and keep your crew out of the water.', img: P + 'seafloor-echoboat-usv-01.jpg', pos: 50,
           l: [['Get a quote', q('seafloor-echoboat')], ['Learn more', 'https://www.seafloorsystems.com/echoboat-160']] },
         { label: 'HydroLite', eye: 'Echosounders', h: 'HydroLite echosounder', p: 'A compact, low-power sensor with GNSS-georeferenced soundings, deployable from small boats or survey vessels.', glow: '#1f5249',
-          prods: [{ src: P + 'seafloor-hydrolite-product-01.avif', alt: 'Seafloor Systems HydroLite echosounder kit', s: 1, blk: 1, w: 34, wm: 80 }],
+          prods: [{ src: P + 'seafloor-hydrolite-cutout-01.webp', alt: 'Seafloor Systems HydroLite echosounder kit', s: 1, w: 34, wm: 80 }],
           l: [['Get a quote', q('seafloor-hydrolite')], ['Learn more', 'https://www.seafloorsystems.com/products']] },
       ],
     },
@@ -487,8 +487,8 @@ export const VENDORS = {
       items: [
         { cat: 'Survey vessels', h: 'EchoBoat-160: a compact unmanned survey vessel', p: 'Autonomous waypoint navigation, RTK GNSS integration and siltation volume auditing, without putting a crew on the water.', img: P + 'seafloor-echoboat-usv-01.jpg', pos: 50, href: 'https://www.seafloorsystems.com/echoboat-160' },
         { cat: 'Survey vessels', h: 'EchoBoat-240: multibeam bathymetry, remotely', img: P + 'seafloor-echoboat-usv-01.jpg', pos: 22, href: 'https://www.seafloorsystems.com/echoboat-240' },
-        { cat: 'Portable', h: 'HyDrone: one-person hydrographic survey', img: P + 'seafloor-hydrone-product-01.avif', fit: 'contain', blk: 1, href: 'https://www.seafloorsystems.com/hydrone' },
-        { cat: 'Resources', h: 'Support videos: set-up and survey walkthroughs', img: P + 'seafloor-hydrolite-product-01.avif', fit: 'contain', blk: 1, href: 'https://www.seafloorsystems.com/support-videos' },
+        { cat: 'Portable', h: 'HyDrone: one-person hydrographic survey', img: P + 'seafloor-hydrone-cutout-01.webp', fit: 'contain', href: 'https://www.seafloorsystems.com/hydrone' },
+        { cat: 'Resources', h: 'Support videos: set-up and survey walkthroughs', img: P + 'seafloor-hydrolite-cutout-01.webp', fit: 'contain', href: 'https://www.seafloorsystems.com/support-videos' },
       ],
     },
     videos: {
@@ -505,17 +505,17 @@ export const VENDORS = {
       cats: [
         { tab: 'Survey vessels', note: 'Unmanned platforms for safe, repeatable bathymetry', more: [{ n: 'EchoBoat-160', href: 'https://www.seafloorsystems.com/echoboat-160' }, { n: 'EchoBoat-240', href: 'https://www.seafloorsystems.com/echoboat-240' }], items: [
           { n: 'EchoBoat Autonomous Survey USV', tag: 'Survey without a crew on the water', specs: ['Autonomous waypoint navigation', 'RTK GNSS integration', 'Siltation volume auditing'], img: 'seafloor-echoboat-usv-01.jpg', cover: 50, learn: 'https://www.seafloorsystems.com/echoboat-160', q: 'seafloor-echoboat' },
-          { n: 'HyDrone & TriDrone', tag: 'Hand-launchable and lightweight', specs: ['Remote or autonomous operation', 'Singlebeam and RTK GNSS ready', 'Ideal for narrow waterways'], img: 'seafloor-hydrone-product-01.avif', dark: 1, blk: 1, learn: 'https://www.seafloorsystems.com/hydrone', q: 'seafloor-hydrone' },
+          { n: 'HyDrone & TriDrone', tag: 'Hand-launchable and lightweight', specs: ['Remote or autonomous operation', 'Singlebeam and RTK GNSS ready', 'Ideal for narrow waterways'], img: 'seafloor-hydrone-cutout-01.webp', dark: 1, learn: 'https://www.seafloorsystems.com/hydrone', q: 'seafloor-hydrone' },
         ] },
         { tab: 'Sensors & software', note: 'Echosounders, sonar and data tools', more: ['Singlebeam sonar', 'Multibeam sonar', 'Side scan sonar', 'Sub-bottom profilers', 'ADCP', 'SVP / CTD', { n: 'Survey software', href: 'https://www.seafloorsystems.com/software' }], items: [
-          { n: 'HydroLite Echosounder', tag: 'Compact, low-power sensor', specs: ['GNSS-georeferenced soundings', 'Deployable from small boats or USVs', 'Standard software export'], img: 'seafloor-hydrolite-product-01.avif', dark: 1, blk: 1, learn: 'https://www.seafloorsystems.com/products', q: 'seafloor-hydrolite' },
+          { n: 'HydroLite Echosounder', tag: 'Compact, low-power sensor', specs: ['GNSS-georeferenced soundings', 'Deployable from small boats or USVs', 'Standard software export'], img: 'seafloor-hydrolite-cutout-01.webp', dark: 1, learn: 'https://www.seafloorsystems.com/products', q: 'seafloor-hydrolite' },
         ] },
       ],
     },
     discover: { items: [
       { n: 'Support videos', p: 'Set-up, calibration and survey walkthroughs from the Seafloor Systems team.', href: 'https://www.seafloorsystems.com/support-videos', img: P + 'seafloor-echoboat-usv-01.jpg', pos: 50 },
-      { n: 'Applications', p: 'Marine construction, hydrographic survey, hydrospatial and mining work.', href: 'https://www.seafloorsystems.com/applications', img: P + 'seafloor-hydrone-product-01.avif', pos: 50 },
-      { n: 'Blog', p: 'News and technical articles from Seafloor Systems.', href: 'https://www.seafloorsystems.com/blog', img: P + 'seafloor-hydrolite-product-01.avif', pos: 50 },
+      { n: 'Applications', p: 'Marine construction, hydrographic survey, hydrospatial and mining work.', href: 'https://www.seafloorsystems.com/applications', img: P + 'seafloor-hydrone-cutout-01.webp', pos: 50 },
+      { n: 'Blog', p: 'News and technical articles from Seafloor Systems.', href: 'https://www.seafloorsystems.com/blog', img: P + 'seafloor-hydrolite-cutout-01.webp', pos: 50 },
       { n: 'Hydrographic survey training', p: 'USV deployment, echosounder calibration and data processing, with our trainers.', href: '/training/', img: H + 'gnss-training-01.jpg', pos: 50 },
     ] },
   },

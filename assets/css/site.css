@@ -353,6 +353,7 @@ main { padding-top: var(--header-h); }
 @media (hover: hover) { .ptile:hover img { transform: scale(1.05); } }
 .photos.short .ptile { min-height: min(62vh, 480px); }
 .photos.cols { grid-template-columns: repeat(var(--cols, 3), 1fr); }
+.photos.short.six .ptile { min-height: min(54vh, 400px); }
 
 /* Horizontal scroller (industries) */
 .rail { display: flex; gap: var(--gutter); overflow-x: auto; scroll-snap-type: x proximity; padding: 0 var(--gutter) 8px; scrollbar-width: none; overscroll-behavior-x: contain; cursor: grab; }
