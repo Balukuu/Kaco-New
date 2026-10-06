@@ -68,7 +68,7 @@
   /* Hero slider: crossfade, progress, swipe by velocity, pause when hidden/hovered */
   var hero = d.querySelector('.hero');
   if (hero) {
-    var slides = [].slice.call(hero.querySelectorAll('.slide')), picks = [].slice.call(hero.querySelectorAll('.hero-pick button'));
+    var slides = [].slice.call(hero.querySelectorAll('.slide')), picks = [].slice.call(hero.querySelectorAll('.hero-dots button'));
     var cur = 0, timer = null, DUR = 7000;
     hero.style.setProperty('--dur', DUR + 'ms');
     var show = function (i) {
@@ -92,6 +92,48 @@
     });
     hero.addEventListener('pointercancel', function () { drag = false; });
     show(0); play();
+  }
+
+  /* Product tabs: every panel shows without JS; with JS only the selected one does */
+  d.querySelectorAll('[data-tabs]').forEach(function (wrap) {
+    var tabs = [].slice.call(wrap.querySelectorAll('[role="tab"]')), panels = [].slice.call(wrap.querySelectorAll('[role="tabpanel"]'));
+    var select = function (i, focus) {
+      tabs.forEach(function (t, k) { t.setAttribute('aria-selected', k === i); t.tabIndex = k === i ? 0 : -1; });
+      panels.forEach(function (pn, k) { pn.hidden = k !== i; });
+      if (focus) tabs[i].focus();
+    };
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(i); });
+      t.addEventListener('keydown', function (e) {
+        var n = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : null;
+        if (n === null) return; e.preventDefault(); select((n + tabs.length) % tabs.length, true);
+      });
+    });
+    select(0);
+  });
+
+  /* Video player: the YouTube iframe (privacy-enhanced domain) is only created on click and removed on close */
+  var vm = d.getElementById('vm');
+  if (vm) {
+    var frame = vm.querySelector('.vm-frame'), vcap = vm.querySelector('p'), opener = null;
+    var vclose = function () {
+      vm.classList.remove('open'); d.body.style.overflow = ''; frame.innerHTML = '';
+      if (opener) { opener.focus(); opener = null; }
+    };
+    d.querySelectorAll('[data-yt]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        opener = b;
+        var id = b.dataset.yt, title = b.dataset.title || '';
+        frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1" title="' + title.replace(/"/g, '&quot;') + '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+        vcap.innerHTML = '';
+        var t = d.createElement('span'); t.textContent = title + ' · '; vcap.appendChild(t);
+        var a = d.createElement('a'); a.href = 'https://www.youtube.com/watch?v=' + id; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Watch on YouTube'; vcap.appendChild(a);
+        vm.classList.add('open'); d.body.style.overflow = 'hidden'; vm.querySelector('.x').focus();
+      });
+    });
+    vm.querySelector('.x').addEventListener('click', vclose);
+    vm.addEventListener('click', function (e) { if (e.target === vm) vclose(); });
+    addEventListener('keydown', function (e) { if (e.key === 'Escape' && vm.classList.contains('open')) vclose(); });
   }
 
   /* Rail: momentum drag with mouse, native scroll-snap on touch */

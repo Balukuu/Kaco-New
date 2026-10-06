@@ -14,3 +14,7 @@ Static site (no framework). Open `index.html` via any web server; deploy by uplo
 5. Privacy/Terms are boilerplate from the Phirez site — need legal review.
 6. Careers email was changed to info@kaco.ug (no careers@ mailbox known). Social links not included (none supplied).
 7. Old placeholder folder `images/` is no longer used and can be deleted.
+8. **DJI Enterprise page** (`/dji-enterprise/`, built by `djiPage()` in `tools/build.mjs`) follows enterprise.dji.com. Product names, taglines and headline specs were taken from DJI's product pages on 2026-10-06 — re-check them when DJI launches or renames products. Hero banners and product images are DJI's marketing assets (as on the previous site); confirm KACO's dealer agreement covers using them.
+9. **Videos**: the three case-study films are DJI Enterprise's official YouTube uploads, played in a modal through `youtube-nocookie.com` (iframe only created on click). Swap IDs in the `vids` list in `djiPage()`. Thumbnails load from `i.ytimg.com`. The embeds do not play from `file://` — test over http/https.
+10. **Hero carousels** (home + DJI page) share `heroCarousel()`. To add a product slide to the home page, add a `prods` list to a slide in `home()`; images shot on a black matte need `blk: 1`. Products without a photo in `assets/img/products/` appear only as "Also available" quote links.
+
