@@ -319,7 +319,18 @@ function generic(key, opts = {}) {
    slide = { label, eye, h, p, l: [[text, href], [text, href]], img?, pos?, glow?, prods? }
    `img` makes a full-bleed banner slide (pos = horizontal focal point in %); `prods` makes a studio product lineup.
    srTitle gives the page a visually hidden <h1> when the slide headings are product names. */
-const stage = (prods, first) => `<div class="stage">${prods.map((p, k) => `<img${[p.blk && 'blk', p.fade && 'fade', p.card && 'card'].filter(Boolean).length ? ` class="${[p.blk && 'blk', p.fade && 'fade', p.card && 'card'].filter(Boolean).join(' ')}"` : ''}${p.side ? ' data-side' : ''} src="${p.src}" alt="${esc(p.alt)}" style="--s:${p.s};--w:${p.w || 34}%;--wm:${p.wm || 56}%;--m:${p.m || 0}px;${p.r ? `--r:${p.r};` : ''}--i:${k}" ${first ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`).join('')}</div>`;
+const stage = (prods, first) => {
+  const load = first ? 'fetchpriority="high"' : 'loading="lazy"';
+  const items = prods.map((p, k) => {
+    const vars = `--s:${p.s || 1};--w:${p.w || 34}%;--wm:${p.wm || 56}%;--m:${p.m || 0}px;${p.r ? `--r:${p.r};` : ''}${p.dy ? `--dy:${p.dy}px;` : ''}${p.ar ? `--ar:${p.ar};` : ''}--i:${k}`;
+    const side = p.side ? ' data-side' : '';
+    // `win`: a screenshot shown in a rectangular app window (title bar = the string); `main` raises the centre window
+    if (p.win) return `<figure class="win${p.main ? ' main' : ''}"${side} style="${vars}"><div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span>${esc(p.win)}</span></div><img src="${p.src}" alt="${esc(p.alt)}" ${load} decoding="async"></figure>`;
+    const cls = [p.blk && 'blk', p.card && 'card'].filter(Boolean).join(' ');
+    return `<img${cls ? ` class="${cls}"` : ''}${side} src="${p.src}" alt="${esc(p.alt)}" style="${vars}" ${load} decoding="async">`;
+  });
+  return `<div class="stage${prods.some((p) => p.win) ? ' wins' : ''}">${items.join('')}</div>`;
+};
 const heroCarousel = (slides, { label = 'Featured', srTitle = '', banner = false } = {}) => `<section class="hero${banner ? ' hero--banner' : ''}" aria-roledescription="carousel" aria-label="${esc(label)}">
 ${srTitle ? `<h1 class="sr-only">${esc(srTitle)}</h1>` : ''}${slides.map((s, i) => {
   const H = i === 0 && !srTitle ? 'h1' : 'h2';
@@ -414,8 +425,7 @@ ${cfg.discover.items.map((x) => `<a href="${esc(href(x.href))}"${attrs(x.href)} 
 function home() {
   // Product lineups for the hero. `s` scales a product against the stage height (cutouts carry different
   // amounts of transparent padding); `blk` marks images shot on an opaque black matte so CSS can lift the matte
-  // into the studio backdrop (`fade` also feathers the edges, for screenshots whose dark ground is not pure black);
-  // `side` items are dropped on phones where there is no room for them.
+  // into the studio backdrop; `win` shows a screenshot in an app window; `side` items are dropped on phones.
   const P = '/assets/img/products/';
   const slides = [
     { label: 'Precision Geospatial', eye: 'Geospatial & Advanced IT', h: "Precision for Africa's built environment", p: 'KACO Systems empowers surveying, mining, construction, utilities, and government organizations with industry-standard Trimble GNSS positioning, DJI Enterprise drone LiDAR, and certified calibration support across Uganda and East Africa.', glow: '#3a424b',
@@ -425,10 +435,10 @@ function home() {
       prods: [{ src: P + 'dji-zenmuse-l2-product-01.png', alt: 'DJI Zenmuse L2 LiDAR payload', s: .66, w: 27, m: -60, side: 1 }, { src: P + 'dji-matrice-350-rtk-product-01.png', alt: 'DJI Matrice 350 RTK enterprise drone', s: 1.8, w: 52, wm: 100 }, { src: P + 'dji-dock-3-product-01.png', alt: 'DJI Dock 3 autonomous drone dock', s: .74, w: 27, m: -60, side: 1 }],
       l: [['Learn more', '/dji-enterprise/'], ['Get a quote', '/contact/?product=dji-enterprise']] },
     { label: 'Enterprise GIS & SDI', eye: 'Esri ArcGIS', h: 'From raw capture to decisions', p: 'Esri ArcGIS deployment and spatial data infrastructure that turns raw field capture into decision-ready intelligence.', glow: '#27414f',
-      prods: [{ src: P + 'esri-arcgis-online-product-01.png', alt: 'ArcGIS Online web GIS', s: .6, blk: 1, fade: 1, side: 1 }, { src: P + 'esri-arcgis-pro-product-01.png', alt: 'ArcGIS Pro desktop GIS', s: 1, wm: 100, blk: 1, fade: 1 }, { src: P + 'esri-arcgis-enterprise-product-01.jpg', alt: 'ArcGIS Enterprise spatial infrastructure', s: .6, blk: 1, fade: 1, side: 1 }],
+      prods: [{ win: 'ArcGIS Online', src: P + 'esri-arcgis-online-product-01.png', alt: 'ArcGIS Online web GIS', w: 33, ar: 1.35, m: -40, dy: 40, side: 1 }, { win: 'ArcGIS Pro', src: P + 'esri-arcgis-pro-product-01.png', alt: 'ArcGIS Pro desktop GIS', w: 50, ar: 1.35, wm: 92, main: 1 }, { win: 'ArcGIS Enterprise', src: P + 'esri-arcgis-enterprise-product-01.jpg', alt: 'ArcGIS Enterprise spatial infrastructure', w: 33, ar: 1.35, m: -40, dy: -26, side: 1 }],
       l: [['Learn more', '/esri-arcgis/'], ['Talk to a specialist', '/contact/']] },
     { label: 'Service & Training', eye: 'Lifecycle support', h: 'Unrivalled service. Unmatched precision.', p: 'Our certified Kampala calibration lab, HelpDesk engineers, and training academy protect your field crews every step of the way.', glow: '#3d3a37',
-      prods: [{ src: P + 'nikon-ac2s-product-01.avif', alt: 'Nikon AC-2S automatic level', s: .6, blk: 1, side: 1 }, { src: P + 'spectra-focus50-product-01.avif', alt: 'Spectra Geospatial FOCUS 50 robotic total station', s: 1, blk: 1 }, { src: P + 'nikon-xf-product-01.avif', alt: 'Nikon XF total station', s: .94, blk: 1 }],
+      prods: [{ src: P + 'nikon-ac2s-cutout-01.webp', alt: 'Nikon AC-2S automatic level', s: .5, side: 1 }, { src: P + 'spectra-focus50-cutout-01.webp', alt: 'Spectra Geospatial FOCUS 50 robotic total station', s: 1 }, { src: P + 'nikon-xf-cutout-01.webp', alt: 'Nikon XF total station', s: .94 }],
       l: [['Services & support', '/solutions/#services-support'], ['Training academy', '/training/']] },
   ];
   const heroHtml = heroCarousel(slides);

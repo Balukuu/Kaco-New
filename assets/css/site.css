@@ -210,16 +210,31 @@ main { padding-top: var(--header-h); }
 .stage { position: absolute; inset: 0 0 0 auto; width: min(60%, 1040px);  /* no z-index: a stacking context would stop .blk products blending into the slide backdrop */
   display: flex; justify-content: center; align-items: flex-end; gap: clamp(4px, 1.6vw, 28px); padding: clamp(28px, 5vh, 56px) clamp(16px, 3vw, 56px) 52px; }
 .stage::after { content: ""; position: absolute; left: 50%; bottom: 42px; width: min(80%, 760px); height: 26px; transform: translateX(-50%); background: radial-gradient(closest-side, rgba(0,0,0,.6), transparent); filter: blur(7px); }
-.stage img {
+.stage > img {
   position: relative; z-index: 1; flex: 0 1 auto; min-width: 0; width: auto; max-width: var(--w, 34%); height: calc(var(--s, 1) * 100%); object-fit: contain; object-position: bottom;
   opacity: 0; transform: translateY(28px) scale(.97);
   transition: opacity .9s var(--ease-out) calc(.3s + var(--i, 0) * .12s), transform 1.1s var(--ease-out) calc(.3s + var(--i, 0) * .12s);
 }
-.stage img:first-child { margin-right: var(--m, 0); } .stage img:last-child { margin-left: var(--m, 0); }  /* tuck side products toward the centre piece */
-.stage img.blk { mix-blend-mode: lighten; }  /* photographed on a black matte: lift it into the backdrop */
-.stage img.fade { aspect-ratio: 1.6; object-fit: cover; object-position: center; -webkit-mask-image: radial-gradient(closest-side, #000 72%, transparent 100%); mask-image: radial-gradient(closest-side, #000 72%, transparent 100%); }
-.stage img.card { height: auto; width: var(--w, 40%); max-width: none; max-height: calc(var(--s, 1) * 100%); aspect-ratio: var(--r, auto); object-fit: cover; border-radius: 16px; background: #fff; box-shadow: 0 30px 70px -20px rgba(0,0,0,.6); }
-.slide.on .stage img { opacity: 1; transform: none; }
+.stage > img:first-child { margin-right: var(--m, 0); } .stage > img:last-child { margin-left: var(--m, 0); }  /* tuck side products toward the centre piece */
+.stage > img.blk { mix-blend-mode: lighten; }  /* photographed on a black matte: lift it into the backdrop */
+.stage > img.card { height: auto; width: var(--w, 40%); max-width: none; max-height: calc(var(--s, 1) * 100%); aspect-ratio: var(--r, auto); object-fit: cover; border-radius: 16px; background: #fff; box-shadow: 0 30px 70px -20px rgba(0,0,0,.6); }
+/* screenshots in rectangular app windows (ArcGIS): title bar, hairline edge, overlapping and staggered */
+.stage.wins { width: min(62%, 1120px); align-items: center; padding-bottom: 60px; }
+.stage.wins::after { display: none; }
+.win {
+  position: relative; z-index: 1; top: var(--dy, 0); flex: 0 1 auto; min-width: 0; width: var(--w, 40%); overflow: hidden; border-radius: 12px; background: #0d0f11;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.16), 0 44px 80px -30px rgba(0,0,0,.85);
+  opacity: 0; transform: translateY(28px) scale(.97);
+  transition: opacity .9s var(--ease-out) calc(.3s + var(--i, 0) * .12s), transform 1.1s var(--ease-out) calc(.3s + var(--i, 0) * .12s);
+}
+.win.main { z-index: 2; }
+.win-bar { display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 12px; background: #24282c; font: 600 .6875rem/1 var(--body); letter-spacing: .02em; color: rgba(255,255,255,.55); }
+.win-bar i { flex: none; width: 9px; height: 9px; border-radius: 50%; background: #ff5f57; }
+.win-bar i:nth-child(2) { background: #febc2e; } .win-bar i:nth-child(3) { background: #28c840; }
+.win-bar span { margin-left: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.win img { display: block; width: 100%; height: auto; aspect-ratio: var(--ar, 1.6); object-fit: cover; }
+.stage > .win:first-child { margin-right: var(--m, 0); } .stage > .win:last-child { margin-left: var(--m, 0); }
+.slide.on .stage > img, .slide.on .win { opacity: 1; transform: none; }
 .hero-ctl { position: absolute; z-index: 5; left: 50%; bottom: 4px; transform: translateX(-50%); display: flex; align-items: center; gap: 4px; }
 .hero-dots { display: flex; }
 .hero-dots button { position: relative; width: 40px; height: 44px; }
@@ -537,8 +552,10 @@ form.form { background: var(--surface); padding: clamp(24px, 3.5vw, 44px); displ
   .slide { display: flex; flex-direction: column; }
   .slide-copy { position: relative; inset: auto; flex: none; width: 100%; padding: 30px var(--gutter) 0; }
   .stage { position: relative; inset: auto; flex: 1 1 0; width: 100%; min-height: 0; padding: 16px var(--gutter) 52px; }
-  .stage img { max-width: var(--wm, 56%); }
-  .stage img[data-side] { display: none; }
+  .stage > img { max-width: var(--wm, 56%); }
+  .stage.wins { width: 100%; padding-bottom: 52px; }
+  .stage > .win { width: var(--wm, 92%); }
+  .stage > [data-side] { display: none; }
   .slide.photo::after { background: linear-gradient(180deg, rgba(0,0,0,.78) 0%, rgba(0,0,0,.34) 52%, transparent 80%); }
   .slide.photo img.bg { top: auto; height: 60%; -webkit-mask-image: linear-gradient(180deg, transparent, #000 30%); mask-image: linear-gradient(180deg, transparent, #000 30%); }
   .news { grid-template-columns: 1fr; }
@@ -592,7 +609,7 @@ form.form { background: var(--surface); padding: clamp(24px, 3.5vw, 44px); displ
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .15s !important; transition-delay: 0s !important; }
-  .stage img, .slide.on .stage img { transform: none !important; }
+  .stage > img, .win, .slide.on .stage > img, .slide.on .win { transform: none !important; }
   .js .rv { transform: none; }
   .tile:hover .media img, .row:hover .row-media img, .ptile:hover img { transform: none; }
 }

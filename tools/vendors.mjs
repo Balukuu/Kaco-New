@@ -185,16 +185,16 @@ export const VENDORS = {
       label: 'Esri ArcGIS featured products',
       slides: [
         { label: 'ArcGIS platform', eye: 'Esri ArcGIS', h: 'Connect your data through geography', p: 'ArcGIS brings maps, analytics and field data together for organizations across Uganda and East Africa, deployed, licensed and supported by KACO Systems.', glow: '#27414f',
-          prods: [{ src: P + 'esri-arcgis-online-product-01.png', alt: 'ArcGIS Online web GIS', s: .6, blk: 1, fade: 1, side: 1 }, { src: P + 'esri-arcgis-pro-product-01.png', alt: 'ArcGIS Pro desktop GIS', s: 1, wm: 100, blk: 1, fade: 1 }, { src: P + 'esri-arcgis-enterprise-product-01.jpg', alt: 'ArcGIS Enterprise spatial infrastructure', s: .6, blk: 1, fade: 1, side: 1 }],
+          prods: [{ win: 'ArcGIS Online', src: P + 'esri-arcgis-online-product-01.png', alt: 'ArcGIS Online web GIS', w: 33, ar: 1.35, m: -40, dy: 40, side: 1 }, { win: 'ArcGIS Pro', src: P + 'esri-arcgis-pro-product-01.png', alt: 'ArcGIS Pro desktop GIS', w: 50, ar: 1.35, wm: 92, main: 1 }, { win: 'ArcGIS Enterprise', src: P + 'esri-arcgis-enterprise-product-01.jpg', alt: 'ArcGIS Enterprise spatial infrastructure', w: 33, ar: 1.35, m: -40, dy: -26, side: 1 }],
           l: [['Get a quote', q('esri-arcgis')], ['Explore the platform', '#products']] },
         { label: 'Field Maps & Survey123', eye: 'Field data collection', h: 'Capture data where work happens', p: 'ArcGIS Field Maps and Survey123 put smart maps and forms in the hands of your field teams, online or offline.', glow: '#1f4a78',
-          prods: [{ src: P + 'esri-field-maps-product-01.jpg', alt: 'ArcGIS Field Maps', s: .9, w: 47, m: -24, card: 1 }, { src: P + 'esri-survey123-product-01.jpg', alt: 'ArcGIS Survey123', s: .9, w: 47, card: 1 }],
+          prods: [{ win: 'ArcGIS Field Maps', src: P + 'esri-field-maps-product-01.jpg', alt: 'ArcGIS Field Maps', w: 47, m: -34, dy: 34, wm: 92 }, { win: 'ArcGIS Survey123', src: P + 'esri-survey123-product-01.jpg', alt: 'ArcGIS Survey123', w: 46, dy: -26, side: 1, main: 1 }],
           l: [['Get a quote', q('esri-field-maps')], ['Learn more', 'https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/overview']] },
         { label: 'Dashboards & Drone2Map', eye: 'Insight and imagery', h: 'Turn data into decisions', p: 'Share live dashboards with decision-makers and process drone imagery into 2D and 3D products inside ArcGIS.', glow: '#27414f',
-          prods: [{ src: P + 'esri-dashboards-product-01.jpg', alt: 'ArcGIS Dashboards', s: .9, w: 47, m: -24, card: 1 }, { src: P + 'esri-drone2map-product-01.jpg', alt: 'ArcGIS Drone2Map', s: .9, w: 47, card: 1 }],
+          prods: [{ win: 'ArcGIS Dashboards', src: P + 'esri-dashboards-product-01.jpg', alt: 'ArcGIS Dashboards', w: 47, m: -34, dy: 34, wm: 92 }, { win: 'ArcGIS Drone2Map', src: P + 'esri-drone2map-product-01.jpg', alt: 'ArcGIS Drone2Map', w: 46, dy: -26, side: 1, main: 1 }],
           l: [['Get a quote', q('esri-dashboards')], ['Learn more', 'https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/overview']] },
         { label: 'Utility Network', eye: 'Infrastructure', h: 'Model complex networks', p: 'ArcGIS Utility Network traces, analyzes and manages power, water and telecom assets at enterprise scale.', glow: '#1f4a78',
-          prods: [{ src: P + 'esri-utility-network-product-01.jpg', alt: 'ArcGIS Utility Network', s: .95, w: 64, wm: 96, card: 1 }],
+          prods: [{ win: 'ArcGIS Utility Network', src: P + 'esri-utility-network-product-01.jpg', alt: 'ArcGIS Utility Network', w: 62, wm: 92, main: 1 }],
           l: [['Get a quote', q('esri-utility-network')], ['Learn more', 'https://www.esri.com/en-us/arcgis/products/arcgis-utility-network/overview']] },
       ],
     },
@@ -262,13 +262,13 @@ export const VENDORS = {
       label: 'Spectra Geospatial featured products',
       slides: [
         { label: 'Spectra Geospatial', eye: 'Spectra Geospatial', h: 'Everyday positioning, built to last', p: 'An established survey brand delivering quality GNSS receivers, robotic total stations and field software for surveying, GIS and construction.', glow: '#2e4a66',
-          prods: [{ src: P + 'spectra-sp100-product-01.avif', alt: 'Spectra Geospatial SP100 GNSS receiver', s: .95 }, { src: P + 'spectra-focus50-product-01.avif', alt: 'Spectra Geospatial FOCUS 50 total station', s: 1, blk: 1 }, { src: P + 'spectra-ranger7-product-01.avif', alt: 'Spectra Geospatial Ranger 7 field controller', s: .85 }],
+          prods: [{ src: P + 'spectra-sp100-product-01.avif', alt: 'Spectra Geospatial SP100 GNSS receiver', s: .95 }, { src: P + 'spectra-focus50-cutout-01.webp', alt: 'Spectra Geospatial FOCUS 50 total station', s: 1 }, { src: P + 'spectra-ranger7-product-01.avif', alt: 'Spectra Geospatial Ranger 7 field controller', s: .85 }],
           l: [['Get a quote', q('spectra-geospatial')], ['Explore products', '#products']] },
         { label: 'GNSS receivers', eye: 'GNSS surveying', h: 'SP100 and SP90m GNSS receivers', p: 'The SP100 is everything you need for surveying out of the box; the SP90m adds powerful, ultra-rugged reference-grade performance.', glow: '#33516f',
           prods: [{ src: P + 'spectra-sp100-product-01.avif', alt: 'Spectra Geospatial SP100 GNSS receiver', s: 1 }, { src: P + 'spectra-sp90m-product-01.avif', alt: 'Spectra Geospatial SP90m GNSS receiver', s: .72 }],
           l: [['Get a quote', q('spectra-sp100')], ['Learn more', 'https://spectrageospatial.com/sp100/']] },
         { label: 'Optical surveying', eye: 'Optical surveying', h: 'FOCUS 50 and Nikon total stations', p: 'A customizable robotic total station alongside Nikon XF mechanical total stations with reflectorless EDM.', glow: '#2e4a66',
-          prods: [{ src: P + 'spectra-focus50-product-01.avif', alt: 'Spectra Geospatial FOCUS 50 robotic total station', s: 1, blk: 1 }, { src: P + 'nikon-xf-product-01.avif', alt: 'Nikon XF total station', s: .86, blk: 1 }],
+          prods: [{ src: P + 'spectra-focus50-cutout-01.webp', alt: 'Spectra Geospatial FOCUS 50 robotic total station', s: 1 }, { src: P + 'nikon-xf-cutout-01.webp', alt: 'Nikon XF total station', s: .86 }],
           l: [['Get a quote', q('spectra-focus-50')], ['Learn more', 'https://spectrageospatial.com/focus-50-total-station/']] },
         { label: 'Field software', eye: 'Controllers & software', h: 'Origin field software', p: 'A modern, efficient field workflow that handles a full range of projects, on rugged Ranger controllers.', glow: '#33516f',
           prods: [{ src: P + 'spectra-ranger5-product-01.avif', alt: 'Spectra Geospatial Ranger 5 field controller', s: .96, blk: 1 }, { src: P + 'spectra-origin-product-01.avif', alt: 'Spectra Geospatial Origin field software', s: .8 }, { src: P + 'spectra-ranger7-product-01.avif', alt: 'Spectra Geospatial Ranger 7 field controller', s: .9 }],
@@ -279,9 +279,9 @@ export const VENDORS = {
       title: 'Spotlight on Spectra Geospatial',
       items: [
         { cat: 'GNSS', h: 'SP100 GNSS receiver: everything you need for surveying', p: 'A complete surveying GNSS solution with everything in the box, entry-level simplicity and dependable everyday performance.', img: P + 'spectra-sp100-product-01.avif', fit: 'contain', href: 'https://spectrageospatial.com/sp100/' },
-        { cat: 'Optical', h: 'FOCUS 50 robotic total station', img: P + 'spectra-focus50-product-01.avif', fit: 'contain', blk: 1, href: 'https://spectrageospatial.com/focus-50-total-station/' },
+        { cat: 'Optical', h: 'FOCUS 50 robotic total station', img: P + 'spectra-focus50-cutout-01.webp', fit: 'contain', href: 'https://spectrageospatial.com/focus-50-total-station/' },
         { cat: 'Software', h: 'Origin field software', img: P + 'spectra-origin-product-01.avif', fit: 'contain', href: 'https://spectrageospatial.com/origin/' },
-        { cat: 'Optical', h: 'Nikon XF series mechanical total stations', img: P + 'nikon-xf-product-01.avif', fit: 'contain', blk: 1, href: 'https://spectrageospatial.com/nikon-xf/' },
+        { cat: 'Optical', h: 'Nikon XF series mechanical total stations', img: P + 'nikon-xf-cutout-01.webp', fit: 'contain', href: 'https://spectrageospatial.com/nikon-xf/' },
       ],
     },
     videos: {
@@ -291,7 +291,7 @@ export const VENDORS = {
         { id: 'K5VofsQgcEc', cat: 'Optical', title: 'Spectra Geospatial FOCUS 50 Robotic Total Station' },
         { id: 'YZehKRKAX2A', cat: 'Optical', title: 'Spectra Geospatial FOCUS 35 Motorized Total Station' },
       ],
-      channel: { href: yt('@spectrageospatial7761'), cat: 'Spectra Geospatial on YouTube', title: 'More product films and how-tos', img: P + 'spectra-focus50-product-01.avif' },
+      channel: { href: yt('@spectrageospatial7761'), cat: 'Spectra Geospatial on YouTube', title: 'More product films and how-tos', img: P + 'spectra-focus50-cutout-01.webp' },
     },
     industries: {
       title: 'Applications', lead: 'Spectra Geospatial serves the survey, GIS and construction markets.',
@@ -309,8 +309,8 @@ export const VENDORS = {
           { n: 'Spectra SP90m GNSS Receiver', tag: 'Powerful and ultra-rugged GNSS', specs: ['Real-time and post-processing ready', 'Versatile across applications', 'Reference-grade performance'], img: 'spectra-sp90m-product-01.avif', learn: 'https://spectrageospatial.com/sp90m-gnss-receiver-2/', q: 'spectra-sp90m' },
         ] },
         { tab: 'Optical', note: 'Robotic and mechanical total stations', more: ['FOCUS 35', { n: 'Nikon XS', href: 'https://spectrageospatial.com/nikon-xs/' }, { n: 'Nikon N & K mechanical', href: 'https://spectrageospatial.com/nikon-nk-total-stations/' }, { n: 'Nikon theodolites', href: 'https://spectrageospatial.com/nikon-theodolites/' }, { n: 'Nikon autolevels', href: 'https://spectrageospatial.com/nikon-autolevels/' }], items: [
-          { n: 'Spectra FOCUS 50 Total Station', tag: 'Customizable robotic total station', specs: ['Automatic target tracking', 'Configurable to your workflow', 'Local calibration support'], img: 'spectra-focus50-product-01.avif', dark: 1, blk: 1, learn: 'https://spectrageospatial.com/focus-50-total-station/', q: 'spectra-focus-50' },
-          { n: 'Nikon XF Series Total Stations', tag: 'Mechanical total stations for every job', specs: ['Dual full-face display', 'Clear optics for bright daylight', 'Reflectorless EDM'], img: 'nikon-xf-product-01.avif', dark: 1, blk: 1, learn: 'https://spectrageospatial.com/nikon-xf/', q: 'nikon-xf' },
+          { n: 'Spectra FOCUS 50 Total Station', tag: 'Customizable robotic total station', specs: ['Automatic target tracking', 'Configurable to your workflow', 'Local calibration support'], img: 'spectra-focus50-cutout-01.webp', dark: 1, learn: 'https://spectrageospatial.com/focus-50-total-station/', q: 'spectra-focus-50' },
+          { n: 'Nikon XF Series Total Stations', tag: 'Mechanical total stations for every job', specs: ['Dual full-face display', 'Clear optics for bright daylight', 'Reflectorless EDM'], img: 'nikon-xf-cutout-01.webp', dark: 1, learn: 'https://spectrageospatial.com/nikon-xf/', q: 'nikon-xf' },
         ] },
         { tab: 'Software & controllers', note: 'Field software and rugged data collectors', more: [{ n: 'Survey Office', href: 'https://spectrageospatial.com/survey-office/' }, { n: 'Survey Basic', href: 'https://spectrageospatial.com/survey-basic/' }, { n: 'Ranger 710', href: 'https://spectrageospatial.com/ranger-710/' }, { n: 'FOCUS data collector', href: 'https://spectrageospatial.com/focus-dc/' }], items: [
           { n: 'Spectra Origin Field Software', tag: 'Handles a full range of projects', specs: ['Fast and efficient field workflow', 'Modern Spectra interface', 'Straightforward field-to-office transfer'], img: 'spectra-origin-product-01.avif', learn: 'https://spectrageospatial.com/origin/', q: 'spectra-origin' },
@@ -336,10 +336,10 @@ export const VENDORS = {
       label: 'Nikon featured instruments',
       slides: [
         { label: 'Nikon survey instruments', eye: 'Nikon Precision', h: 'Precision optics for everyday survey', p: 'XF total stations, NE-100 theodolites and AC-2S automatic levels: dependable instruments built for daily field use.', glow: '#4a4528',
-          prods: [{ src: P + 'nikon-ne100-product-02.png', alt: 'Nikon NE-100 theodolite', s: .95 }, { src: P + 'nikon-xf-product-01.avif', alt: 'Nikon XF total station', s: 1, blk: 1 }, { src: P + 'nikon-ac2s-product-02.png', alt: 'Nikon AC-2S automatic level', s: .6 }],
+          prods: [{ src: P + 'nikon-ne100-product-02.png', alt: 'Nikon NE-100 theodolite', s: .95 }, { src: P + 'nikon-xf-cutout-01.webp', alt: 'Nikon XF total station', s: 1 }, { src: P + 'nikon-ac2s-product-02.png', alt: 'Nikon AC-2S automatic level', s: .6 }],
           l: [['Get a quote', q('nikon')], ['Explore instruments', '#products']] },
         { label: 'XF total stations', eye: 'Total stations', h: 'Nikon XF series', p: 'Mechanical total stations packed with features that make survey work easier and faster, with an 800 m non-prism EDM.', glow: '#4a4528',
-          prods: [{ src: P + 'nikon-xf-product-01.avif', alt: 'Nikon XF total station', s: 1, blk: 1 }],
+          prods: [{ src: P + 'nikon-xf-cutout-01.webp', alt: 'Nikon XF total station', s: 1 }],
           l: [['Get a quote', q('nikon-xf-series')], ['Learn more', 'https://spectrageospatial.com/nikon-xf/']] },
         { label: 'Theodolites & levels', eye: 'Theodolites and automatic levels', h: 'NE-100 and AC-2S', p: 'A compact digital theodolite and a durable automatic level: simple, low-maintenance tools for layout and elevation work.', glow: '#3f4a52',
           prods: [{ src: P + 'nikon-ne100-product-02.png', alt: 'Nikon NE-100 theodolite', s: 1 }, { src: P + 'nikon-ac2s-product-02.png', alt: 'Nikon AC-2S automatic level', s: .64 }],
@@ -349,10 +349,10 @@ export const VENDORS = {
     updates: {
       title: 'Spotlight on Nikon survey',
       items: [
-        { cat: 'Total stations', h: 'Nikon XF series: a total station for everyone', p: 'Mechanical total stations with dual full-face displays, clear optics for bright daylight and an 800 m non-prism EDM.', img: P + 'nikon-xf-product-01.avif', fit: 'contain', blk: 1, href: 'https://spectrageospatial.com/nikon-xf/' },
+        { cat: 'Total stations', h: 'Nikon XF series: a total station for everyone', p: 'Mechanical total stations with dual full-face displays, clear optics for bright daylight and an 800 m non-prism EDM.', img: P + 'nikon-xf-cutout-01.webp', fit: 'contain', href: 'https://spectrageospatial.com/nikon-xf/' },
         { cat: 'Theodolites', h: 'Nikon NE-100: simple layout work', img: P + 'nikon-ne100-product-02.png', fit: 'contain', href: 'https://spectrageospatial.com/nikon-theodolites/' },
         { cat: 'Levels', h: 'Nikon AC-2S automatic level', img: P + 'nikon-ac2s-product-02.png', fit: 'contain', href: 'https://spectrageospatial.com/nikon-autolevels/' },
-        { cat: 'Total stations', h: 'Nikon N & K mechanical total stations', img: P + 'nikon-xf-product-01.avif', fit: 'contain', blk: 1, href: 'https://spectrageospatial.com/nikon-nk-total-stations/' },
+        { cat: 'Total stations', h: 'Nikon N & K mechanical total stations', img: P + 'nikon-xf-cutout-01.webp', fit: 'contain', href: 'https://spectrageospatial.com/nikon-nk-total-stations/' },
       ],
     },
     videos: {
@@ -361,7 +361,7 @@ export const VENDORS = {
         { id: '-ay2cYH1-JI', cat: 'Total stations', title: 'Spectra Nikon XF Series: A solution for everyone' },
         { id: 'dw2fRrJ5mIM', cat: 'Total stations', title: 'Nikon X-Series Total Stations' },
       ],
-      channel: { href: yt('@spectrageospatial7761'), cat: 'Spectra Geospatial on YouTube', title: 'More survey instrument films', img: P + 'nikon-xf-product-01.avif' },
+      channel: { href: yt('@spectrageospatial7761'), cat: 'Spectra Geospatial on YouTube', title: 'More survey instrument films', img: P + 'nikon-xf-cutout-01.webp' },
     },
     industries: {
       title: 'Applications', lead: 'Where Nikon instruments earn their keep.',
@@ -375,7 +375,7 @@ export const VENDORS = {
       title: 'Nikon survey instruments', lead: 'Rugged optical and mechanical instruments, backed by local calibration.',
       cats: [
         { tab: 'Total stations', note: 'Mechanical total stations', more: [{ n: 'Nikon XS', href: 'https://spectrageospatial.com/nikon-xs/' }, { n: 'N & K mechanical', href: 'https://spectrageospatial.com/nikon-nk-total-stations/' }], items: [
-          { n: 'Nikon XF & N/K Series Total Stations', tag: 'Packed with features for everyday survey', specs: ['Dual full-face display', 'Clear optics for bright daylight', 'Low-maintenance build'], img: 'nikon-xf-product-01.avif', dark: 1, blk: 1, learn: 'https://spectrageospatial.com/nikon-xf/', q: 'nikon-xf-series' },
+          { n: 'Nikon XF & N/K Series Total Stations', tag: 'Packed with features for everyday survey', specs: ['Dual full-face display', 'Clear optics for bright daylight', 'Low-maintenance build'], img: 'nikon-xf-cutout-01.webp', dark: 1, learn: 'https://spectrageospatial.com/nikon-xf/', q: 'nikon-xf-series' },
         ] },
         { tab: 'Theodolites', note: 'Digital angle measurement', items: [
           { n: 'Nikon NE-100 Series', tag: 'Compact digital theodolite', specs: ['Digital angle readout', 'Compact, lightweight build', 'Simple setup for layout work'], img: 'nikon-ne100-product-02.png', learn: 'https://spectrageospatial.com/nikon-theodolites/', q: 'nikon-ne-100' },
@@ -386,7 +386,7 @@ export const VENDORS = {
       ],
     },
     discover: { items: [
-      { n: 'Find a dealer', p: 'Locate Nikon survey instrument dealers through Spectra Geospatial.', href: 'https://spectrageospatial.com/dealer-locator/', img: P + 'nikon-xf-product-01.avif', pos: 50 },
+      { n: 'Find a dealer', p: 'Locate Nikon survey instrument dealers through Spectra Geospatial.', href: 'https://spectrageospatial.com/dealer-locator/', img: P + 'nikon-xf-cutout-01.webp', pos: 50 },
       { n: 'Spectra Geospatial support', p: 'Manuals, firmware and technical help for Nikon and Spectra instruments.', href: 'https://spectrageospatial.com/support/', img: P + 'nikon-ac2s-product-02.png', pos: 50 },
       KACO.training, KACO.calibration,
     ] },
