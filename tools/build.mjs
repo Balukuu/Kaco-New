@@ -4,6 +4,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { VENDORS } from './vendors.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const C = JSON.parse(fs.readFileSync(path.join(ROOT, 'tools/content.json'), 'utf8'));
@@ -220,10 +221,6 @@ const ctaBand = (h, p, links, id = '') => `<section class="sec dark" ${id ? `id=
 <div class="links-row" style="margin-top:28px;gap:12px">${links.map((l, i) => `<a class="btn ${i ? 'ghost on-dark' : 'light'}" href="${esc(href(l.href))}"${aAttr(l.href)}>${t(l.t)}</a>`).join('')}</div></div></section>`;
 
 /* ---------- generic page from extracted content ---------- */
-const VENDOR = {
-  trimble: 'Trimble', 'dji-enterprise': 'DJI Enterprise', 'esri-arcgis': 'Esri ArcGIS', 'spectra-geospatial': 'Spectra Geospatial', nikon: 'Nikon Precision',
-  'us-radar': 'US Radar', 'seafloor-systems': 'Seafloor Systems', autodesk: 'Autodesk & Carlson', 'datamine-software': 'Datamine', 'ibm-tape': 'IBM Tape Storage',
-};
 
 function generic(key, opts = {}) {
   const d = C[key];
@@ -231,21 +228,18 @@ function generic(key, opts = {}) {
   const hero = secs[0];
   let h1 = hero.intro.find((x) => x.tag === 'h1');
   let lead = hero.intro.find((x) => x.tag === 'p');
-  const isVendor = key in VENDOR;
   let out = '';
   // sticky local bar
   const quick = secs.find((s) => !s.intro.length && !s.cards.length && s.links.length >= 2 && key === 'projects');
   const anchors = secs.filter((s) => s.id && s.intro.length).map((s) => [s.intro.find((x) => x.tag === 'h2')?.t.split(/[&,]| And /)[0].trim() || s.id, '#' + (s.id === 'why-phirez' ? 'why-kaco' : s.id)]);
-  if (isVendor) out += localbar(VENDOR[key], [['Products', '#products'], ['Support', '#why-kaco']]);
-  else if (key === 'projects' && quick) out += localbar('Case Studies', quick.links.filter((l) => l.href.startsWith('#')).map((l) => [l.t, l.href]));
+  if (key === 'projects' && quick) out += localbar('Case Studies', quick.links.filter((l) => l.href.startsWith('#')).map((l) => [l.t, l.href]));
   else if (key === 'solutions') out += localbar('Solutions', [['Hardware', '#gnss-positioning'], ['GIS', '#esri-gis'], ['Software', '#field-software'], ['Services', '#services-support'], ['Partners', '#partners']]);
 
   // hero
   const heroImgs = hero.imgs.filter((i) => !/-logo/.test(i.src) && (/\/(gallery|training)\//.test(i.src) || /\.(png|webp|avif)$/.test(i.src)));
   const photoHero = heroImgs[0] && /\/(gallery|training)\//.test(heroImgs[0].src);
-  const heroLinks = isVendor ? [{ t: 'Get a Quote', href: `/contact/?product=${key}` }, { t: 'View products', href: '#products' }]
-    : key === 'solutions' ? [{ t: 'Talk to a specialist', href: '/contact/' }, { t: 'Explore services', href: '#services-support' }] : [];
-  out += `<section class="page-hero"><span class="eyebrow rv">${isVendor ? 'Solutions' : t(opts.eyebrow || '')}</span>
+  const heroLinks = key === 'solutions' ? [{ t: 'Talk to a specialist', href: '/contact/' }, { t: 'Explore services', href: '#services-support' }] : [];
+  out += `<section class="page-hero"><span class="eyebrow rv">${t(opts.eyebrow || '')}</span>
   <h1 class="display rv">${t(h1?.t || d.meta.title)}</h1>${lead ? `<p class="lead rv">${t(lead.t)}</p>` : ''}${heroLinks.length ? `<div class="rv">${linksRow(heroLinks)}</div>` : ''}
   ${photoHero ? `<div class="hero-photo rv"><img src="${im(heroImgs[0].src)}" alt="${esc(rb(heroImgs[0].alt))}" fetchpriority="high"></div>`
     : heroImgs.length ? `<div class="hero-products rv">${heroImgs.slice(0, 3).map((i) => `<img src="${im(i.src)}" alt="${esc(rb(i.alt))}" style="mix-blend-mode:multiply">`).join('')}</div>` : ''}
@@ -314,124 +308,94 @@ function generic(key, opts = {}) {
    slide = { label, eye, h, p, l: [[text, href], [text, href]], img?, pos?, glow?, prods? }
    `img` makes a full-bleed banner slide (pos = horizontal focal point in %); `prods` makes a studio product lineup.
    srTitle gives the page a visually hidden <h1> when the slide headings are product names. */
-const stage = (prods, first) => `<div class="stage">${prods.map((p, k) => `<img${p.blk ? ` class="blk${p.fade ? ' fade' : ''}"` : ''}${p.side ? ' data-side' : ''} src="${p.src}" alt="${esc(p.alt)}" style="--s:${p.s};--w:${p.w || 34}%;--wm:${p.wm || 56}%;--m:${p.m || 0}px;--i:${k}" ${first ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`).join('')}</div>`;
+const stage = (prods, first) => `<div class="stage">${prods.map((p, k) => `<img${[p.blk && 'blk', p.fade && 'fade', p.card && 'card'].filter(Boolean).length ? ` class="${[p.blk && 'blk', p.fade && 'fade', p.card && 'card'].filter(Boolean).join(' ')}"` : ''}${p.side ? ' data-side' : ''} src="${p.src}" alt="${esc(p.alt)}" style="--s:${p.s};--w:${p.w || 34}%;--wm:${p.wm || 56}%;--m:${p.m || 0}px;${p.r ? `--r:${p.r};` : ''}--i:${k}" ${first ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`).join('')}</div>`;
 const heroCarousel = (slides, { label = 'Featured', srTitle = '', banner = false } = {}) => `<section class="hero${banner ? ' hero--banner' : ''}" aria-roledescription="carousel" aria-label="${esc(label)}">
 ${srTitle ? `<h1 class="sr-only">${esc(srTitle)}</h1>` : ''}${slides.map((s, i) => {
   const H = i === 0 && !srTitle ? 'h1' : 'h2';
   const [primary, secondary] = s.l;
-  return `<div class="slide" role="group" aria-label="${i + 1} of ${slides.length}" style="${s.glow ? `--glow:${s.glow};` : ''}--pos:${s.pos || 70}%">
+  return `<div class="slide${s.img ? ' photo' : ''}" role="group" aria-label="${i + 1} of ${slides.length}" style="${s.glow ? `--glow:${s.glow};` : ''}--pos:${s.pos || 70}%">
 ${s.img ? `<img class="bg" src="${s.img}" alt="" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">` : ''}
 <div class="slide-copy"><span class="eyebrow">${esc(s.eye)}</span><${H} class="display">${esc(s.h)}</${H}><p>${esc(s.p)}</p><div class="actions"><a class="btn light" href="${esc(href(primary[1]))}"${aAttr(primary[1])}>${esc(primary[0])}</a>${secondary ? tl(secondary[0], secondary[1]) : ''}</div></div>${s.prods ? stage(s.prods, i === 0) : ''}</div>`;
 }).join('')}
 <div class="hero-dots" role="tablist" aria-label="Choose slide">${slides.map((s, i) => `<button type="button" role="tab" aria-selected="${i === 0}" aria-label="${esc(s.label)}"><i></i></button>`).join('')}</div></section>`;
 
-/* ---------- DJI ENTERPRISE (modelled on enterprise.dji.com) ---------- */
-function djiPage() {
-  const d = C['dji-enterprise'];
-  const B = '/assets/img/products/';
-  const DJI = 'https://enterprise.dji.com/';
+/* ---------- VENDOR PAGES (each modelled on the vendor's own site; the data lives in tools/vendors.mjs) ----------
+   Sections are optional: hero, updates, videos, industries, products (tabbed), discover, then KACO's support + CTA. */
+function vendorPage(cfg) {
+  const d = C[cfg.content || cfg.key];
   const q = (k) => `/contact/?product=${k}`;
-  const qs = (n) => q(slug(/^dji/i.test(n) ? n : 'DJI ' + n));
+  const pre = cfg.chipPrefix || '';
+  const qs = (n) => q(slug(pre && !new RegExp('^' + pre.trim(), 'i').test(n) ? pre + n : n));
   const play = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 6.5v11l9-5.5z"/></svg>';
+  const attrs = (h) => (ext(h) ? ' target="_blank" rel="noopener"' : '');
+  const PRODUCTS = '/assets/img/products/';
+  const imgPath = (f) => (f.startsWith('/') ? f : PRODUCTS + f);
+  const bar = [];
 
-  // hero carousel: DJI's own banners, copy on the dark left side
-  const slides = [
-    { label: 'DJI Matrice 400', eye: 'Drone', h: 'DJI Matrice 400', p: 'Engineered for excellence, designed for versatility.', img: B + 'dji-matrice-400-hero-01.jpg', pos: 56, l: [['Get a quote', q('dji-matrice-400')], ['Learn more', DJI + 'matrice-400']] },
-    { label: 'Zenmuse L3', eye: 'LiDAR payload', h: 'Zenmuse L3', p: 'See through, far and true.', img: B + 'dji-zenmuse-l3-hero-01.jpg', pos: 64, l: [['Get a quote', q('dji-zenmuse-l3')], ['Learn more', DJI + 'zenmuse-l3']] },
-    { label: 'DJI Dock 3', eye: 'Remote operations', h: 'DJI Dock 3', p: 'Rise to any challenge.', img: B + 'dji-dock-3-hero-01.jpg', pos: 66, l: [['Get a quote', q('dji-dock-3')], ['Learn more', DJI + 'dock-3']] },
-    { label: 'DJI Matrice 4 Series', eye: 'Drone', h: 'DJI Matrice 4 Series', p: 'The age of intelligent flight.', img: B + 'dji-matrice-4-series-hero-01.jpg', pos: 50, l: [['Get a quote', q('dji-m4-series')], ['Learn more', DJI + 'matrice-4-series']] },
-    { label: 'DJI FlightHub 2', eye: 'Software', h: 'DJI FlightHub 2', p: 'Fly with cloud intelligence.', img: B + 'dji-flighthub-2-hero-01.jpg', pos: 74, l: [['Get a quote', q('dji-flighthub-2')], ['Learn more', DJI + 'flighthub-2']] },
-    { label: 'Dock as First Responder', eye: 'Public safety', h: 'Dock as First Responder', p: 'Launch on alert, eyes on scene first.', img: B + 'dji-dock-first-responder-hero-01.jpg', pos: 80, l: [['Get a quote', q('dji-dock-3')], ['Learn more', DJI + 'dock-3']] },
-    { label: 'DJI O4 Ground Station', eye: 'Accessory', h: 'DJI O4 Ground Station', p: 'Reach farther, stay aware.', img: B + 'dji-o4-ground-station-hero-01.jpg', pos: 76, l: [['Get a quote', q('dji-o4-ground-station')], ['Learn more', DJI + 'o4-ground-station']] },
-    { label: 'DJI AP100 Parachute', eye: 'Accessory', h: 'DJI AP100 Parachute', p: 'For the priceless below.', img: B + 'dji-ap100-parachute-hero-01.jpg', pos: 58, l: [['Get a quote', q('dji-ap100')], ['Learn more', DJI + 'ap100-parachute']] },
-  ];
-  const hero = heroCarousel(slides, { label: 'DJI Enterprise featured products', srTitle: 'DJI Enterprise drones, LiDAR and docks in Uganda', banner: true });
+  const hero = heroCarousel(cfg.hero.slides, { label: cfg.hero.label, srTitle: cfg.srTitle, banner: !!cfg.hero.banner });
 
-  // latest updates: one lead story + three cards
-  const stories = [
-    { cat: 'Geospatial', h: 'Zenmuse L3: long-range, high-accuracy aerial LiDAR', p: "DJI's first long-range LiDAR system pairs a 1535 nm sensor reaching up to 950 m with dual 100MP mapping cameras and a high-precision POS, covering up to 100 km² a day on the Matrice 400.", img: B + 'dji-zenmuse-l3-hero-01.jpg', pos: 64, href: DJI + 'news/detail/zenmuse-l3-release' },
-    { cat: 'Public Safety', h: 'From drone to dock as first responder: the next evolution of DFR', img: B + 'dji-dock-first-responder-hero-01.jpg', pos: 80, href: DJI + 'dock-3' },
-    { cat: 'Industry', h: 'Matrice 400 sets a new standard for long-endurance aerial missions', img: B + 'dji-matrice-400-hero-01.jpg', pos: 56, href: DJI + 'news/detail/matrice-400-release' },
-    { cat: 'Industry', h: 'Matrice 4 Series: the age of intelligent flight', img: B + 'dji-matrice-4-series-hero-01.jpg', pos: 50, href: DJI + 'matrice-4-series' },
-  ];
-  const media = (x) => `<div class="news-media" style="--pos:${x.pos}%"><img src="${x.img}" alt="" loading="lazy" decoding="async"></div>`;
-  const [lead, ...rest] = stories;
-  const updates = `<section class="sec" id="updates"><div class="wrap">${head('Latest from DJI Enterprise')}<div class="news rv">
+  // latest updates: one lead story + cards
+  let updates = '';
+  if (cfg.updates) {
+    const media = (x) => `<div class="news-media${x.fit === 'contain' ? ' contain' : x.fit === 'light' ? ' contain light' : ''}" style="--pos:${x.pos || 50}%"><img${x.blk ? ' class="blk"' : ''} src="${imgPath(x.img)}" alt="" loading="lazy" decoding="async"></div>`;
+    const [lead, ...rest] = cfg.updates.items;
+    updates = `<section class="sec" id="updates"><div class="wrap">${head(cfg.updates.title, cfg.updates.lead)}<div class="news rv">
 <article class="news-lead">${media(lead)}<div class="news-body"><span class="cat">${esc(lead.cat)}</span><h3>${esc(lead.h)}</h3><p>${esc(lead.p)}</p>${tl('Learn more', lead.href)}</div></article>
-${rest.map((x) => `<article class="news-card">${media(x)}<div class="news-body"><span class="cat">${esc(x.cat)}</span><h3>${esc(x.h)}</h3>${tl('Learn more', x.href)}</div></article>`).join('')}</div></div></section>`;
+${rest.map((x) => `<article class="news-card">${media(x)}<div class="news-body"><span class="cat">${esc(x.cat)}</span><h3>${esc(x.h)}</h3>${x.p ? `<p>${esc(x.p)}</p>` : ''}${tl('Learn more', x.href)}</div></article>`).join('')}</div></div></section>`;
+    bar.push(['Updates', '#updates']);
+  }
 
-  // case-study videos: official DJI Enterprise YouTube films, played in-page on click
-  const vids = [
-    { id: 'ieMpv2EQjlU', cat: 'Public Safety', title: 'Fighting Wildfires With DJI Matrice 4T to Save Time and Lives' },
-    { id: 'D23O3OGMevc', cat: 'AEC & Surveying', title: 'DJI Zenmuse L2: Using LiDAR Technology for Land Surveying Projects' },
-    { id: 'AsrPtDmtXu0', cat: 'Public Safety', title: 'Protecting Iceland from Volcanic Eruptions with DJI Drones' },
-  ];
-  const videos = `<section class="sec grey" id="videos"><div class="wrap">${head('Case study videos', 'See how DJI Enterprise drones work in the field.')}<div class="vgrid rv">
-${vids.map((v) => `<button type="button" class="vcard" data-yt="${v.id}" data-title="${esc(v.title)}"><span class="vthumb"><img src="https://i.ytimg.com/vi/${v.id}/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${v.id}/hqdefault.jpg'"><span class="vplay">${play}</span></span><span class="vbody"><span class="cat">${esc(v.cat)}</span><strong>${esc(v.title)}</strong><span class="tl">Watch video</span></span></button>`).join('\n')}
-<a class="vcard" href="https://www.youtube.com/@DJIEnterprise" target="_blank" rel="noopener"><span class="vthumb"><img src="${B}dji-drone-pair-01.jpg" alt="" loading="lazy" decoding="async"><span class="vplay">${play}</span></span><span class="vbody"><span class="cat">DJI Enterprise on YouTube</span><strong>More case studies and product films</strong><span class="tl">Visit the channel</span></span></a>
+  // videos: official YouTube films, played in-page on click (iframe created on demand)
+  let videos = '', modal = '';
+  if (cfg.videos) {
+    const v = cfg.videos, total = v.items.length + (v.channel ? 1 : 0);
+    videos = `<section class="sec grey" id="videos"><div class="wrap">${head(v.title, v.lead)}<div class="vgrid${total === 3 ? ' v3' : ''} rv">
+${v.items.map((x) => `<button type="button" class="vcard" data-yt="${x.id}" data-title="${esc(x.title)}"><span class="vthumb"><img src="https://i.ytimg.com/vi/${x.id}/${x.thumb || 'maxresdefault'}.jpg" alt="" loading="lazy" decoding="async"><span class="vplay">${play}</span></span><span class="vbody"><span class="cat">${esc(x.cat)}</span><strong>${esc(x.title)}</strong><span class="tl">Watch video</span></span></button>`).join('\n')}
+${v.channel ? `<a class="vcard" href="${v.channel.href}" target="_blank" rel="noopener"><span class="vthumb"><img src="${imgPath(v.channel.img)}" alt="" loading="lazy" decoding="async"><span class="vplay">${play}</span></span><span class="vbody"><span class="cat">${esc(v.channel.cat)}</span><strong>${esc(v.channel.title)}</strong><span class="tl">${esc(v.channel.cta || 'Visit the channel')}</span></span></a>` : ''}
 </div></div></section>`;
+    modal = `<div class="lb vm" id="vm" role="dialog" aria-modal="true" aria-label="Video player"><button class="x" type="button" aria-label="Close video">${svg.x}</button><div class="vm-frame"></div><p></p></div>`;
+    bar.push(['Videos', '#videos']);
+  }
 
-  // industries
-  const inds = [
-    { n: 'Public Safety', p: 'Give responders accurate, timely aerial intelligence to better serve their communities.', img: B + 'dji-dock-first-responder-hero-01.jpg', pos: 68, href: DJI + 'public-safety' },
-    { n: 'Geospatial', p: 'Digitize assets and manage projects with drone mapping, photogrammetry and LiDAR.', img: B + 'dji-drone-flight-01.jpg', pos: 50, href: DJI + 'geospatial' },
-    { n: 'Inspection', p: 'Safely inspect and manage assets, equipment and infrastructure from the air.', img: B + 'dji-dock-3-hero-01.jpg', pos: 70, href: DJI + 'inspection' },
-  ];
-  const industries = `<section class="sec" id="industries"><div class="wrap">${head('Industries', 'Three ways DJI Enterprise puts aerial intelligence to work.')}<div class="photos short">
-${inds.map((x) => `<a class="ptile rv" href="${x.href}" target="_blank" rel="noopener"><img src="${x.img}" alt="" loading="lazy" decoding="async" style="object-position:${x.pos}% 50%"><h3>${esc(x.n)}</h3><p>${esc(x.p)}</p><span class="tl">Learn more</span></a>`).join('\n')}</div></div></section>`;
+  // industries / applications
+  let industries = '';
+  if (cfg.industries) {
+    const i = cfg.industries;
+    industries = `<section class="sec" id="industries"><div class="wrap">${head(i.title, i.lead)}<div class="photos short cols" style="--cols:${Math.min(i.items.length, 4)}">
+${i.items.map((x) => `<a class="ptile rv" href="${esc(href(x.href))}"${attrs(x.href)}><img src="${imgPath(x.img)}" alt="" loading="lazy" decoding="async" style="object-position:${x.pos || 50}% 50%"><h3>${esc(x.n)}</h3><p>${esc(x.p)}</p><span class="tl">Learn more</span></a>`).join('\n')}</div></div></section>`;
+    bar.push([i.nav || 'Industries', '#industries']);
+  }
 
-  // products: DJI's own catalogue structure, tabbed. `more` items link to a prefilled KACO quote request.
-  const CAT = [
-    { tab: 'Drones', note: 'Aerial tools for your daily tasks', more: ['Matrice 4D Series', 'Matrice 30 Series', 'DJI FlyCart 100', 'DJI FlyCart 30'], items: [
-      { n: 'DJI Matrice 400', tag: 'Engineered for excellence, designed for versatility', specs: ['59-minute flight time', 'Up to 6 kg payload capacity', 'Rotating LiDAR and mmWave radar obstacle sensing'], img: 'dji-matrice-400-hero-01.jpg', cover: 56, learn: 'matrice-400', q: 'dji-matrice-400' },
-      { n: 'DJI Matrice 350 RTK', tag: 'Fully powered to forge ahead', specs: ['55-minute flight time', 'IP55 weather rating', '6-direction sensing and positioning'], img: 'dji-matrice-350-rtk-product-01.png', zoom: 1.15, learn: 'matrice-350-rtk', q: 'dji-m350' },
-      { n: 'DJI Matrice 4 Series', tag: 'The age of intelligent flight', specs: ['Matrice 4E for surveying, mapping and construction', 'Matrice 4T for inspection and public safety', 'O4 Enterprise video transmission'], img: 'dji-matrice-4-series-product-01.png', zoom: 1.15, learn: 'matrice-4-series', q: 'dji-m4-series' },
-      { n: 'DJI Mavic 3 Enterprise Series', tag: 'Portable mapping and inspection', specs: ['45-minute flight time', 'Mechanical shutter camera with RTK module support', 'Thermal version with 640×512 sensor'], img: 'dji-mavic-3-enterprise-product-01.png', zoom: 1.15, learn: 'mavic-3-enterprise', q: 'dji-mavic-3-enterprise' },
-    ] },
-    { tab: 'Payloads', note: 'Gather data from multiple angles', more: ['Zenmuse S1', 'Zenmuse V1', 'Zenmuse H30 Series', 'Zenmuse H20N', 'Zenmuse H20 Series'], items: [
-      { n: 'Zenmuse L3', tag: 'See through, far and true', specs: ['LiDAR range up to 950 m at 10% reflectivity', 'Dual 100MP RGB mapping cameras', 'Up to 100 km² of coverage per day'], img: 'dji-zenmuse-l3-hero-01.jpg', cover: 64, learn: 'zenmuse-l3', q: 'dji-zenmuse-l3' },
-      { n: 'Zenmuse L2', tag: 'Integrated LiDAR and RGB for surveying', specs: ['5 LiDAR returns', '250 m detection range', 'Real-time point cloud coloring'], img: 'dji-zenmuse-l2-product-01.png', learn: 'zenmuse-l2', q: 'dji-zenmuse-l2' },
-      { n: 'Zenmuse P1', tag: 'Full-frame photogrammetry', specs: ['45MP full-frame sensor', 'Interchangeable fixed-focus lenses', 'Smart oblique capture'], img: 'dji-zenmuse-p1-product-01.png', learn: 'zenmuse-p1', q: 'dji-zenmuse-p1' },
-    ] },
-    { tab: 'Docks', note: 'Remote drone operation, for roads less traveled', more: ['DJI Dock 2', 'DJI Dock'], items: [
-      { n: 'DJI Dock 3', tag: 'Rise to any challenge', specs: ['The first DJI dock adaptable for vehicle mounting', 'Works with Matrice 4D and 4TD drones', '24/7 remote operations through FlightHub 2'], img: 'dji-dock-3-product-01.png', learn: 'dock-3', q: 'dji-dock-3' },
-    ] },
-    { tab: 'Software', note: 'Create digital transformation', more: ['DJI FlightHub 2 On-Premises', 'DJI Terra', 'DJI Modify', 'DJI DeliveryHub', 'Cloud API', 'Mobile SDK', 'Payload SDK'], items: [
-      { n: 'DJI FlightHub 2', tag: 'Fly with cloud intelligence', specs: ['Remote operation and control', 'Flight planning and route management', 'Secure third-party integration through the API'], img: 'dji-flighthub-2-hero-01.jpg', cover: 74, learn: 'flighthub-2', q: 'dji-flighthub-2' },
-    ] },
-    { tab: 'Accessories', note: 'Expand your capabilities', more: ['FlightHub 2 AIO', 'Manifold 3', 'D-RTK 3 Multifunctional Station', 'DJI SkyPort V2', 'DJI X-Port'], items: [
-      { n: 'DJI AP100 Parachute', tag: 'For the priceless below', specs: ['Response time under 600 ms', 'Descent rate below 5 m/s', 'Manual or automatic deployment'], img: 'dji-ap100-parachute-hero-01.jpg', cover: 58, learn: 'ap100-parachute', q: 'dji-ap100' },
-      { n: 'DJI O4 Ground Station', tag: 'Reach farther, stay aware', specs: ['12-antenna array with automatic multi-band selection', 'Gateway mode connects straight to FlightHub 2', 'Built for 24/7 unattended operations'], img: 'dji-o4-ground-station-hero-01.jpg', cover: 76, learn: 'o4-ground-station', q: 'dji-o4-ground-station' },
-    ] },
-  ];
-  const pcard = (it, wide) => `<article class="pcard${wide ? ' wide' : ''}"><div class="pcard-media"><img${it.cover ? ` class="cover" style="--pos:${it.cover}%"` : it.zoom ? ` style="--z:${it.zoom}"` : ''} src="${B}${it.img}" alt="${esc(it.n)}" loading="lazy" decoding="async"></div>
-<div class="pcard-body"><h3>${esc(it.n)}</h3><p class="tag">${esc(it.tag)}</p>${chk(it.specs)}<div class="links-row">${tl('Get a quote', q(it.q))}${tl('Learn more', DJI + it.learn)}</div></div></article>`;
-  const products = `<section class="sec grey" id="products"><div class="wrap">${head('DJI Enterprise products', "DJI's current enterprise line-up, supplied and supported by KACO Systems across Uganda and East Africa.")}
-<div class="rv" data-tabs><div class="ptabs" role="tablist" aria-label="Product categories">${CAT.map((c, i) => `<button type="button" role="tab" id="ptab-${i}" aria-controls="ppanel-${i}" aria-selected="${i === 0}">${c.tab}</button>`).join('')}</div>
-${CAT.map((c, i) => `<div class="ppanel" role="tabpanel" id="ppanel-${i}" aria-labelledby="ptab-${i}"><h3 class="pcat">${c.tab}</h3><p class="pnote">${esc(c.note)}</p><div class="pgrid">${c.items.map((it) => pcard(it, c.items.length === 1)).join('')}</div>
-<div class="chips"><span>Also available</span>${c.more.map((n) => `<a href="${qs(n)}" title="Request a quote for ${esc(n)}">${esc(n)}</a>`).join('')}</div></div>`).join('\n')}</div></div></section>`;
+  // products: the vendor's own catalogue structure, tabbed. `more` entries link to a prefilled KACO quote request.
+  let products = '';
+  if (cfg.products) {
+    const P = cfg.products;
+    const pcard = (it, wide) => `<article class="pcard${wide ? ' wide' : ''}"><div class="pcard-media${it.dark ? ' dark' : ''}"><img${it.cover ? ` class="cover" style="--pos:${it.cover}%"` : `${it.blk ? ' class="blk"' : ''}${it.zoom ? ` style="--z:${it.zoom}"` : ''}`} src="${imgPath(it.img)}" alt="${esc(it.n)}" loading="lazy" decoding="async"></div>
+<div class="pcard-body"><h3>${esc(it.n)}</h3><p class="tag">${esc(it.tag)}</p>${chk(it.specs)}<div class="links-row">${tl('Get a quote', q(it.q))}${it.learn ? tl('Learn more', it.learn) : ''}</div></div></article>`;
+    products = `<section class="sec grey" id="products"><div class="wrap">${head(P.title, P.lead)}
+<div class="rv" data-tabs><div class="ptabs" role="tablist" aria-label="Product categories">${P.cats.map((c, i) => `<button type="button" role="tab" id="ptab-${i}" aria-controls="ppanel-${i}" aria-selected="${i === 0}">${esc(c.tab)}</button>`).join('')}</div>
+${P.cats.map((c, i) => `<div class="ppanel" role="tabpanel" id="ppanel-${i}" aria-labelledby="ptab-${i}"><h3 class="pcat">${esc(c.tab)}</h3>${c.note ? `<p class="pnote">${esc(c.note)}</p>` : ''}<div class="pgrid">${c.items.map((it) => pcard(it, c.items.length === 1)).join('')}</div>
+${c.more && c.more.length ? `<div class="chips"><span>Also available</span>${c.more.map((m) => { const o = typeof m === 'string' ? { n: m, href: qs(m), t: `Request a quote for ${m}` } : { n: m.n, href: m.href, t: m.n }; return `<a href="${esc(o.href)}"${attrs(o.href)} title="${esc(o.t)}">${esc(o.n)}</a>`; }).join('')}</div>` : ''}</div>`).join('\n')}</div></div></section>`;
+    bar.push(['Products', '#products']);
+  }
 
-  // discover
-  const disc = [
-    ['Learning Center', 'Explore new features and courses to optimize your aerial workflows and boost productivity.', 'https://enterprise-insights.dji.com/learning-center', 'dji-dock-3-hero-01.jpg', 66],
-    ['Blogs', 'Read real-world case studies and the latest updates.', 'https://enterprise-insights.dji.com/blog', 'dji-matrice-4-series-hero-01.jpg', 50],
-    ['DJI Care Enterprise', 'An accident protection solution that gives you and your business peace of mind.', DJI + 'djicare-enterprise', 'dji-drone-pair-01.jpg', 50],
-    ['Fly Safe', 'Fly safely and responsibly with the latest tips, regulatory links and instructional videos.', 'https://www.dji.com/flysafe', 'dji-flighthub-2-hero-01.jpg', 74],
-  ];
-  const discover = `<section class="sec" id="discover"><div class="wrap">${head('Discover')}<div class="disc rv">
-${disc.map(([n, p, h, img, pos]) => `<a href="${h}" target="_blank" rel="noopener" style="--pos:${pos}%"><img src="${B}${img}" alt="" loading="lazy" decoding="async"><div><h3>${esc(n)}</h3><p>${esc(p)}</p><span class="tl">Learn more</span></div></a>`).join('\n')}</div></div></section>`;
+  // discover / resources
+  let discover = '';
+  if (cfg.discover) {
+    discover = `<section class="sec" id="discover"><div class="wrap">${head(cfg.discover.title || 'Discover')}<div class="disc rv">
+${cfg.discover.items.map((x) => `<a href="${esc(href(x.href))}"${attrs(x.href)} style="--pos:${x.pos || 50}%"><img${x.fit === 'contain' ? ' class="contain"' : ''} src="${imgPath(x.img)}" alt="" loading="lazy" decoding="async"><div><h3>${esc(x.n)}</h3><p>${esc(x.p)}</p><span class="tl">Learn more</span></div></a>`).join('\n')}</div></div></section>`;
+  }
 
   // KACO support + closing CTA (copy carried over from the previous page)
   const why = d.secs.find((x) => x.id === 'why-phirez');
   const whyH = why.intro.find((x) => x.tag === 'h2'), whyP = why.intro.find((x) => x.tag === 'p');
-  const support = `<section class="sec grey" id="why-kaco"><div class="wrap">${head(whyH.t, whyP && whyP.t)}<div class="cards">${why.cards.map((c) => textCard(c)).join('')}</div></div></section>`;
+  const support = `<section class="sec ${products ? '' : 'grey'}" id="why-kaco"><div class="wrap">${head(whyH.t, whyP && whyP.t)}<div class="cards">${why.cards.map((c) => textCard(c)).join('')}</div></div></section>`;
+  bar.push(['Support', '#why-kaco']);
   const end = d.secs[4], endH = end.intro.find((x) => x.tag === 'h2'), endP = end.intro.find((x) => x.tag === 'p');
-  const modal = `<div class="lb vm" id="vm" role="dialog" aria-modal="true" aria-label="Video player"><button class="x" type="button" aria-label="Close video">${svg.x}</button><div class="vm-frame"></div><p></p></div>`;
 
   page({
-    url: '/dji-enterprise/', title: 'DJI Enterprise Drones, LiDAR & Docks in Uganda | KACO Systems', desc: rb(d.meta.desc),
-    body: hero + localbar('DJI Enterprise', [['Updates', '#updates'], ['Videos', '#videos'], ['Industries', '#industries'], ['Products', '#products'], ['Support', '#why-kaco']])
-      + updates + videos + industries + products + discover + support + ctaBand(endH.t, endP && endP.t, end.links) + modal,
+    url: `/${cfg.key}/`, title: cfg.title, desc: cfg.desc || rb(d.meta.desc), bodyClass: cfg.theme ? `v-${cfg.theme}` : '',
+    body: hero + localbar(cfg.nav, bar) + updates + videos + industries + products + discover + support + ctaBand(endH.t, endP && endP.t, end.links) + modal,
   });
 }
 
@@ -599,8 +563,7 @@ generic('industries', { eyebrow: 'Industries' });
 generic('projects', { eyebrow: 'Case studies' });
 generic('training', { eyebrow: 'KACO Training Academy' });
 generic('company', { eyebrow: 'Company' });
-for (const k of Object.keys(VENDOR)) if (k !== 'dji-enterprise') generic(k);
-djiPage();
+for (const cfg of Object.values(VENDORS)) vendorPage(cfg);
 galleryPage();
 contactPage();
 legal('privacy', 'Privacy Policy');
