@@ -42,6 +42,7 @@ function im(src) {
 const ANCHOR = { '#service-centre': '#services-support', '#technical-support': '#services-support', '#consultancy-surveys': '#services-support', '#spatial-infrastructure': '#esri-gis', '#assurance-plan': '#services-support', '#hydrography': '#gpr-subsurface' };
 function href(h = '') {
   h = rb(h);
+  h = h.replace(/(?:\/solutions\/)?#(?:services-support|service-centre|technical-support|consultancy-surveys|assurance-plan)\b/, '/services/');
   h = h.replace(/(#[\w-]+)/, (a) => ANCHOR[a] || a);
   if (h.includes('why-phirez')) h = h.replace('why-phirez', 'why-kaco');
   return h;
@@ -67,8 +68,8 @@ const BRANDS = [
   { n: 'XGRIDS', s: 'Handheld SLAM LiDAR', h: '/solutions/#laser-scanning', i: 'xgrids-slam-scanner-01.jpg' },
 ];
 const NAV = [
-  ['Solutions', '/solutions/'], ['Services', '/solutions/#services-support'], ['Industries', '/industries/'],
-  ['Case Studies', '/projects/'], ['Gallery', '/gallery/'], ['Training', '/training/'], ['Company', '/company/'], ['Contact', '/contact/'],
+  ['Solutions', '/solutions/'], ['Services', '/services/'], ['Industries', '/industries/'],
+  ['Capabilities', '/projects/'], ['Gallery', '/gallery/'], ['Training', '/training/'], ['Company', '/company/'], ['Contact', '/contact/'],
 ];
 const svg = {
   wa: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.4 11.4 0 0 0 2.2 17.3L1 23l5.8-1.5a11.4 11.4 0 0 0 5.4 1.4h.1A11.4 11.4 0 0 0 20.5 3.5zM12.2 21a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3.4.9.9-3.3-.2-.3A9.4 9.4 0 1 1 12.2 21zm5.2-7c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1a7.7 7.7 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>',
@@ -90,7 +91,7 @@ function header(cur) {
   }).join('');
   const sheet = NAV.map(([n, h]) => n === 'Solutions'
     ? `<button class="sh-btn" type="button" aria-expanded="false" aria-controls="sh-sub">Solutions<span aria-hidden="true">${svg.down}</span></button><div class="sub" id="sh-sub"><div>${BRANDS.map((b) => `<a href="${b.h}">${esc(b.n)}</a>`).join('')}<a class="all" href="/solutions/">All solutions &amp; services</a></div></div>`
-    : `<a href="${h}">${n}<span aria-hidden="true">${svg.right}</span></a>`).join('');
+    : `<a href="${h}"${cur === h || (!h.includes('#') && cur.startsWith(h)) ? ' aria-current="page"' : ''}>${n}<span aria-hidden="true">${svg.right}</span></a>`).join('');
   return `<a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="hdr">
   <a class="logo" href="/" aria-label="KACO Systems — home"><img src="/kaco-logo.jpg" alt="KACO Systems" width="96" height="26"></a>
@@ -114,12 +115,12 @@ function footer() {
     <li><a href="/autodesk/">Autodesk &amp; Carlson Software</a></li><li><a href="/datamine-software/">Datamine Mine Geology Software</a></li>
     <li><a href="/ibm-tape/">IBM Tape Storage &amp; Archive</a></li><li><a href="/solutions/#system-integration">System Integration &amp; IT Networks</a></li></ul></div>
   <div><h4>Services &amp; Support</h4><ul>
-    <li><a href="/solutions/#services-support">Certified Service &amp; Calibration</a></li><li><a href="/solutions/#services-support">Technical HelpDesk Support</a></li>
-    <li><a href="/training/">KACO Training Academy</a></li><li><a href="/solutions/#services-support">Contract Survey &amp; Engineering</a></li>
-    <li><a href="/solutions/#esri-gis">Spatial Data Infrastructure</a></li><li><a href="/solutions/#services-support">Technology Assurance Plan</a></li>
+    <li><a href="/services/">Certified Service &amp; Calibration</a></li><li><a href="/services/">Technical HelpDesk Support</a></li>
+    <li><a href="/training/">KACO Training Academy</a></li><li><a href="/services/">Contract Survey &amp; Engineering</a></li>
+    <li><a href="/solutions/#esri-gis">Spatial Data Infrastructure</a></li><li><a href="/services/">Technology Assurance Plan</a></li>
     <li><a href="/gallery/">Field Gallery</a></li><li><a href="/company/#divisions">Our Technical Divisions</a></li><li><a href="/company/#careers">Careers at KACO</a></li></ul></div>
   <div><h4>Company</h4><ul>
-    <li><a href="/company/">About KACO Systems</a></li><li><a href="/industries/">Industries</a></li><li><a href="/projects/">Case Studies</a></li>
+    <li><a href="/company/">About KACO Systems</a></li><li><a href="/industries/">Industries</a></li><li><a href="/projects/">Capabilities</a></li>
     <li><a href="/contact/">Contact</a></li><li><a href="${WA}" target="_blank" rel="noopener">Chat on WhatsApp</a></li><li><a href="/contact/?action=service">Book Instrument Service</a></li></ul></div>
 </div>
 <div class="f-bottom"><span>© KACO Systems. All rights reserved. Registered in Uganda. · Designed by <a href="https://blactec.ug" target="_blank" rel="noopener">Blactec</a></span><nav><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></nav></div>
@@ -160,12 +161,18 @@ ${footer()}
 </html>
 `;
   const out = path.join(ROOT, url === '/' ? '' : url, 'index.html');
+  html = webpify(html);
   html = relativise(html, url);
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, html);
   PAGES.push(url);
 }
 const PAGES = [];
+// Heavy PNG/JPG assets get a smaller .webp sibling from tools/optimize.mjs; use it when present.
+function webpify(html) {
+  return html.replace(/\b(src|data-lb)="(\/assets\/img\/[^"]+)\.(png|jpe?g)"/gi, (m, attr, base, ext) =>
+    fs.existsSync(path.join(ROOT, base + '.webp')) ? `${attr}="${base}.webp"` : m);
+}
 // Make every root-absolute link relative so the site works from file://, subfolders, or any host.
 // Folder links get an explicit index.html so they also resolve without a web server. Set CLEAN_URLS=1 to keep /folder/ style.
 function relativise(html, url) {
@@ -181,7 +188,8 @@ function relativise(html, url) {
 /* ---------- components ---------- */
 const rv = (cls = '') => `rv ${cls}`.trim();
 const head = (h2, lead) => `<div class="sec-head rv"><h2 class="title">${t(h2)}</h2>${lead ? `<p class="lead">${t(lead)}</p>` : ''}</div>`;
-const chk = (arr) => `<ul class="chk">${arr.map((x) => `<li>${t(x)}</li>`).join('')}</ul>`;
+// Spec lists: hairline rows, no ticks or bullets. "Label: detail" items get a bold lead-in.
+const chk = (arr) => `<ul class="specs">${arr.map((x) => { const m = rb(x).match(/^([^:]{3,44}):\s+(.+)$/); return m ? `<li><b>${esc(m[1])}</b>${esc(m[2])}</li>` : `<li>${t(x)}</li>`; }).join('')}</ul>`;
 const linksRow = (ls, cls = '') => (ls.length ? `<div class="links-row">${ls.map((l, i) => tl(l.t, l.href, cls)).join('')}</div>` : '');
 const localbar = (title, items, cta = true) => `<div class="localbar"><div class="wrap"><strong>${t(title)}</strong><nav aria-label="On this page">${items.map(([n, h], i) => `<a href="${h}"${i === 0 ? ' class="keep"' : ''}>${t(n)}</a>`).join('')}${cta ? '<a class="pill-sm keep" href="/contact/">Get a Quote</a>' : ''}</nav></div></div>`;
 
@@ -234,13 +242,13 @@ function generic(key, opts = {}) {
   // sticky local bar
   const quick = secs.find((s) => !s.intro.length && !s.cards.length && s.links.length >= 2 && key === 'projects');
   const anchors = secs.filter((s) => s.id && s.intro.length).map((s) => [s.intro.find((x) => x.tag === 'h2')?.t.split(/[&,]| And /)[0].trim() || s.id, '#' + (s.id === 'why-phirez' ? 'why-kaco' : s.id)]);
-  if (key === 'projects' && quick) out += localbar('Case Studies', quick.links.filter((l) => l.href.startsWith('#')).map((l) => [l.t, l.href]));
-  else if (key === 'solutions') out += localbar('Solutions', [['Hardware', '#gnss-positioning'], ['GIS', '#esri-gis'], ['Software', '#field-software'], ['Services', '#services-support'], ['Partners', '#partners']]);
+  if (key === 'projects' && quick) out += localbar('Capabilities', quick.links.filter((l) => l.href.startsWith('#')).map((l) => [l.t, l.href]));
+  else if (key === 'solutions') out += localbar('Solutions', [['Hardware', '#gnss-positioning'], ['GIS', '#esri-gis'], ['Software', '#field-software'], ['Services', '/services/'], ['Partners', '#partners']]);
 
   // hero
   const heroImgs = hero.imgs.filter((i) => !/-logo/.test(i.src) && (/\/(gallery|training)\//.test(i.src) || /\.(png|webp|avif)$/.test(i.src)));
   const photoHero = heroImgs[0] && /\/(gallery|training)\//.test(heroImgs[0].src);
-  const heroLinks = key === 'solutions' ? [{ t: 'Talk to a specialist', href: '/contact/' }, { t: 'Explore services', href: '#services-support' }] : [];
+  const heroLinks = key === 'solutions' ? [{ t: 'Talk to a specialist', href: '/contact/' }, { t: 'Explore services', href: '/services/' }] : [];
   out += `<section class="page-hero"><span class="eyebrow rv">${t(opts.eyebrow || '')}</span>
   <h1 class="display rv">${t(h1?.t || d.meta.title)}</h1>${lead ? `<p class="lead rv">${t(lead.t)}</p>` : ''}${heroLinks.length ? `<div class="rv">${linksRow(heroLinks)}</div>` : ''}
   ${photoHero ? `<div class="hero-photo rv"><img src="${im(heroImgs[0].src)}" alt="${esc(rb(heroImgs[0].alt))}" fetchpriority="high"></div>`
@@ -256,6 +264,7 @@ function generic(key, opts = {}) {
     const id = s.id === 'why-phirez' ? 'why-kaco' : s.id;
     const idAttr = id ? ` id="${id}"` : '';
     const bg = (n++ % 2 === 0) ? '' : 'grey';
+    if (key === 'solutions' && s.id === 'services-support') return;
     // empty or link-only
     if (!h2 && !cards.length && !ps.length) return;
     // logo wall
@@ -286,7 +295,7 @@ function generic(key, opts = {}) {
     const spot = key === 'projects' && s.id === 'spotlights';
     if (cards.length === 1 && !hasImg) {
       const c = cards[0];
-      body = `<div class="banner rv" style="margin-top:0"><h3>${t(c.h)}</h3>${c.ps.map((x) => `<p>${t(x)}</p>`).join('')}${c.lis.length ? `<ul class="chk" style="max-width:420px;margin:0 auto 22px;text-align:left;color:#fff">${c.lis.map((x) => `<li>${t(x)}</li>`).join('')}</ul>` : ''}<div class="links-row">${c.links.map((l, i) => `<a class="btn ${i ? 'ghost on-dark' : 'light'}" href="${esc(href(l.href))}"${aAttr(l.href)}>${t(l.t)}</a>`).join('')}</div></div>`;
+      body = `<div class="banner rv" style="margin-top:0"><h3>${t(c.h)}</h3>${c.ps.map((x) => `<p>${t(x)}</p>`).join('')}${c.lis.length ? chk(c.lis) : ''}<div class="links-row">${c.links.map((l, i) => `<a class="btn ${i ? 'ghost on-dark' : 'light'}" href="${esc(href(l.href))}"${aAttr(l.href)}>${t(l.t)}</a>`).join('')}</div></div>`;
     } else if (industry || spot) {
       body = `<div class="rows">${cards.map((c, i) => rowCard(c, i, spot)).join('')}</div>`;
     } else if (hasImg) {
@@ -294,7 +303,7 @@ function generic(key, opts = {}) {
       body = `<div class="tiles ${cls}">${cards.map((c) => tile(c)).join('')}</div>`;
     } else {
       const numbered = /process/.test(s.cls) || key === 'training' && idx === 3;
-      body = `<div class="cards">${cards.map((c, i) => textCard(c, numbered ? i + 1 : 0)).join('')}</div>`;
+      body = `<div class="cards${cards.length % 3 === 0 ? ' c3' : ''}">${cards.map((c, i) => textCard(c, numbered ? i + 1 : 0)).join('')}</div>`;
     }
     if (banner) body += `<div class="banner rv"><h3>${t(banner.h)}</h3>${banner.ps.map((x) => `<p>${t(x)}</p>`).join('')}<div class="links-row">${banner.links.map((l, i) => `<a class="btn ${i ? 'ghost on-dark' : 'light'}" href="${esc(href(l.href))}"${aAttr(l.href)}>${t(l.t)}</a>`).join('')}</div></div>`;
     const darkBanner = cards.length === 1 && !hasImg;
@@ -319,7 +328,7 @@ ${srTitle ? `<h1 class="sr-only">${esc(srTitle)}</h1>` : ''}${slides.map((s, i) 
 ${s.img ? `<img class="bg" src="${s.img}" alt="" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">` : ''}
 <div class="slide-copy"><span class="eyebrow">${esc(s.eye)}</span><${H} class="display">${esc(s.h)}</${H}><p>${esc(s.p)}</p><div class="actions"><a class="btn light" href="${esc(href(primary[1]))}"${aAttr(primary[1])}>${esc(primary[0])}</a>${secondary ? tl(secondary[0], secondary[1]) : ''}</div></div>${s.prods ? stage(s.prods, i === 0) : ''}</div>`;
 }).join('')}
-<div class="hero-dots" role="tablist" aria-label="Choose slide">${slides.map((s, i) => `<button type="button" role="tab" aria-selected="${i === 0}" aria-label="${esc(s.label)}"><i></i></button>`).join('')}</div></section>`;
+<div class="hero-ctl"><div class="hero-dots" role="tablist" aria-label="Choose slide">${slides.map((s, i) => `<button type="button" role="tab" aria-selected="${i === 0}" aria-label="${esc(s.label)}"><i></i></button>`).join('')}</div><button class="hero-pause" type="button" aria-pressed="false" aria-label="Pause slideshow"><svg class="i-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button></div></section>`;
 
 /* ---------- VENDOR PAGES (each modelled on the vendor's own site; the data lives in tools/vendors.mjs) ----------
    Sections are optional: hero, updates, videos, industries, products (tabbed), discover, then KACO's support + CTA. */
@@ -481,7 +490,7 @@ function home() {
 
   const svcs = C.solutions.secs[10].cards.slice(0, 6);
   const services = `<section class="sec dark" id="services"><div class="wrap">${head('Comprehensive services & lifecycle support', 'We ensure your investment delivers maximum productivity and zero unexpected downtime. Our certified service center, HelpDesk engineers, and training academy protect your field crews every step of the way.')}
-<div class="cards">${svcs.map((c, i) => textCard({ ...c, links: c.links.map((l) => ({ ...l })) }, i + 1)).join('')}</div>
+<div class="cards c3">${svcs.map((c, i) => textCard({ ...c, links: c.links.map((l) => ({ ...l })) }, i + 1)).join('')}</div>
 <div class="banner rv" style="background:#fff;color:#000;margin-top:var(--gutter)"><h3 style="color:#000">Unrivalled Service. Unmatched Precision. Maximum Field Uptime.</h3><p style="color:var(--ink-2)">Don't let uncalibrated total stations or sensor drift compromise millions in engineering investments. Book your equipment into our factory-calibrated Kampala laboratory today.</p>
 <div class="links-row" style="gap:12px"><a class="btn" href="/contact/?action=service">Book Equipment Service</a><a class="btn ghost" href="tel:${TEL}">Call Service Lab: ${PHONE}</a></div></div></div></section>`;
 
@@ -493,7 +502,22 @@ function home() {
 <div class="links-row" style="margin-top:28px;gap:12px"><a class="btn" href="/contact/">Talk to a specialist</a><a class="btn ghost" href="/contact/?service=calibration">Book equipment service</a></div></div></section>`;
 
   const ld = JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', name: 'KACO Systems', url: SITE, telephone: PHONE, email: EMAIL, image: SITE + '/kaco-logo.jpg', address: { '@type': 'PostalAddress', streetAddress: '2nd Floor, Unicalo House, Plot 11, Archer Road', addressLocality: 'Kampala', addressCountry: 'UG' }, openingHours: 'Mo-Fr 08:00-17:00' });
-  page({ url: '/', title: 'KACO Systems | Precision Geospatial & IT Solutions in Uganda', desc: "KACO Systems supplies Trimble GNSS, DJI Enterprise drones & LiDAR, Esri GIS and certified calibration across Uganda and East Africa.", body: heroHtml + solutions + stats + caps + about + industries2 + spotlights + services + gallery + cta, jsonld: ld });
+  page({ url: '/', title: 'KACO Systems | Precision Geospatial & IT Solutions in Uganda', desc: "KACO Systems supplies Trimble GNSS, DJI Enterprise drones & LiDAR, Esri GIS and certified calibration across Uganda and East Africa.", body: heroHtml + solutions + stats + about + industries2 + spotlights + services + cta, jsonld: ld });
+}
+
+/* ---------- Services (split out of Solutions so "Services" has its own destination) ---------- */
+function servicesPage() {
+  const sol = C.solutions.secs;
+  const sec = sol.find((x) => x.id === 'services-support');
+  const h2 = sec.intro.find((x) => x.tag === 'h2'), lead = sec.intro.find((x) => x.tag === 'p');
+  const cards = [...sec.cards], banner = cards.pop();
+  const end = sol[sol.length - 1], endH = end.intro.find((x) => x.tag === 'h2'), endP = end.intro.find((x) => x.tag === 'p');
+  const body = `${localbar('Services', [['Calibration', '#svc-1'], ['Support', '#svc-2'], ['Training', '#svc-3'], ['Survey', '#svc-4'], ['SDI & IT', '#svc-5'], ['Assurance', '#svc-6']])}
+<section class="page-hero"><span class="eyebrow">Services &amp; support</span><h1 class="display">${t(h2.t)}</h1><p class="lead">${t(lead.t)}</p></section>
+<section class="sec" style="padding-top:8px"><div class="wrap"><div class="cards${cards.length % 3 === 0 ? ' c3' : ''}">${cards.map((c, i) => textCard(c, i + 1).replace('<article class="card rv">', `<article class="card rv" id="svc-${i + 1}">`)).join('')}</div>
+<div class="banner rv"><h3>${t(banner.h)}</h3>${banner.ps.map((x) => `<p>${t(x)}</p>`).join('')}<div class="links-row">${banner.links.map((l, i) => `<a class="btn ${i ? 'ghost on-dark' : 'light'}" href="${esc(href(l.href))}"${aAttr(l.href)}>${t(l.t)}</a>`).join('')}</div></div></div></section>
+${ctaBand(endH.t, endP && endP.t, end.links)}`;
+  page({ url: '/services/', title: 'Services & Certified Support | KACO Systems', desc: 'Certified calibration, HelpDesk support, training, contract survey, spatial data infrastructure and technology assurance from KACO Systems in Kampala.', body });
 }
 
 /* ---------- Gallery ---------- */
@@ -522,13 +546,14 @@ function contactPage() {
 <div class="links-row" style="justify-content:flex-start;margin-top:22px;gap:12px"><a class="btn" href="/contact/?action=service">Book instrument service</a><a class="btn ghost" href="${WA}" target="_blank" rel="noopener">Chat on WhatsApp</a></div></div>
 <form class="form rv" id="contact-form" data-endpoint="${FORM}" novalidate>
 <h2>Send us a message</h2>
-<div class="two"><div class="fld"><label for="f-name">Full name</label><input id="f-name" name="name" required autocomplete="name"></div><div class="fld"><label for="f-org">Organisation</label><input id="f-org" name="organisation" autocomplete="organization"></div></div>
-<div class="two"><div class="fld"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email"></div><div class="fld"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div></div>
+<div class="two"><div class="fld"><label for="f-name">Full name <small>required</small></label><input id="f-name" name="name" required autocomplete="name" aria-describedby="e-name"><span class="err" id="e-name"></span></div><div class="fld"><label for="f-org">Organisation</label><input id="f-org" name="organisation" autocomplete="organization"></div></div>
+<div class="two"><div class="fld"><label for="f-email">Email <small>required</small></label><input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="e-email"><span class="err" id="e-email"></span></div><div class="fld"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div></div>
 <div class="fld"><label for="f-int">I'm interested in</label><select id="f-int" name="interest"><option>Equipment &amp; product quote</option><option>Calibration &amp; service booking</option><option>Technical support (HelpDesk)</option><option>Training courses</option><option>Contract survey &amp; engineering</option><option>Spatial data infrastructure &amp; IT</option><option>Technology assurance plan</option><option>Something else</option></select></div>
-<div class="fld"><label for="f-msg">How can we help?</label><textarea id="f-msg" name="message" required></textarea></div>
+<div class="fld"><label for="f-msg">How can we help? <small>required</small></label><textarea id="f-msg" name="message" required aria-describedby="e-msg"></textarea><span class="err" id="e-msg"></span></div>
 <div class="hp" aria-hidden="true"><input name="_honey" tabindex="-1" autocomplete="off"></div>
 <input type="hidden" name="_subject" value="New enquiry from kaco.ug"><input type="hidden" name="_template" value="table">
-<button class="btn" type="submit">Send message</button><p class="form-note" role="status" aria-live="polite"></p></form>
+<button class="btn" type="submit">Send message</button><p class="form-note" role="status" aria-live="polite"></p>
+<p class="priv">We use your details only to reply to your enquiry. Messages are delivered by FormSubmit, a third-party form service. See our <a href="/privacy/">Privacy Policy</a>.</p></form>
 </div>
 <div class="map rv"><iframe title="KACO Systems on the map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Unicalo%20House%2C%20Archer%20Road%2C%20Kampala&output=embed"></iframe></div></div></section>`;
   const ld = JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', name: 'KACO Systems', telephone: PHONE, email: EMAIL, url: SITE, address: { '@type': 'PostalAddress', streetAddress: '2nd Floor, Unicalo House, Plot 11, Archer Road', addressLocality: 'Kampala', addressCountry: 'UG' } });
@@ -539,7 +564,7 @@ function contactPage() {
 function legal(key, title) {
   const f = LEGAL[key];
   let html = '', open = '';
-  const flush = () => { if (open) { html += `<ul>${open}</ul>`; open = ''; } };
+  const flush = () => { if (open) { html += `<ul class="specs">${open}</ul>`; open = ''; } };
   f.slice(1).forEach((x) => {
     if (x.tag === 'li') { open += `<li>${t(x.t)}</li>`; return; }
     flush();
@@ -561,8 +586,9 @@ function notFound() {
 /* ---------- run ---------- */
 home();
 generic('solutions', { eyebrow: 'Solutions & services' });
+servicesPage();
 generic('industries', { eyebrow: 'Industries' });
-generic('projects', { eyebrow: 'Case studies' });
+generic('projects', { eyebrow: 'Field capabilities' });
 generic('training', { eyebrow: 'KACO Training Academy' });
 generic('company', { eyebrow: 'Company' });
 for (const cfg of Object.values(VENDORS)) vendorPage(cfg);
