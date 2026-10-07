@@ -551,7 +551,8 @@ form.form { background: var(--surface); padding: clamp(24px, 3.5vw, 44px); displ
   .hero { height: clamp(600px, calc(100svh - var(--header-h)), 780px); }
   .hero--banner { height: clamp(500px, 124vw, 620px); }
   .slide { display: flex; flex-direction: column; }
-  .slide-copy { position: relative; inset: auto; flex: none; width: 100%; padding: 30px var(--gutter) 0; }
+  .slide-copy { position: relative; inset: auto; flex: none; width: 100%; padding: 30px var(--gutter) 0; align-items: center; text-align: center; }
+  .slide-copy .actions { justify-content: center; }
   .stage { position: relative; inset: auto; flex: 1 1 0; width: 100%; min-height: 0; padding: 16px var(--gutter) 52px; }
   .stage > img { max-width: var(--wm, 56%); }
   .stage.wins { width: 100%; padding-bottom: 52px; }
@@ -567,6 +568,7 @@ form.form { background: var(--surface); padding: clamp(24px, 3.5vw, 44px); displ
   .pcard.wide { flex-direction: column; }
   .pcard.wide .pcard-media { min-height: 0; aspect-ratio: 4 / 3; }
   .row, .split, .contact-grid { grid-template-columns: 1fr; }
+  .split { text-align: center; }
   .row:nth-child(even) .row-media { order: 0; }
   .row-media { min-height: 260px; }
   .stats { grid-template-columns: 1fr 1fr; row-gap: 36px; }
@@ -628,7 +630,8 @@ a.card:active, a.ptile:active, a.pcard:active, a.tile:active, .news-card:active,
 .rail > * { translate: var(--rb, 0) 0; }
 .rail.snapback > * { transition: translate .5s var(--ease); }
 @media (pointer: coarse) {
-  .tl, .localbar nav a, .chips a, .f-bottom a, .f-grid a, .hdr-right .pill-sm { min-height: 44px; display: inline-flex; align-items: center; }
+  .tl, .localbar nav a, .chips a, .f-bottom a, .f-grid a { min-height: 44px; display: inline-flex; align-items: center; }
+  .hdr-right .pill-sm { min-height: 44px; }  /* no display here: it would undo the mobile hide (menu sheet carries the CTA) */
   .f-grid li { margin-bottom: 0; }
   .pill-sm { height: 36px; }
 }
