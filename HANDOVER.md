@@ -3,6 +3,7 @@
 Static site (no framework). Open `index.html` via any web server; deploy by uploading the folder.
 
 - `tools/build.mjs` regenerates every page from `tools/content.json` (copy carried over from phirez.ug, rebranded to KACO) — run `node tools/build.mjs`.
+- **Clean URLs** (GitHub Pages): internal links are `/folder/`, never `/folder/index.html`, and canonical/sitemap use the same form. Old `…/index.html` addresses still load and `site.js` rewrites them to the clean URL in the address bar (Pages can't do server redirects). To preview from disk without a web server, build with `FILE_URLS=1 node tools/build.mjs`, then rebuild normally before committing.
 - `assets/css/site.css` — DJI-style design system (tokens at the top). `assets/js/site.js` — hero slider, mega menu, lightbox, form.
 - Design reference: dji.com/global (DJI palette #000/#fff/#303233/#f5f6f7, Open Sans body, Montserrat headings, 48px header, product tiles, sticky local bar). DJI's own "Dji" typeface is proprietary and is **not** used — Montserrat is the closest free match.
 

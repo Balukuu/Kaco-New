@@ -180,14 +180,15 @@ function webpify(html) {
   return html.replace(/\b(src|data-lb)="(\/assets\/img\/[^"]+)\.(png|jpe?g)"/gi, (m, attr, base, ext) =>
     fs.existsSync(path.join(ROOT, base + '.webp')) ? `${attr}="${base}.webp"` : m);
 }
-// Make every root-absolute link relative so the site works from file://, subfolders, or any host.
-// Folder links get an explicit index.html so they also resolve without a web server. Set CLEAN_URLS=1 to keep /folder/ style.
+// Make every root-absolute link relative so the site works from subfolders or any host.
+// Folder links stay clean (/folder/); GitHub Pages serves them from folder/index.html.
+// Set FILE_URLS=1 to append index.html instead, for previewing straight from disk (file://).
 function relativise(html, url) {
   const depth = url === '/' ? 0 : url.split('/').filter(Boolean).length;
   const pre = depth ? '../'.repeat(depth) : './';
   return html.replace(/\b(href|src|data-lb)="\/([^"]*)"/g, (m, attr, rest) => {
     let [pathPart, tail = ''] = rest.split(/(?=[?#])/).length > 1 ? [rest.split(/[?#]/)[0], rest.slice(rest.split(/[?#]/)[0].length)] : [rest, ''];
-    if (!process.env.CLEAN_URLS && (pathPart === '' || pathPart.endsWith('/'))) pathPart += 'index.html';
+    if (process.env.FILE_URLS && (pathPart === '' || pathPart.endsWith('/'))) pathPart += 'index.html';
     return `${attr}="${pre}${pathPart}${tail}"`;
   }).replace(/url\(\/(assets[^)]*)\)/g, `url(${pre}$1)`);
 }

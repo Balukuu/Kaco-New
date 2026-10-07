@@ -4,6 +4,10 @@
   var d = document, root = d.documentElement;
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   root.classList.add('js');
+  // Clean URLs: GitHub Pages can't redirect /folder/index.html, so tidy the address bar (canonical tags cover search engines)
+  if (/^https?:$/.test(location.protocol) && /\/index\.html$/.test(location.pathname)) {
+    try { history.replaceState(null, '', location.pathname.slice(0, -10) + location.search + location.hash); } catch (e) { /* keep the URL as is */ }
+  }
   // Apple's momentum projection: where a flick will come to rest (v in px/s)
   var project = function (v, rate) { rate = rate || 0.998; return (v / 1000) * rate / (1 - rate); };
   // Progressive resistance past a boundary
