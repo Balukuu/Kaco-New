@@ -130,7 +130,7 @@ function footer() {
 <a class="fab" href="${WA}" target="_blank" rel="noopener" aria-label="Chat with KACO Systems on WhatsApp">${svg.wa}</a>`;
 }
 
-function page({ url, title, desc, body, ogImage = '/assets/img/og-image.png', jsonld = '', bodyClass = '', noindex = false }) {
+function page({ url, title, desc, body, ogImage = '/assets/img/og-kaco.jpg', jsonld = '', bodyClass = '', noindex = false }) {
   const full = `${SITE}${url}`;
   let html = `<!doctype html>
 <html lang="en">
@@ -142,12 +142,15 @@ function page({ url, title, desc, body, ogImage = '/assets/img/og-image.png', js
 <link rel="canonical" href="${full}">
 <meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow'}">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:type" content="website"><meta property="og:site_name" content="KACO Systems">
+<meta property="og:type" content="website"><meta property="og:site_name" content="KACO Systems"><meta property="og:locale" content="en_UG">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${full}"><meta property="og:image" content="${SITE}${ogImage}">
+<meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="KACO Systems — precision geospatial and IT solutions for Africa's built environment, Kampala, Uganda">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}">
 <meta name="twitter:image" content="${SITE}${ogImage}">
+<meta name="twitter:image:alt" content="KACO Systems — precision geospatial and IT solutions for Africa's built environment, Kampala, Uganda">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">

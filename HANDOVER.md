@@ -21,6 +21,13 @@ Static site (no framework). Open `index.html` via any web server; deploy by uplo
 11. **Links**: 121 of 131 external vendor links returned 200 when checked. Ten (Autodesk, Esri newsroom, IBM docs) block scripted requests, so they could not be verified automatically — click them once after launch.
 12. **Hero carousels** (home + vendor pages) share `heroCarousel()`. A slide is either a studio lineup (`prods`; `win: 'Title'` shows a screenshot in a rectangular app window, `card: 1` is for logo cards, `blk: 1` lifts images shot on a black matte) or a full-bleed photo (`img`). The FOCUS 50, Nikon XF and AC-2S photos use real transparent cutouts (`*-cutout-01.webp` in `assets/img/products/`) rather than `blk`, which left ragged edges. Products without a photo in `assets/img/products/` appear as "Also available" chips that open a prefilled quote request.
 
+## Link preview card (WhatsApp / Facebook / LinkedIn / X)
+- Every page shares `assets/img/og-kaco.jpg` (1200×630, ~170 KB — keep it under ~300 KB or WhatsApp drops the image). It is set in `page()` in `tools/build.mjs` together with `og:image:width/height/alt`.
+- White card: copy + CTA on the left, a device lineup (Trimble R980/S9/X9, Spectra FOCUS 50, DJI Matrice 350 RTK) on the right, and a partner-logo strip along the bottom (Trimble, DJI, Esri, Spectra, Nikon, US Radar, Seafloor, Autodesk). Devices and logos come from `assets/img/products/`; the `.crop` wrappers trim their padding. It is white on purpose — the vendor logos are JPGs on white.
+- Source is `tools/og-card.html`. To change the text, devices or logos, edit it, then:
+  `google-chrome --headless=new --allow-file-access-from-files --window-size=1200,630 --virtual-time-budget=8000 --screenshot=/tmp/og.png file://$PWD/tools/og-card.html` and save `/tmp/og.png` as a JPEG (quality ~85) to `assets/img/og-kaco.jpg`.
+- **Preview caching:** WhatsApp/Facebook cache a link's preview. If you change the card, give it a new filename (and update `build.mjs`), then re-scrape at developers.facebook.com/tools/debug/ — or share the link with a throwaway query, e.g. `https://kaco.ug/?v=2`.
+
 ## Build notes (design audit)
 - `tools/optimize.mjs` writes smaller `.webp` copies of heavy PNG/JPG images (`cd tools && npm i && node optimize.mjs`); `build.mjs` uses them automatically. Re-run it after adding images, then `node tools/build.mjs`.
 - "Services" is its own page (`/services/`). "Case Studies" was renamed "Capabilities" because the examples are illustrative, not named client projects.

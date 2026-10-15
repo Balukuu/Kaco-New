@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- Source for assets/img/og-kaco.jpg (1200x630 link-preview card for WhatsApp / Facebook / LinkedIn / X).
+     Render: see "Link preview card" in HANDOVER.md. Logos/devices are cropped to their artwork with the
+     .crop wrapper (numbers come from the images' content bounds). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KACO Systems — link preview card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#0b1b1f; --ink-2:#4b5a5f; --teal:#00868b; --line:#dfe6e8; --panel:#eef4f5; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { width:1200px; height:630px; background:#fff; overflow:hidden; }
+  .card { position:relative; width:1200px; height:630px; background:#fff; font-family:"Open Sans","Helvetica Neue",Arial,sans-serif; color:var(--ink); }
+  .crop { position:relative; display:block; overflow:hidden; flex:none; }
+  .crop img { position:absolute; max-width:none; display:block; }
+
+  .logo  { position:absolute; left:64px; top:44px; width:188px; height:51px; overflow:hidden; }
+  .logo img { width:100%; height:100%; display:block; filter:brightness(1.07) contrast(1.12); mix-blend-mode:multiply; }
+
+  .copy  { position:absolute; left:64px; top:120px; width:510px; }
+  .pill  { display:inline-flex; align-items:center; gap:10px; padding:9px 15px; border-radius:999px; background:var(--panel); border:1px solid var(--line);
+           font:600 14px/1 "Open Sans",sans-serif; color:var(--ink-2); }
+  .pill i { width:8px; height:8px; border-radius:50%; background:var(--teal); }
+  h1     { margin-top:20px; font:800 52px/1.07 "Montserrat",sans-serif; letter-spacing:-.02em; color:var(--ink); }
+  h1 em  { font-style:normal; color:var(--teal); }
+  .sub   { margin-top:16px; width:470px; font:400 19px/1.5 "Open Sans",sans-serif; color:var(--ink-2); }
+  .cta   { position:absolute; left:64px; top:434px; display:flex; align-items:center; gap:16px; }
+  .url   { padding:13px 24px; border-radius:999px; background:var(--ink); color:#fff; font:700 18px/1 "Montserrat",sans-serif; }
+  .loc   { font:600 15px/1 "Open Sans",sans-serif; color:var(--ink-2); }
+
+  .panel { position:absolute; left:604px; top:36px; width:540px; height:442px; border-radius:26px; overflow:hidden;
+           background: radial-gradient(420px 260px at 50% 78%, rgba(0,134,139,.14), rgba(0,134,139,0) 70%), linear-gradient(165deg,#f6fafb,#e8f0f1); }
+  .ground { position:absolute; left:0; right:0; top:372px; height:1px; background:rgba(11,27,31,.08); }
+  .drone { position:absolute; left:196px; top:34px; z-index:1; filter:drop-shadow(0 18px 18px rgba(11,27,31,.16)); }
+  .dev   { position:absolute; top:0; height:442px; }
+  .dev .crop { position:absolute; bottom:70px; left:0; }
+  .dev .sh   { position:absolute; bottom:63px; left:-3%; height:14px; border-radius:50%; background:radial-gradient(closest-side, rgba(11,27,31,.28), rgba(11,27,31,0)); }
+  .tag   { position:absolute; left:26px; right:20px; bottom:20px; font:600 11.5px/1 "Montserrat",sans-serif; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-2); white-space:nowrap; }
+  .tag b { color:var(--teal); font-weight:700; }
+
+  .strip { position:absolute; left:64px; right:56px; top:508px; height:90px; border-top:1px solid var(--line); }
+  .strip h2 { position:absolute; top:14px; left:0; font:700 12px/1 "Montserrat",sans-serif; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-2); }
+  .brands { position:absolute; left:0; right:0; top:38px; height:40px; display:flex; align-items:center; justify-content:space-between; }
+  .brand { display:inline-flex; align-items:center; gap:9px; mix-blend-mode:multiply; }
+  .brand b { font:700 19px/1 "Montserrat",sans-serif; letter-spacing:-.01em; color:#1f2d33; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo"><img src="../kaco-logo.jpg" alt="KACO"></div>
+
+  <div class="copy">
+    <span class="pill"><i></i>GNSS · Total stations · Drone LiDAR · GIS</span>
+    <h1>Precision for <em>Africa’s built environment</em></h1>
+    <p class="sub">Supply, calibration, training and support across Uganda and East Africa.</p>
+  </div>
+  <div class="cta"><span class="url">kaco.ug</span><span class="loc">Kampala, Uganda</span></div>
+
+  <div class="panel">
+    <div class="ground"></div>
+    <div class="drone"><span class="crop " style="width:330.0px;height:162.4px;"><img src="../assets/img/products/dji-matrice-350-rtk-product-01.png" alt="" style="width:401.4px;left:-34.6px;top:-117.3px"></span></div>
+    <div class="dev" style="left:26px;z-index:2"><span class="crop " style="width:117.3px;height:296.0px;"><img src="../assets/img/products/trimble-r980-product-01.avif" alt="" style="width:185.8px;left:-36.3px;top:-4.5px"></span><i class="sh" style="width:123px"></i></div><div class="dev" style="left:150px;z-index:2"><span class="crop " style="width:105.7px;height:208.0px;"><img src="../assets/img/products/trimble-s9-product-01.avif" alt="" style="width:173.7px;left:-34.0px;top:-12.6px"></span><i class="sh" style="width:111px"></i></div><div class="dev" style="left:282px;z-index:2"><span class="crop " style="width:112.5px;height:224.0px;"><img src="../assets/img/products/spectra-focus50-cutout-01.webp" alt="" style="width:113.8px;left:-0.6px;top:-0.8px"></span><i class="sh" style="width:118px"></i></div><div class="dev" style="left:410px;z-index:2"><span class="crop " style="width:110.4px;height:190.0px;"><img src="../assets/img/products/trimble-x9-product-01.webp" alt="" style="width:156.5px;left:-25.7px;top:-11.6px"></span><i class="sh" style="width:116px"></i></div>
+    <div class="tag"><b>Trimble</b> R980 · S9 · X9 &nbsp;|&nbsp; <b>Spectra</b> FOCUS 50 &nbsp;|&nbsp; <b>DJI</b> Matrice 350 RTK</div>
+  </div>
+
+  <div class="strip">
+    <h2>Solutions from</h2>
+    <div class="brands"><span class="brand"><span class="crop " style="width:30.8px;height:34.0px;"><img src="../assets/img/products/trimble-logo.jpg" alt="" style="width:176.6px;left:-72.9px;top:-7.3px"></span><b>Trimble</b></span><span class="brand"><span class="crop " style="width:64.1px;height:38.0px;"><img src="../assets/img/products/dji-logo.jpg" alt="" style="width:366.3px;left:-151.1px;top:-26.8px"></span></span><span class="brand"><span class="crop " style="width:35.8px;height:36.0px;"><img src="../assets/img/products/esri-logo.jpg" alt="" style="width:146.2px;left:-55.2px;top:-7.6px"></span><b>Esri</b></span><span class="brand"><span class="crop " style="width:128.5px;height:30.0px;"><img src="../assets/img/products/spectra-geospatial-logo.jpg" alt="" style="width:148.6px;left:-10.0px;top:-6.0px"></span></span><span class="brand"><span class="crop " style="width:40.0px;height:40.0px;"><img src="../assets/img/products/nikon-logo.png" alt="" style="width:50.0px;left:-5.0px;top:-5.0px"></span></span><span class="brand"><span class="crop " style="width:136.9px;height:30.0px;"><img src="../assets/img/products/usradar-logo.jpg" alt="" style="width:168.4px;left:-15.7px;top:-8.5px"></span></span><span class="brand"><span class="crop " style="width:105.3px;height:32.0px;"><img src="../assets/img/products/seafloor-logo.jpg" alt="" style="width:105.3px;left:0.0px;top:0.0px"></span></span><span class="brand"><span class="crop " style="width:37.8px;height:26.0px;"><img src="../assets/img/products/autodesk-logo.jpg" alt="" style="width:214.4px;left:-88.3px;top:-13.8px"></span><b>Autodesk</b></span></div>
+  </div>
+</div>
+</body>
+</html>
